@@ -12,6 +12,20 @@ export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
 
+  const bathroomServices = [
+    { name: "Bathroom Remodeling", href: "/bathroom-remodeling" },
+    { name: "Shower Remodeling", href: "/bathroom-remodeling#shower-remodeling" },
+    { name: "Bathtub Installation", href: "/bathroom-remodeling#bathtub-installation" },
+    { name: "Bathtub Replacement", href: "/bathroom-remodeling#bathtub-replacement" },
+    { name: "Walk-in Shower Installation", href: "/bathroom-remodeling#walk-in-shower-installation" },
+    { name: "Bathroom Tile Installation", href: "/bathroom-remodeling#bathroom-tile-installation" },
+    { name: "Bathroom Vanity Installation", href: "/bathroom-remodeling#bathroom-vanity-installation" },
+    { name: "Bathroom Flooring", href: "/bathroom-remodeling#bathroom-flooring" },
+    { name: "Bathroom Lighting Upgrade", href: "/bathroom-remodeling#bathroom-lighting-upgrade" },
+    { name: "Bathroom Sink Installation", href: "/bathroom-remodeling#bathroom-sink-installation" },
+    { name: "Bathroom Plumbing Upgrade", href: "/bathroom-remodeling#bathroom-plumbing-upgrade" },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -82,7 +96,7 @@ export function Header() {
               </button>
               {isServicesOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-card rounded-lg shadow-xl border border-border p-1 opacity-100 animate-in fade-in slide-in-from-top-2 duration-200">
-                  {siteConfig.services.map((service) => (
+                  {bathroomServices.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
@@ -147,7 +161,7 @@ export function Header() {
               <div className="py-2 border-b border-border">
                 <span className="text-lg font-medium text-foreground">Services</span>
                 <div className="mt-3 space-y-3 pl-4">
-                  {siteConfig.services.map((service) => (
+                  {bathroomServices.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
