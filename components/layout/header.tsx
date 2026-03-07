@@ -6,6 +6,7 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
+import { InfoHeader } from "@/components/layout/info-header";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,6 +39,7 @@ export function Header() {
 
   return (
     <>
+    <InfoHeader />
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
