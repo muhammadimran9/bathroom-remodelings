@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -29,8 +30,10 @@ import Tips from "@/components/services/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
+import SubServices from "@/components/services/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { siteConfig } from "@/lib/site-config";
+import { ServiceSchema } from "@/components/seo/json-ld";
 
 type ServiceDetail = {
   hero: {
@@ -70,6 +73,17 @@ type ServiceDetail = {
     title: string;
     description: string;
   };
+  relatedServices?: {
+    title: string;
+    services: { name: string; href: string; description: string }[];
+  };
+  content?: {
+    intro: string;
+    sections: {
+      title: string;
+      content: string;
+    }[];
+  };
 };
 
 const serviceMap = bathroomServices.reduce<Record<string, (typeof bathroomServices)[number]>>(
@@ -90,6 +104,32 @@ const serviceContent: Record<string, ServiceDetail> = {
         "Upgrade to a watertight, spa-inspired shower with premium tilework, glass, and fixtures tailored to your Chandler home.",
       image:
         "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp",
+    },
+    content: {
+      intro:
+        "Transform your outdated bathroom with professional shower remodeling services in Chandler, Arizona. Our expert team specializes in creating custom shower spaces that combine modern design, superior functionality, and long-lasting durability. Whether you're looking to upgrade a cramped shower stall or create a luxurious spa-like retreat, we deliver exceptional results that enhance your daily routine and increase your home's value.",
+      sections: [
+        {
+          title: "Why Choose Professional Shower Remodeling in Chandler?",
+          content:
+            "Chandler homeowners face unique challenges when it comes to bathroom renovations. Arizona's hard water, temperature fluctuations, and humidity levels require specialized materials and installation techniques. Our shower remodeling services address these local concerns with waterproof membranes, proper ventilation planning, and materials that resist mineral buildup. We understand Chandler's building codes and work efficiently to minimize disruption to your household. From initial consultation to final walkthrough, our team ensures your shower remodel meets the highest standards of quality and craftsmanship.",
+        },
+        {
+          title: "Custom Shower Design Options for Chandler Homes",
+          content:
+            "Every shower remodel begins with understanding your vision and lifestyle needs. We offer frameless glass enclosures that create an open, modern aesthetic, custom tile patterns ranging from classic subway to contemporary large-format porcelain, and built-in niches and benches for added functionality. Our design team helps you select fixtures, finishes, and layouts that complement your home's style while maximizing space efficiency. Whether you prefer a minimalist design or a more traditional look, we tailor every detail to your preferences and budget.",
+        },
+        {
+          title: "The Shower Remodeling Process in Chandler, AZ",
+          content:
+            "Our streamlined process ensures your shower remodel stays on schedule and within budget. We start with a detailed consultation and accurate measurements, followed by material selection and design finalization. During demolition, we protect your home with dust barriers and careful removal techniques. Our certified installers then prepare surfaces with proper waterproofing, install your chosen tile and fixtures with precision, and complete all finishing work including grout sealing and caulking. Throughout the project, we maintain clear communication and keep your space clean and organized.",
+        },
+        {
+          title: "Quality Materials for Arizona's Climate",
+          content:
+            "Selecting the right materials is crucial for shower longevity in Chandler's climate. We recommend porcelain and ceramic tiles that resist moisture and are easy to maintain, waterproof membranes that exceed industry standards, slip-resistant flooring options for safety, and premium fixtures with finishes that resist hard water staining. Our partnerships with leading manufacturers ensure you receive quality products backed by solid warranties. We also provide guidance on maintenance practices that keep your shower looking beautiful for years to come.",
+        },
+      ],
     },
     process: {
       title: "Shower Remodel Process",
@@ -195,7 +235,27 @@ const serviceContent: Record<string, ServiceDetail> = {
     seo: {
       title: "Shower Remodeling in Chandler AZ | Custom Shower Renovations",
       description:
-        "Shower remodeling in Chandler, Arizona. Waterproof installations, custom tile, glass enclosures, niches, and premium fixtures. Call for a free shower remodel estimate.",
+        "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures. Call for a free shower remodel estimate today.",
+    },
+    relatedServices: {
+      title: "Related Bathroom Services in Chandler",
+      services: [
+        {
+          name: "Walk-in Shower Installation",
+          href: "/walk-in-shower-installation",
+          description: "Accessible, curbless walk-in showers for safer bathing",
+        },
+        {
+          name: "Bathroom Tile Installation",
+          href: "/bathroom-tile-installation",
+          description: "Expert tile work for showers, floors, and walls",
+        },
+        {
+          name: "Bathtub Replacement",
+          href: "/bathtub-replacement",
+          description: "Convert your old tub to a modern shower",
+        },
+      ],
     },
   },
   "bathtub-installation": {
@@ -206,6 +266,32 @@ const serviceContent: Record<string, ServiceDetail> = {
         "Install a new bathtub with proper leveling, plumbing connections, and finished trim so your Chandler bathroom feels complete.",
       image:
         "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop&fm=webp",
+    },
+    content: {
+      intro:
+        "Professional bathtub installation in Chandler, Arizona requires precision, expertise, and attention to detail. Whether you're building a new bathroom or upgrading an existing space, our certified installers ensure your bathtub is properly leveled, securely supported, and connected to plumbing systems that meet all local codes. We work with alcove tubs, freestanding soaking tubs, and whirlpool models, providing complete installation services that include waterproofing, surround finishing, and fixture coordination.",
+      sections: [
+        {
+          title: "Expert Bathtub Installation Services in Chandler",
+          content:
+            "Our bathtub installation process begins with careful planning and precise measurements. We assess your bathroom layout, plumbing configuration, and structural support to ensure a flawless installation. Chandler homes vary in age and construction style, so we adapt our approach to work with your specific situation. From preparing the subfloor and installing proper drainage to setting and leveling the tub, every step is performed with meticulous attention to detail. We also coordinate with tile setters, plumbers, and other trades to ensure seamless integration with your overall bathroom design.",
+        },
+        {
+          title: "Choosing the Right Bathtub for Your Chandler Home",
+          content:
+            "Selecting the perfect bathtub involves considering size, material, style, and functionality. Alcove tubs fit standard three-wall enclosures and maximize space efficiency in smaller bathrooms. Freestanding tubs create a stunning focal point and work well in master bathrooms with ample square footage. Soaking tubs offer deeper water depth for relaxation, while whirlpool and air-jet tubs provide therapeutic benefits. We help you evaluate options based on your bathroom dimensions, budget, and personal preferences, ensuring you choose a tub that enhances both comfort and aesthetics.",
+        },
+        {
+          title: "Proper Installation Techniques for Long-Lasting Results",
+          content:
+            "A properly installed bathtub should last for decades without issues. Our installation process includes reinforcing the subfloor to prevent flexing and creaking, installing mortar beds or foam support systems for stability, setting the tub perfectly level to ensure proper drainage, connecting drain assemblies with leak-proof seals, and applying waterproof membranes around the tub perimeter. We test all connections before finishing work and provide detailed care instructions to help you maintain your new bathtub. Our installations are backed by warranties that give you peace of mind.",
+        },
+        {
+          title: "Bathtub Installation Cost and Timeline in Chandler",
+          content:
+            "The cost of bathtub installation in Chandler depends on several factors including tub type and size, plumbing modifications required, surround materials and finishes, and accessibility challenges. Most standard installations are completed within 1-3 days, though more complex projects may take longer. We provide detailed estimates that outline all costs upfront, with no hidden fees or surprise charges. Our efficient scheduling minimizes disruption to your household, and we always clean up thoroughly at the end of each workday. Financing options are available for qualified homeowners.",
+        },
+      ],
     },
     process: {
       title: "Bathtub Installation Process",
@@ -307,9 +393,29 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for fast scheduling and a polished install that's ready to use.",
     },
     seo: {
-      title: "Bathtub Installation in Chandler AZ | Professional Tub Installers",
+      title: "Bathtub Installation Chandler AZ | Professional Tub Installers",
       description:
-        "Bathtub installation in Chandler, Arizona. Level installs, proper drains, waterproof sealing, and coordinated trim. Get a free bathtub installation estimate today.",
+        "Expert bathtub installation in Chandler, Arizona. Level installs, proper drainage, waterproof sealing, and coordinated trim. Get a free bathtub installation estimate today.",
+    },
+    relatedServices: {
+      title: "Related Bathroom Services in Chandler",
+      services: [
+        {
+          name: "Bathtub Replacement",
+          href: "/bathtub-replacement",
+          description: "Replace your old tub with a modern upgrade",
+        },
+        {
+          name: "Shower Remodeling",
+          href: "/shower-remodeling",
+          description: "Convert your tub to a custom shower",
+        },
+        {
+          name: "Bathroom Tile Installation",
+          href: "/bathroom-tile-installation",
+          description: "Professional tile work for tub surrounds",
+        },
+      ],
     },
   },
   "bathtub-replacement": {
@@ -320,6 +426,32 @@ const serviceContent: Record<string, ServiceDetail> = {
         "Swap outdated tubs for modern, comfortable replacements with clean removal, plumbing updates, and fresh finishes.",
       image:
         "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1600&auto=format&fit=crop&fm=webp",
+    },
+    content: {
+      intro:
+        "Is your bathtub stained, cracked, or simply outdated? Bathtub replacement in Chandler, Arizona offers a cost-effective way to refresh your bathroom without a complete remodel. Our experienced team removes old tubs carefully, updates plumbing as needed, and installs new tubs that match your style and budget. We handle everything from demolition and disposal to final finishing, ensuring a smooth process that minimizes disruption to your daily routine.",
+      sections: [
+        {
+          title: "Signs You Need Bathtub Replacement in Chandler",
+          content:
+            "Several indicators suggest it's time to replace your bathtub. Visible cracks or chips in the tub surface can lead to water damage and mold growth. Persistent stains that won't clean despite your best efforts make your bathroom look dated and unclean. Rust spots and discoloration indicate the tub's protective coating has failed. If your tub feels unstable or flexes when you step in, the support structure may be compromised. Outdated colors like avocado green or harvest gold can make your entire bathroom feel stuck in the past. Replacing your bathtub addresses these issues while giving you an opportunity to upgrade to modern features and finishes.",
+        },
+        {
+          title: "The Bathtub Replacement Process",
+          content:
+            "Our bathtub replacement service follows a systematic approach to ensure quality results. We begin with a thorough assessment of your existing tub, plumbing, and surrounding finishes. Next, we carefully remove the old tub, taking precautions to protect your floors, walls, and fixtures. We inspect and update plumbing connections, replacing worn valves, drains, and supply lines as needed. The subfloor is reinforced if necessary to provide solid support for your new tub. We then install your selected bathtub, ensuring it's perfectly level and properly sealed. Finally, we complete all finishing work including caulking, trim installation, and cleanup. Most bathtub replacements in Chandler are completed within 1-2 days.",
+        },
+        {
+          title: "Bathtub Options for Chandler Homeowners",
+          content:
+            "Today's bathtubs offer impressive variety in materials, styles, and features. Acrylic tubs are lightweight, affordable, and available in many colors and sizes. Cast iron tubs provide exceptional durability and heat retention but require strong floor support. Fiberglass tubs offer budget-friendly options for rental properties and quick updates. Cultured marble tubs combine beauty with easy maintenance. For luxury upgrades, consider soaking tubs with ergonomic designs, whirlpool tubs with therapeutic jets, or freestanding tubs that serve as bathroom focal points. We help you select the best option based on your bathroom layout, budget, and personal preferences.",
+        },
+        {
+          title: "Maximizing Your Bathtub Replacement Investment",
+          content:
+            "When replacing your bathtub, consider complementary upgrades that enhance functionality and value. Update faucets and fixtures to match your new tub's finish. Replace worn tile or install a new tub surround for a cohesive look. Upgrade to a handheld showerhead for added convenience. Add grab bars for safety, especially if seniors or children use the bathroom. Improve lighting to showcase your new tub and make the space more functional. These coordinated improvements create a refreshed bathroom that feels completely updated, often at a fraction of the cost of a full remodel. Our team can handle all these upgrades as part of your bathtub replacement project.",
+        },
+      ],
     },
     process: {
       title: "Bathtub Replacement Process",
@@ -421,9 +553,29 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for a fast quote and professional tub replacement scheduling.",
     },
     seo: {
-      title: "Bathtub Replacement in Chandler AZ | Modern Tub Upgrades",
+      title: "Bathtub Replacement Chandler AZ | Modern Tub Upgrades",
       description:
-        "Bathtub replacement in Chandler, Arizona. Clean removal, updated plumbing, level installs, and fresh finishes. Contact us for a fast bathtub replacement quote.",
+        "Professional bathtub replacement in Chandler, Arizona. Clean removal, updated plumbing, level installs, and fresh finishes. Contact us for a fast bathtub replacement quote.",
+    },
+    relatedServices: {
+      title: "Related Bathroom Services in Chandler",
+      services: [
+        {
+          name: "Bathtub Installation",
+          href: "/bathtub-installation",
+          description: "New bathtub installation for remodels",
+        },
+        {
+          name: "Walk-in Shower Installation",
+          href: "/walk-in-shower-installation",
+          description: "Convert your tub to an accessible shower",
+        },
+        {
+          name: "Bathroom Vanity Installation",
+          href: "/bathroom-vanity-installation",
+          description: "Complete your bathroom update with a new vanity",
+        },
+      ],
     },
   },
   "walk-in-shower-installation": {
@@ -434,6 +586,32 @@ const serviceContent: Record<string, ServiceDetail> = {
         "Create an open, safer walk-in shower with slip-resistant materials, glass, and storage tailored to your Chandler home.",
       image:
         "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp",
+    },
+    content: {
+      intro:
+        "Walk-in shower installation in Chandler, Arizona combines accessibility, safety, and modern design. Whether you're aging in place, accommodating mobility challenges, or simply prefer the convenience of a barrier-free shower, our expert installers create custom walk-in showers that enhance your bathroom's functionality and aesthetic appeal. We specialize in curbless designs, low-threshold entries, and ADA-compliant features that don't compromise on style.",
+      sections: [
+        {
+          title: "Benefits of Walk-In Showers for Chandler Homes",
+          content:
+            "Walk-in showers offer numerous advantages for homeowners throughout Chandler. The low or zero-threshold entry eliminates tripping hazards, making bathrooms safer for all ages. Open designs create a more spacious feel, especially valuable in smaller bathrooms. Frameless glass enclosures allow natural light to flow throughout the space. Easy-access features accommodate wheelchairs, walkers, and other mobility aids. Walk-in showers are also easier to clean than traditional tub-shower combinations, with fewer crevices where mold and mildew can develop. For resale value, walk-in showers appeal to a broad range of buyers, from young families to retirees, making them a smart investment in Chandler's competitive real estate market.",
+        },
+        {
+          title: "Custom Walk-In Shower Design Options",
+          content:
+            "Every walk-in shower we install is customized to your specific needs and preferences. Curbless showers provide completely barrier-free entry, ideal for wheelchair access. Low-threshold designs offer a subtle transition while containing water effectively. We incorporate built-in benches for comfortable seated showering, custom niches for organized storage, and grab bars strategically placed for safety without institutional appearance. Tile options range from large-format porcelain that minimizes grout lines to decorative mosaics that add visual interest. We also offer various glass configurations including frameless, semi-frameless, and fully enclosed designs. Our design team works with you to create a walk-in shower that balances accessibility, aesthetics, and your budget.",
+        },
+        {
+          title: "Walk-In Shower Installation Process in Chandler",
+          content:
+            "Installing a walk-in shower requires specialized expertise, particularly for curbless designs. We begin by assessing your bathroom's structural requirements and plumbing configuration. For curbless showers, we may need to lower the shower floor or raise the bathroom floor to achieve proper drainage slope. We install high-quality waterproofing systems that exceed industry standards, ensuring long-term protection against water damage. Linear drains are positioned to maximize water flow while maintaining a sleek appearance. All tile work is performed with precision to ensure proper slope and water management. We install glass enclosures with careful attention to fit and finish. Throughout the process, we coordinate with plumbers, electricians, and other trades to ensure seamless integration of all components.",
+        },
+        {
+          title: "Safety Features for Walk-In Showers",
+          content:
+            "Safety is paramount in walk-in shower design, especially for Chandler homeowners planning to age in place. We incorporate slip-resistant tile flooring with appropriate DCOF ratings, grab bars installed into reinforced blocking for secure support, handheld showerheads mounted on slide bars for adjustable height, built-in seating for comfortable showering, and adequate lighting including waterproof fixtures. We also recommend thermostatic valves that prevent scalding and ensure consistent water temperature. These safety features are integrated thoughtfully into the design, maintaining the shower's aesthetic appeal while providing essential functionality. Our installations meet or exceed ADA guidelines when required, ensuring your walk-in shower is both beautiful and accessible.",
+        },
+      ],
     },
     process: {
       title: "Walk-in Shower Installation Process",
@@ -535,9 +713,29 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call today for a fast walkthrough and tailored walk-in shower estimate.",
     },
     seo: {
-      title: "Walk-in Shower Installation Chandler AZ | Accessible Shower Pros",
+      title: "Walk-in Shower Installation Chandler AZ | Accessible Showers",
       description:
-        "Walk-in shower installation in Chandler, Arizona. Curbless and low-threshold showers, slip-resistant tile, glass enclosures, and waterproofing. Schedule a walk-in shower estimate.",
+        "Professional walk-in shower installation in Chandler, Arizona. Curbless and low-threshold showers, slip-resistant tile, glass enclosures, and waterproofing. Schedule your estimate.",
+    },
+    relatedServices: {
+      title: "Related Bathroom Services in Chandler",
+      services: [
+        {
+          name: "Shower Remodeling",
+          href: "/shower-remodeling",
+          description: "Complete shower renovations and upgrades",
+        },
+        {
+          name: "Bathroom Tile Installation",
+          href: "/bathroom-tile-installation",
+          description: "Slip-resistant tile for walk-in showers",
+        },
+        {
+          name: "Bathtub Replacement",
+          href: "/bathtub-replacement",
+          description: "Replace your tub with a walk-in shower",
+        },
+      ],
     },
   },
   "bathroom-tile-installation": {
@@ -548,6 +746,32 @@ const serviceContent: Record<string, ServiceDetail> = {
         "Precision tile installation for shower walls, floors, and backsplashes that stay aligned, sealed, and beautiful.",
       image:
         "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp",
+    },
+    content: {
+      intro:
+        "Professional bathroom tile installation in Chandler, Arizona transforms ordinary bathrooms into stunning spaces. Our certified tile installers bring years of experience and meticulous attention to detail to every project. Whether you're updating a shower surround, installing new floor tile, or creating a decorative backsplash, we deliver flawless results that enhance your bathroom's beauty and functionality. We work with all tile types including ceramic, porcelain, natural stone, and glass, ensuring proper installation techniques for lasting performance.",
+      sections: [
+        {
+          title: "Why Professional Tile Installation Matters",
+          content:
+            "Bathroom tile installation requires specialized skills and knowledge that go far beyond basic DIY capabilities. Proper surface preparation prevents future cracking and tile failure. Waterproofing systems must be installed correctly to protect against moisture damage and mold growth. Tile layout requires careful planning to minimize cuts and create balanced, visually appealing patterns. Precise cutting and fitting around fixtures, corners, and edges ensures a professional finish. Proper thinset application and tile setting techniques prevent lippage and hollow spots. Grout selection and application affect both appearance and durability. Our professional installers master all these elements, delivering tile work that looks beautiful and performs flawlessly for decades.",
+        },
+        {
+          title: "Tile Options for Chandler Bathrooms",
+          content:
+            "Selecting the right tile for your Chandler bathroom involves considering style, durability, and maintenance requirements. Porcelain tile offers exceptional durability and water resistance, ideal for shower floors and walls. Ceramic tile provides excellent value with countless design options. Natural stone tiles like marble, travertine, and slate create luxurious, organic aesthetics but require more maintenance. Glass tile adds sparkle and visual interest, perfect for accent walls and borders. Large-format tiles minimize grout lines for a sleek, modern look and easier cleaning. Mosaic tiles allow for intricate patterns and excellent slip resistance on shower floors. We help you select tiles that match your design vision, budget, and lifestyle needs, ensuring your bathroom tile installation exceeds expectations.",
+        },
+        {
+          title: "Bathroom Tile Installation Process",
+          content:
+            "Our systematic approach ensures superior results on every tile installation project. We begin with thorough surface preparation, removing old tile if necessary and repairing any substrate damage. Cement backer board is installed on walls and floors to provide a stable, moisture-resistant base. Waterproofing membranes are applied in wet areas, with special attention to corners, seams, and penetrations. We create detailed layout plans that optimize tile placement and minimize waste. Tiles are set using appropriate thinset mortar, with spacers ensuring consistent grout lines. After proper curing time, we apply grout in your selected color, tooling joints for uniform appearance. Finally, we seal grout lines and natural stone tiles to protect against staining and moisture. The result is tile work that combines beauty, durability, and proper water management.",
+        },
+        {
+          title: "Tile Maintenance for Arizona Homes",
+          content:
+            "Chandler's hard water and climate conditions require specific tile maintenance practices. Regular cleaning with pH-neutral products prevents buildup and preserves tile finishes. Grout sealing should be performed annually in shower areas to maintain water resistance. Proper ventilation during and after showers reduces humidity that can lead to mold growth. Addressing any cracked or loose tiles promptly prevents water intrusion and further damage. For natural stone tiles, use cleaners specifically formulated for stone to avoid etching or discoloration. We provide detailed care instructions with every installation and offer maintenance services to keep your tile looking new. With proper care, your bathroom tile installation will maintain its beauty and functionality for many years.",
+        },
+      ],
     },
     process: {
       title: "Bathroom Tile Installation Process",
@@ -651,7 +875,27 @@ const serviceContent: Record<string, ServiceDetail> = {
     seo: {
       title: "Bathroom Tile Installation Chandler AZ | Waterproof Tile Experts",
       description:
-        "Bathroom tile installation in Chandler, Arizona. Layout planning, waterproofing, flat installs, and sealed grout for showers, floors, and backsplashes. Get a tile quote today.",
+        "Expert bathroom tile installation in Chandler, Arizona. Layout planning, waterproofing, precision installs, and sealed grout for showers, floors, and backsplashes. Get your tile quote.",
+    },
+    relatedServices: {
+      title: "Related Bathroom Services in Chandler",
+      services: [
+        {
+          name: "Shower Remodeling",
+          href: "/shower-remodeling",
+          description: "Custom tile showers with premium finishes",
+        },
+        {
+          name: "Walk-in Shower Installation",
+          href: "/walk-in-shower-installation",
+          description: "Accessible showers with slip-resistant tile",
+        },
+        {
+          name: "Bathroom Vanity Installation",
+          href: "/bathroom-vanity-installation",
+          description: "Vanity backsplash tile installation",
+        },
+      ],
     },
   },
   "bathroom-vanity-installation": {
@@ -662,6 +906,32 @@ const serviceContent: Record<string, ServiceDetail> = {
         "Install a vanity that improves storage, workflow, and style with aligned plumbing, countertops, and lighting.",
       image:
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop&fm=webp",
+    },
+    content: {
+      intro:
+        "Transform your bathroom with professional vanity installation in Chandler, Arizona. A new bathroom vanity provides essential storage, improves daily functionality, and serves as a focal point for your bathroom's design. Our experienced installers handle every aspect of vanity installation, from removing old cabinets and updating plumbing to setting new vanities perfectly level and installing countertops with precision. We work with all vanity styles including single and double sink configurations, floating wall-mounted designs, and traditional floor-standing cabinets.",
+      sections: [
+        {
+          title: "Choosing the Perfect Vanity for Your Chandler Bathroom",
+          content:
+            "Selecting the right bathroom vanity involves balancing style, size, storage, and budget considerations. Measure your bathroom carefully to determine the maximum vanity size that allows comfortable movement. Single-sink vanities work well in powder rooms and smaller bathrooms, while double-sink vanities accommodate busy households and master bathrooms. Consider storage needs—drawers provide better organization than cabinets for most items. Vanity height has evolved from the traditional 30-32 inches to comfort height at 36 inches, which reduces back strain during daily use. Material choices include solid wood for durability and classic appeal, engineered wood with moisture-resistant finishes for budget-friendly options, and metal or glass for contemporary designs. Countertop materials range from affordable laminate to luxurious quartz, granite, or marble. We help you navigate these options to find the perfect vanity for your needs.",
+        },
+        {
+          title: "Professional Vanity Installation Process",
+          content:
+            "Our vanity installation process ensures flawless results that last for years. We begin by carefully removing your existing vanity, protecting floors and walls during demolition. Plumbing is inspected and updated as needed, with supply lines and drain assemblies positioned to match your new vanity configuration. Wall blocking is added if necessary to support wall-mounted vanities. We set the vanity cabinet, shimming and leveling it precisely to prevent door and drawer misalignment. Countertops are installed with proper support and sealed seams. Sinks are mounted and plumbed with new faucets and drain assemblies. Backsplashes are installed and caulked for a watertight seal. Finally, we connect all plumbing, test for leaks, and clean the work area thoroughly. Most vanity installations in Chandler are completed in one day, minimizing disruption to your household.",
+        },
+        {
+          title: "Vanity Styles for Chandler Homes",
+          content:
+            "Bathroom vanity styles have evolved significantly, offering options for every design preference. Traditional vanities feature furniture-style details, raised panel doors, and classic hardware in rich wood finishes. Transitional vanities blend traditional and contemporary elements with clean lines and subtle details. Modern vanities emphasize minimalism with flat-panel doors, sleek hardware, and bold finishes. Floating vanities mount to the wall, creating an airy feel and making floor cleaning easier. Vessel sink vanities showcase decorative above-counter sinks as design statements. Farmhouse vanities incorporate rustic elements like distressed finishes and apron-front sinks. We help you select a vanity style that complements your bathroom's architecture and your personal aesthetic, ensuring a cohesive, polished result.",
+        },
+        {
+          title: "Maximizing Vanity Storage and Functionality",
+          content:
+            "A well-designed vanity installation optimizes storage and improves your bathroom's functionality. Drawer organizers keep toiletries, cosmetics, and grooming tools neatly arranged and easily accessible. Pull-out shelves in lower cabinets maximize storage capacity and improve access to items in back corners. Electrical outlets integrated into drawers or on the side of the vanity provide convenient power for hair dryers and electric toothbrushes. Adequate lighting above or beside the vanity eliminates shadows for grooming tasks. Medicine cabinets or open shelving add supplementary storage without consuming floor space. Soft-close hinges and drawer glides provide quiet, smooth operation. We consider these functional elements during planning to ensure your new vanity enhances your daily routine while maintaining a clean, organized appearance.",
+        },
+      ],
     },
     process: {
       title: "Bathroom Vanity Installation Process",
@@ -765,7 +1035,27 @@ const serviceContent: Record<string, ServiceDetail> = {
     seo: {
       title: "Bathroom Vanity Installation Chandler AZ | Custom Vanity Pros",
       description:
-        "Bathroom vanity installation in Chandler, Arizona. Measurements, leveling, countertop install, plumbing hook-ups, and storage planning. Get a vanity installation estimate today.",
+        "Professional bathroom vanity installation in Chandler, Arizona. Measurements, leveling, countertop install, plumbing hook-ups, and storage planning. Get your vanity estimate today.",
+    },
+    relatedServices: {
+      title: "Related Bathroom Services in Chandler",
+      services: [
+        {
+          name: "Bathroom Tile Installation",
+          href: "/bathroom-tile-installation",
+          description: "Tile backsplashes for your new vanity",
+        },
+        {
+          name: "Shower Remodeling",
+          href: "/shower-remodeling",
+          description: "Complete your bathroom with a shower upgrade",
+        },
+        {
+          name: "Bathtub Installation",
+          href: "/bathtub-installation",
+          description: "Coordinate your vanity with a new tub",
+        },
+      ],
     },
   },
 };
@@ -817,6 +1107,11 @@ export default function BathroomServicePage({
 
   return (
     <>
+      <ServiceSchema
+        serviceName={`${service.name} in Chandler, Arizona`}
+        serviceDescription={content.seo.description}
+        serviceUrl={`${siteConfig.url}${service.href}`}
+      />
       <Header />
       <main>
         <ServiceHero
@@ -829,6 +1124,31 @@ export default function BathroomServicePage({
             { name: service.name, url: `${siteConfig.url}${service.href}` },
           ]}
         />
+
+        {/* SEO Content Section */}
+        {content.content && (
+          <section className="py-20 lg:py-32 bg-background">
+            <div className="container mx-auto px-4 lg:px-8">
+              <div className="max-w-4xl mx-auto">
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                    {content.content.intro}
+                  </p>
+                  {content.content.sections.map((section, index) => (
+                    <div key={index} className="mb-10">
+                      <h2 className="font-serif text-2xl md:text-3xl font-semibold mb-4 text-foreground">
+                        {section.title}
+                      </h2>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {section.content}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         <ServiceProcess
           title={content.process.title}
@@ -849,6 +1169,44 @@ export default function BathroomServicePage({
           subtitle="Why It Matters"
           benefits={content.benefits}
         />
+
+        {/* Related Services Section */}
+        {content.relatedServices && (
+          <section className="py-20 lg:py-32 bg-secondary">
+            <div className="container mx-auto px-4 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">
+                  More Services
+                </span>
+                <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 mb-4 text-foreground">
+                  {content.relatedServices.title}
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                  Explore our other bathroom remodeling services in Chandler, Arizona
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                {content.relatedServices.services.map((relatedService) => (
+                  <Link
+                    key={relatedService.href}
+                    href={relatedService.href}
+                    className="bg-card p-6 rounded-lg hover:shadow-lg transition-shadow border border-border"
+                  >
+                    <h3 className="font-serif text-xl font-semibold mb-3 text-foreground">
+                      {relatedService.name}
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      {relatedService.description}
+                    </p>
+                    <span className="text-primary font-medium text-sm">
+                      Learn More →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <Tips
           title={`${service.name} Tips & Maintenance`}

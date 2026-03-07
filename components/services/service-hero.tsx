@@ -30,7 +30,7 @@ export default function ServiceHero({
       <div className="absolute inset-0 z-0">
         <Image
           src={image}
-          alt={title}
+          alt={`${title} - Professional bathroom remodeling in Chandler Arizona`}
           fill
           className="object-cover"
           priority
