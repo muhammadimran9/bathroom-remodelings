@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { LucideIcon } from "lucide-react";
+import * as Icons from "lucide-react";
 
 interface Benefit {
-  icon: LucideIcon;
+  icon: string;
   title: string;
   description: string;
 }
@@ -46,25 +46,28 @@ export default function Benefits({ title, subtitle, benefits }: BenefitsProps) {
 
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={benefit.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
-            >
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-                <benefit.icon className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold mb-3 text-background">
-                {benefit.title}
-              </h3>
-              <p className="text-background/70 leading-relaxed">
-                {benefit.description}
-              </p>
-            </motion.div>
-          ))}
+          {benefits.map((benefit, index) => {
+            const Icon = (Icons as any)[benefit.icon];
+            return (
+              <motion.div
+                key={benefit.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
+                  {Icon && <Icon className="w-8 h-8 text-primary" />}
+                </div>
+                <h3 className="font-serif text-xl font-semibold mb-3 text-background">
+                  {benefit.title}
+                </h3>
+                <p className="text-background/70 leading-relaxed">
+                  {benefit.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
