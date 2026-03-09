@@ -23,6 +23,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/services/service-hero";
 import ServiceCTA from "@/components/services/service-cta";
+import ServiceFAQ from "@/components/services/service-faq";
 import ServiceProcess from "@/components/services/service-process";
 import IssuesSolved from "@/components/services/issues-solved";
 import Benefits from "@/components/services/benefits";
@@ -1335,6 +1336,8 @@ export default async function BathroomServicePage({
         />
 
         <ServiceCTA title={content.ctas.midTitle} description={content.ctas.midDescription} />
+
+        <ServiceFAQ faqs={faqs} />
 
         <Testimonials />
 
