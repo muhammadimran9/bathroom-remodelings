@@ -10,9 +10,17 @@ import { bathroomServices } from "@/lib/bathroom-services";
 
 export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [wordCount, setWordCount] = useState(0);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    if (wordCount < 20) {
+      setError(`Message must be at least 20 words. Current: ${wordCount} words.`);
+      return;
+    }
+    
     setIsSubmitting(true);
     
     const form = e.currentTarget;
@@ -30,12 +38,25 @@ export function QuoteForm() {
       await addDoc(collection(db, "quotes"), data);
       alert("Quote request submitted successfully!");
       form.reset();
+      setWordCount(0);
+      setError("");
     } catch (error) {
       console.error("Error:", error);
       alert("Failed to submit. Please try again.");
     }
     
     setIsSubmitting(false);
+  };
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const text = e.target.value.trim();
+    const count = text ? text.split(/\s+/).filter(w => w).length : 0;
+    setWordCount(count);
+    if (count < 20) {
+      setError(`Message must be at least 20 words. Current: ${count} words.`);
+    } else {
+      setError("");
+    }
   };
 
   return (
@@ -89,16 +110,23 @@ export function QuoteForm() {
           ))}
         </select>
         
-        <Textarea
-          name="message"
-          placeholder="Message (Optional)"
-          rows={3}
-          className="resize-none"
-        />
+        <div>
+          <Textarea
+            name="message"
+            placeholder="Describe your project in detail (minimum 20 words required)"
+            rows={4}
+            className="resize-none"
+            required
+            onChange={handleMessageChange}
+          />
+          {error && (
+            <p className="text-sm text-destructive mt-1">{error}</p>
+          )}
+        </div>
         
         <Button
           type="submit"
-          disabled={isSubmitting}
+          disabled={isSubmitting || wordCount < 20}
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
         >
           {isSubmitting ? "Sending..." : "Get Free Quote"}
