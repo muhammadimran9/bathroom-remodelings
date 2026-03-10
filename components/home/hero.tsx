@@ -30,9 +30,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-16 lg:pt-16 lg:pb-20">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
-          <div>
+          <div className="lg:col-span-2">
             {/* Rating Badge */}
             <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-4 py-2 mb-8">
               <div className="flex">

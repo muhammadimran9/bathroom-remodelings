@@ -41,9 +41,9 @@ export default function ServiceHero({
 
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
-          <div>
+          <div className="lg:col-span-2">
             {/* Breadcrumbs */}
             <motion.nav
               initial={{ opacity: 0, y: 20 }}
