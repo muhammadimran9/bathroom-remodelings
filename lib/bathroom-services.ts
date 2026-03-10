@@ -1,4 +1,4 @@
-import { ShowerHead, Bath, Grid3X3, LucideIcon } from "lucide-react";
+import { ShowerHead, Bath, Grid3X3, LucideIcon, Droplets, Sparkles, ArrowUpDown } from "lucide-react";
 
 export type BathroomService = {
   name: string;
@@ -9,45 +9,52 @@ export type BathroomService = {
 
 export const bathroomServices: BathroomService[] = [
   {
-    name: "Shower Remodeling",
-    href: "/shower-remodeling",
+    name: "Bathtubs",
+    href: "/services/bathtubs",
     description:
-      "Custom showers with premium tile, glass enclosures, and modern fixtures.",
-    icon: ShowerHead,
-  },
-  {
-    name: "Bathtub Installation",
-    href: "/bathtub-installation",
-    description:
-      "Professional bathtub installs designed for comfort, performance, and style.",
+      "Premium bathtub installation and replacement services for ultimate comfort and relaxation.",
     icon: Bath,
   },
   {
-    name: "Bathtub Replacement",
-    href: "/bathtub-replacement",
+    name: "Shower Systems",
+    href: "/services/shower-systems",
     description:
-      "Replace outdated tubs with updated options that fit your layout and routine.",
-    icon: Bath,
-  },
-  {
-    name: "Walk-in Shower Installation",
-    href: "/walk-in-shower-installation",
-    description:
-      "Accessible walk-in showers that balance clean design with everyday function.",
+      "Complete shower system installations with modern fixtures and premium materials.",
     icon: ShowerHead,
   },
   {
-    name: "Bathroom Tile Installation",
-    href: "/bathroom-tile-installation",
+    name: "Walk-In Showers",
+    href: "/services/walk-in-showers",
     description:
-      "Tile installation for showers, walls, backsplashes, and bathroom floors.",
-    icon: Grid3X3,
+      "Accessible walk-in shower installations for safety, comfort, and modern design.",
+    icon: Droplets,
   },
   {
-    name: "Bathroom Vanity Installation",
-    href: "/bathroom-vanity-installation",
+    name: "Walk-In Tubs",
+    href: "/services/walk-in-tubs",
     description:
-      "Stylish vanities with smart storage, durable tops, and coordinated sinks.",
+      "Safe and accessible walk-in tub installations for enhanced bathing independence.",
+    icon: Bath,
+  },
+  {
+    name: "KOHLER® LuxStone Showers",
+    href: "/services/kohler-luxstone-showers",
+    description:
+      "Premium KOHLER® LuxStone shower installations with luxury finishes and durability.",
+    icon: Sparkles,
+  },
+  {
+    name: "Tub to Shower Conversion",
+    href: "/services/tub-to-shower-conversion",
+    description:
+      "Convert your old bathtub to a modern, functional shower space efficiently.",
+    icon: ArrowUpDown,
+  },
+  {
+    name: "KOHLER® Walk-In Bath",
+    href: "/services/kohler-walk-in-bath",
+    description:
+      "Premium KOHLER® walk-in bath solutions combining safety with luxury bathing.",
     icon: Grid3X3,
   },
 ];
