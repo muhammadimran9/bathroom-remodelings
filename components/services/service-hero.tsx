@@ -40,7 +40,7 @@ export default function ServiceHero({
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-2 pb-20 lg:pb-32">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-8 pb-20 lg:pt-12 lg:pb-32">
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">
