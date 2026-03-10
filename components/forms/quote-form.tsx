@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,6 +13,11 @@ export function QuoteForm() {
   const [wordCount, setWordCount] = useState(0);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -42,11 +47,16 @@ export function QuoteForm() {
       setSuccess(true);
       e.currentTarget.reset();
       setWordCount(0);
+      setError("");
     } catch (error: any) {
       console.error("Error submitting quote:", error);
-      console.error("Error code:", error.code);
-      console.error("Error message:", error.message);
-      setError(`Failed to submit quote: ${error.message}. Please try again or call us directly.`);
+      if (error.code === "permission-denied") {
+        setError("Unable to submit at this time. Please try again or call us directly.");
+      } else if (error.code === "failed-precondition") {
+        setError("Service temporarily unavailable. Please try again later.");
+      } else {
+        setError("Failed to submit quote. Please try again or call us directly.");
+      }
     }
     
     setIsSubmitting(false);
@@ -62,6 +72,10 @@ export function QuoteForm() {
       setError("");
     }
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   if (success) {
     return (

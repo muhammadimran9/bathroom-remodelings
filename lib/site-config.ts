@@ -4,7 +4,7 @@ export const siteConfig = {
   description: "Premier bathroom remodeling services in Chandler, Arizona. Transform your bathroom with expert craftsmanship, premium finishes, and timeless design.",
   url: "https://bathroom-remodelings-995z.vercel.app",
   phone: "(480) 555-0123",
-  email: "info@chandlerbathremodeling.com",
+  email: "bathroomremodelign@gmail.com",
   address: {
     street: "123 Main Street",
     city: "Chandler",

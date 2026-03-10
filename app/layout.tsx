@@ -20,11 +20,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Commercial Bathroom Remodel Contractors Near Me | ${siteConfig.name} - Chandler, AZ`,
+    default: `Expert Bathroom Remodelers – Chandler, AZ | ${siteConfig.name}`,
     template: `%s | ${siteConfig.name}`
   },
-  description: 'Top-rated commercial bathroom remodel contractors near me in Chandler, AZ and 60625 IL. Get bathroom remodel financing near me, handicap bathroom remodel contractors near me, and free bathroom remodel for seniors near me. Same-day service available.',
-  keywords: ['commercial bathroom remodel contractors near me', 'handicap bathroom remodel contractors near me', 'bathroom remodel financing near me', 'bathroom remodelers near me 60625 il', 'bathroom remodel jobs near me', 'bathroom remodel near me with financing', 'free bathroom remodel for seniors near me', 'bathroom remodel in a day near me', 'bathroom remodel with financing near me'],
+  description: 'Expert Bathroom Remodelers – Chandler, AZ. Top-rated commercial bathroom remodel contractors near me in Chandler, AZ and 60625 IL. Get bathroom remodel financing near me, handicap bathroom remodel contractors near me, and free bathroom remodel for seniors near me.',
+  keywords: ['expert bathroom remodelers chandler az', 'commercial bathroom remodel contractors near me', 'handicap bathroom remodel contractors near me', 'bathroom remodel financing near me', 'bathroom remodelers near me 60625 il', 'bathroom remodel jobs near me', 'bathroom remodel near me with financing', 'free bathroom remodel for seniors near me', 'bathroom remodel in a day near me', 'bathroom remodel with financing near me'],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   openGraph: {
@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Commercial Bathroom Remodel Contractors Near Me | ${siteConfig.name} - Chandler, AZ`,
-    description: 'Top-rated commercial bathroom remodel contractors near me in Chandler, AZ. Bathroom remodel financing near me and handicap bathroom remodel contractors near me available.',
+    title: `Expert Bathroom Remodelers – Chandler, AZ | ${siteConfig.name}`,
+    description: 'Expert Bathroom Remodelers – Chandler, AZ. Top-rated commercial bathroom remodel contractors near me in Chandler, AZ. Bathroom remodel financing near me and handicap bathroom remodel contractors near me available.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} | Best Bathroom Remodelers Near Me in Chandler, Arizona`,
+    title: `Expert Bathroom Remodelers – Chandler, AZ | ${siteConfig.name}`,
     description: 'Expert bathroom remodeling services in Chandler, Arizona. Bathroom remodel financing near me available.',
   },
   robots: {
@@ -77,7 +77,7 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-background text-foreground" suppressHydrationWarning>
         {children}
       </body>
-      <Script src="/_vercel/insights/script.js" strategy="afterInteractive" async />
+      <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
     </html>
   )
 }
