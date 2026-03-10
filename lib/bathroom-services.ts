@@ -1,4 +1,4 @@
-import { ShowerHead, Bath, Grid3X3, LucideIcon, Droplets, Sparkles, ArrowUpDown } from "lucide-react";
+import { ShowerHead, Bath, Lightbulb, LucideIcon, Droplets, Sparkles, ArrowUpDown, Accessibility } from "lucide-react";
 
 export type BathroomService = {
   name: string;
@@ -9,52 +9,59 @@ export type BathroomService = {
 
 export const bathroomServices: BathroomService[] = [
   {
-    name: "Bathtubs",
-    href: "/bathtubs",
+    name: "Shower Remodeling",
+    href: "/services/shower-remodeling",
     description:
-      "Premium bathtub installation and replacement services for ultimate comfort and relaxation.",
-    icon: Bath,
-  },
-  {
-    name: "Shower Systems",
-    href: "/shower-systems",
-    description:
-      "Complete shower system installations with modern fixtures and premium materials.",
+      "Complete shower remodeling services with modern fixtures, premium materials, and expert craftsmanship.",
     icon: ShowerHead,
   },
   {
-    name: "Walk-In Showers",
-    href: "/walk-in-showers",
+    name: "Bathtub Remodeling",
+    href: "/services/bathtub-remodeling",
     description:
-      "Accessible walk-in shower installations for safety, comfort, and modern design.",
-    icon: Droplets,
-  },
-  {
-    name: "Walk-In Tubs",
-    href: "/walk-in-tubs",
-    description:
-      "Safe and accessible walk-in tub installations for enhanced bathing independence.",
+      "Professional bathtub remodeling and replacement services for ultimate comfort and relaxation.",
     icon: Bath,
   },
   {
-    name: "KOHLER® LuxStone Showers",
-    href: "/kohler-luxstone-showers",
+    name: "Bathroom Vanity Installation",
+    href: "/services/bathroom-vanity-installation",
     description:
-      "Premium KOHLER® LuxStone shower installations with luxury finishes and durability.",
+      "Expert bathroom vanity installation services with custom designs and premium materials.",
     icon: Sparkles,
   },
   {
-    name: "Tub to Shower Conversion",
-    href: "/tub-to-shower-conversion",
+    name: "Bathroom Flooring Installation",
+    href: "/services/bathroom-flooring-installation",
     description:
-      "Convert your old bathtub to a modern, functional shower space efficiently.",
+      "Professional bathroom flooring installation with durable, water-resistant materials.",
     icon: ArrowUpDown,
   },
   {
-    name: "KOHLER® Walk-In Bath",
-    href: "/kohler-walk-in-bath",
+    name: "Bathroom Lighting Installation",
+    href: "/services/bathroom-lighting-installation",
     description:
-      "Premium KOHLER® walk-in bath solutions combining safety with luxury bathing.",
-    icon: Grid3X3,
+      "Modern bathroom lighting installation services for enhanced ambiance and functionality.",
+    icon: Lightbulb,
+  },
+  {
+    name: "Bathroom Tile Installation",
+    href: "/services/bathroom-tile-installation",
+    description:
+      "Expert bathroom tile installation with premium materials and precision craftsmanship.",
+    icon: Droplets,
+  },
+  {
+    name: "Bathroom Accessibility Remodeling",
+    href: "/services/bathroom-accessibility-remodeling",
+    description:
+      "ADA-compliant bathroom accessibility remodeling for seniors and individuals with mobility needs.",
+    icon: Accessibility,
+  },
+  {
+    name: "Small Bathroom Remodeling",
+    href: "/services/small-bathroom-remodeling",
+    description:
+      "Maximize your small bathroom space with our expert small bathroom remodeling services.",
+    icon: Bath,
   },
 ];

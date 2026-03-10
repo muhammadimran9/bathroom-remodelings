@@ -7,9 +7,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { bathroomServices } from "@/lib/bathroom-services";
 
-const services = bathroomServices
-  .filter((service) => service.name !== "Bathroom Remodeling")
-  .slice(0, 8); // show 8 micro services
+const services = bathroomServices; // show all new services
 
 export default function ServicesGrid() {
   const ref = useRef(null);

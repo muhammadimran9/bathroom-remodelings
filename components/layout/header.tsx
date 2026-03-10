@@ -14,9 +14,7 @@ export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
 
-  const servicesMenu = bathroomServices
-    .filter((service) => service.name !== "Bathroom Remodeling")
-    .slice(0, 8); // show 8 micro services consistently
+  const servicesMenu = bathroomServices; // show all new services
 
   useEffect(() => {
     const handleScroll = () => {
