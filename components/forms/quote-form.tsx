@@ -79,11 +79,11 @@ export function QuoteForm() {
 
   if (success) {
     return (
-      <div className="bg-card border border-border rounded-xl shadow-lg p-6 lg:p-8 text-center">
+      <div className="bg-card border border-border rounded-xl shadow-lg p-5 lg:p-6 text-center max-w-sm mx-auto lg:mx-0">
         <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
           <span className="text-2xl">✓</span>
         </div>
-        <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
+        <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
           Quote Request Sent!
         </h3>
         <p className="text-muted-foreground mb-4">
@@ -101,15 +101,15 @@ export function QuoteForm() {
   }
 
   return (
-    <div className="bg-card border border-border rounded-xl shadow-lg p-6 lg:p-8">
-      <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
+    <div className="bg-card border border-border rounded-xl shadow-lg p-5 lg:p-6 max-w-sm mx-auto lg:mx-0">
+      <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
         Get Free Quote
       </h3>
-      <p className="text-muted-foreground text-sm mb-6">
+      <p className="text-muted-foreground text-sm mb-5">
         Fill out the form and we'll contact you within 24 hours
       </p>
       
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-3">
         <Input
           type="text"
           name="name"
@@ -155,7 +155,7 @@ export function QuoteForm() {
           <Textarea
             name="message"
             placeholder="Describe your project in detail (minimum 20 words required)"
-            rows={4}
+            rows={3}
             className="resize-none"
             required
             onChange={handleMessageChange}
