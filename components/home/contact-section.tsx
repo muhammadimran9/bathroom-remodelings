@@ -8,6 +8,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { siteConfig } from "@/lib/site-config";
@@ -197,19 +204,19 @@ export default function ContactSection() {
 
                     <div className="space-y-2">
                       <Label htmlFor="service">Service Interested In</Label>
-                      <select
-                        name="service"
-                        required
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                      >
-                        <option value="">Select a service</option>
-                        {bathroomServices.map((service) => (
-                          <option key={service.href} value={service.name}>
-                            {service.name}
-                          </option>
-                        ))}
-                        <option value="Other">Other</option>
-                      </select>
+                      <Select name="service" required>
+                        <SelectTrigger className="bg-background">
+                          <SelectValue placeholder="Select a service" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {bathroomServices.map((service) => (
+                            <SelectItem key={service.href} value={service.name}>
+                              {service.name}
+                            </SelectItem>
+                          ))}
+                          <SelectItem value="Other">Other</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div className="space-y-2">
