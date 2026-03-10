@@ -51,13 +51,28 @@ export default function Hero() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-background/80 mb-8 leading-relaxed">
               Looking for commercial bathroom remodel contractors near me? We're the top-rated bathroom remodelers near me serving Chandler and 60625 IL areas. 
               Get bathroom remodel financing near me with our flexible payment options, including free bathroom remodel for seniors near me programs.
             </p>
 
+            {/* Trust Badges */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+              {trustBadges.map((badge) => (
+                <div
+                  key={badge.label}
+                  className="flex items-center justify-center gap-3 bg-background/10 backdrop-blur-sm border border-background/20 rounded-lg px-4 py-3"
+                >
+                  <badge.icon className="w-5 h-5 text-primary" />
+                  <span className="text-background text-sm font-medium">
+                    {badge.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
                 size="lg"
