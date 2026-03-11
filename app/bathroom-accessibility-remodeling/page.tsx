@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
-import ServiceProcess from "@/components/services/service-process";
-import IssuesSolved from "@/components/services/issues-solved";
-import Benefits from "@/components/services/benefits";
-import Tips from "@/components/services/tips";
+import ServiceHero from "@/components/service-hero";
+import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
+import ServiceProcess from "@/components/service-process";
+import IssuesSolved from "@/components/issues-solved";
+import Benefits from "@/components/benefits";
+import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
+import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
@@ -31,7 +31,7 @@ const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 export default function BathroomAccessibilityRemodelingPage() {
   return (
     <>
-      <ServiceSchema serviceName="Bathroom Accessibility Remodeling in Chandler, Arizona" serviceDescription="Professional bathroom accessibility remodeling in Chandler, Arizona. ADA compliant bathrooms, grab bars, walk-in showers, and aging in place solutions." serviceUrl={`${siteConfig.url}/services/bathroom-accessibility-remodeling`} />
+      <ServiceSchema serviceName="Bathroom Accessibility Remodeling in Chandler, Arizona" serviceDescription="Professional bathroom accessibility remodeling in Chandler, Arizona. ADA compliant bathrooms, grab bars, walk-in showers, and aging in place solutions." serviceUrl={`${siteConfig.url}/bathroom-accessibility-remodeling`} />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
@@ -40,7 +40,7 @@ export default function BathroomAccessibilityRemodelingPage() {
           subtitle="ADA Compliant Bathroom Remodeling in Chandler AZ"
           description="Create safe, accessible bathrooms with ADA compliant features, grab bars, walk-in showers, and aging in place solutions for your Chandler home."
           image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
-          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Accessibility Remodeling", url: `${siteConfig.url}/services/bathroom-accessibility-remodeling` }]}
+          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Accessibility Remodeling", url: `${siteConfig.url}/bathroom-accessibility-remodeling` }]}
         />
         <ServiceProcess
           title="Bathroom Accessibility Remodeling Process"

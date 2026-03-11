@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
-import ServiceProcess from "@/components/services/service-process";
-import IssuesSolved from "@/components/services/issues-solved";
-import Benefits from "@/components/services/benefits";
-import Tips from "@/components/services/tips";
+import ServiceHero from "@/components/service-hero";
+import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
+import ServiceProcess from "@/components/service-process";
+import IssuesSolved from "@/components/issues-solved";
+import Benefits from "@/components/benefits";
+import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
+import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
@@ -49,7 +49,7 @@ export default function BathtubRemodelingPage() {
       <ServiceSchema
         serviceName="Bathtub Remodeling in Chandler, Arizona"
         serviceDescription="Expert bathtub remodeling in Chandler, Arizona. Modern tub installations, luxury upgrades, and professional renovations."
-        serviceUrl={`${siteConfig.url}/services/bathtub-remodeling`}
+        serviceUrl={`${siteConfig.url}/bathtub-remodeling`}
       />
       <FAQSchema faqs={faqs} />
       <Header />
@@ -61,7 +61,7 @@ export default function BathtubRemodelingPage() {
           image="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Bathtub Remodeling", url: `${siteConfig.url}/services/bathtub-remodeling` },
+            { name: "Bathtub Remodeling", url: `${siteConfig.url}/bathtub-remodeling` },
           ]}
         />
 

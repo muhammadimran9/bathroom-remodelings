@@ -1,22 +1,46 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
-import ServiceProcess from "@/components/services/service-process";
-import IssuesSolved from "@/components/services/issues-solved";
-import Benefits from "@/components/services/benefits";
-import Tips from "@/components/services/tips";
+import ServiceHero from "@/components/service-hero";
+import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
+import ServiceProcess from "@/components/service-process";
+import IssuesSolved from "@/components/issues-solved";
+import Benefits from "@/components/benefits";
+import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
+import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-  description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing. Get your tile installation estimate today.",
+  description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing. Licensed, insured, free estimates.",
+  keywords: ["bathroom tile installation chandler az", "shower tile installation chandler", "bathroom floor tile", "tile contractors chandler", "bathroom backsplash installation", "waterproof tile installation"],
+  openGraph: {
+    title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
+    description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing.",
+    url: `${siteConfig.url}/bathroom-tile-installation`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/tile-installation-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Tile Installation - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
+    description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing.",
+    images: [`${siteConfig.url}/images/tile-installation-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-tile-installation`,
+  },
 };
 
 const faqs = [
@@ -31,7 +55,7 @@ const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 export default function BathroomTileInstallationPage() {
   return (
     <>
-      <ServiceSchema serviceName="Bathroom Tile Installation in Chandler, Arizona" serviceDescription="Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing." serviceUrl={`${siteConfig.url}/services/bathroom-tile-installation`} />
+      <ServiceSchema serviceName="Bathroom Tile Installation in Chandler, Arizona" serviceDescription="Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing." serviceUrl={`${siteConfig.url}/bathroom-tile-installation`} />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
@@ -40,7 +64,7 @@ export default function BathroomTileInstallationPage() {
           subtitle="Expert Tile Installation in Chandler AZ"
           description="Professional bathroom tile installation with waterproof systems, precision craftsmanship, and premium materials for lasting beauty."
           image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp"
-          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Tile Installation", url: `${siteConfig.url}/services/bathroom-tile-installation` }]}
+          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Tile Installation", url: `${siteConfig.url}/bathroom-tile-installation` }]}
         />
         <ServiceProcess
           title="Bathroom Tile Installation Process"

@@ -2,15 +2,15 @@
 
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import SubServices from "@/components/services/sub-services";
-import IssuesSolved from "@/components/services/issues-solved";
-import Benefits from "@/components/services/benefits";
-import Tips from "@/components/services/tips";
+import ServiceHero from "@/components/service-hero";
+import SubServices from "@/components/sub-services";
+import IssuesSolved from "@/components/issues-solved";
+import Benefits from "@/components/benefits";
+import Tips from "@/components/tips";
 import ProcessSection from "@/components/home/process-section";
 import Testimonials from "@/components/home/testimonials";
 import ServiceAreas from "@/components/home/service-areas";
-import ServiceCTA from "@/components/services/service-cta";
+import ServiceCTA from "@/components/service-cta";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import {

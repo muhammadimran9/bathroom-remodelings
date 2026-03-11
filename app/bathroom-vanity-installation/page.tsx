@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
-import ServiceProcess from "@/components/services/service-process";
-import IssuesSolved from "@/components/services/issues-solved";
-import Benefits from "@/components/services/benefits";
-import Tips from "@/components/services/tips";
+import ServiceHero from "@/components/service-hero";
+import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
+import ServiceProcess from "@/components/service-process";
+import IssuesSolved from "@/components/issues-solved";
+import Benefits from "@/components/benefits";
+import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
+import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
@@ -46,7 +46,7 @@ export default function BathroomVanityInstallationPage() {
       <ServiceSchema
         serviceName="Bathroom Vanity Installation in Chandler, Arizona"
         serviceDescription="Professional bathroom vanity installation in Chandler, Arizona. Custom designs, expert installation, and coordinated fixtures."
-        serviceUrl={`${siteConfig.url}/services/bathroom-vanity-installation`}
+        serviceUrl={`${siteConfig.url}/bathroom-vanity-installation`}
       />
       <FAQSchema faqs={faqs} />
       <Header />
@@ -58,7 +58,7 @@ export default function BathroomVanityInstallationPage() {
           image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Bathroom Vanity Installation", url: `${siteConfig.url}/services/bathroom-vanity-installation` },
+            { name: "Bathroom Vanity Installation", url: `${siteConfig.url}/bathroom-vanity-installation` },
           ]}
         />
 

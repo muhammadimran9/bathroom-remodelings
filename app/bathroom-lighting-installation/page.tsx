@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
-import ServiceProcess from "@/components/services/service-process";
-import IssuesSolved from "@/components/services/issues-solved";
-import Benefits from "@/components/services/benefits";
-import Tips from "@/components/services/tips";
+import ServiceHero from "@/components/service-hero";
+import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
+import ServiceProcess from "@/components/service-process";
+import IssuesSolved from "@/components/issues-solved";
+import Benefits from "@/components/benefits";
+import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
+import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
@@ -31,7 +31,7 @@ const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 export default function BathroomLightingInstallationPage() {
   return (
     <>
-      <ServiceSchema serviceName="Bathroom Lighting Installation in Chandler, Arizona" serviceDescription="Professional bathroom lighting installation in Chandler, Arizona. Vanity lights, recessed lighting, and modern fixtures." serviceUrl={`${siteConfig.url}/services/bathroom-lighting-installation`} />
+      <ServiceSchema serviceName="Bathroom Lighting Installation in Chandler, Arizona" serviceDescription="Professional bathroom lighting installation in Chandler, Arizona. Vanity lights, recessed lighting, and modern fixtures." serviceUrl={`${siteConfig.url}/bathroom-lighting-installation`} />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
@@ -40,7 +40,7 @@ export default function BathroomLightingInstallationPage() {
           subtitle="Modern Lighting Installation in Chandler AZ"
           description="Transform your bathroom with professional lighting installation featuring modern fixtures, energy-efficient LEDs, and expert electrical work."
           image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
-          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Lighting Installation", url: `${siteConfig.url}/services/bathroom-lighting-installation` }]}
+          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Lighting Installation", url: `${siteConfig.url}/bathroom-lighting-installation` }]}
         />
         <ServiceProcess
           title="Bathroom Lighting Installation Process"
