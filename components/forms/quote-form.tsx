@@ -138,18 +138,24 @@ export function QuoteForm() {
           required
         />
         
-        <select
-          name="service"
-          required
-          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-        >
-          <option value="">Select Service</option>
-          {bathroomServices.map((service) => (
-            <option key={service.href} value={service.name}>
-              {service.name}
-            </option>
-          ))}
-        </select>
+        <div className="space-y-2">
+          <label htmlFor="service" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+            Service Interested In
+          </label>
+          <select
+            id="service"
+            name="service"
+            required
+            className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            <option value="">Select Service</option>
+            {bathroomServices.map((service) => (
+              <option key={service.href} value={service.name}>
+                {service.name}
+              </option>
+            ))}
+          </select>
+        </div>
         
         <div>
           <Textarea

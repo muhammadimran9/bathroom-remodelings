@@ -125,6 +125,8 @@ export default function AdminGalleryPage() {
               variant={viewMode === "grid" ? "default" : "ghost"} 
               size="sm"
               onClick={() => setViewMode("grid")}
+              aria-label="Grid view"
+              aria-pressed={viewMode === "grid"}
             >
               <Grid className="h-4 w-4" />
             </Button>
@@ -132,6 +134,8 @@ export default function AdminGalleryPage() {
               variant={viewMode === "list" ? "default" : "ghost"} 
               size="sm"
               onClick={() => setViewMode("list")}
+              aria-label="List view"
+              aria-pressed={viewMode === "list"}
             >
               <List className="h-4 w-4" />
             </Button>
@@ -303,6 +307,7 @@ export default function AdminGalleryPage() {
                       variant="ghost" 
                       size="icon"
                       onClick={() => openEditDialog(item)}
+                      aria-label="Edit gallery item"
                     >
                       <Pencil className="h-4 w-4" />
                     </Button>
@@ -310,6 +315,7 @@ export default function AdminGalleryPage() {
                       variant="ghost" 
                       size="icon"
                       onClick={() => toggleFeatured(item)}
+                      aria-label={item.featured ? "Unfeature gallery item" : "Feature gallery item"}
                     >
                       {item.featured ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                     </Button>
@@ -318,6 +324,7 @@ export default function AdminGalleryPage() {
                       size="icon"
                       className="text-destructive"
                       onClick={() => handleDelete(item.id)}
+                      aria-label="Delete gallery item"
                     >
                       <Trash2 className="h-4 w-4" />
                     </Button>

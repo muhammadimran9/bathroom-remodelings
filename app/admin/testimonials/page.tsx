@@ -161,6 +161,8 @@ export default function AdminTestimonialsPage() {
                       type="button"
                       onClick={() => setFormData({ ...formData, rating: star })}
                       className="p-1"
+                      aria-label={`Rate ${star} star${star !== 1 ? 's' : ''}`}
+                      aria-pressed={star <= formData.rating}
                     >
                       <Star 
                         className={`h-6 w-6 ${star <= formData.rating ? "fill-amber-400 text-amber-400" : "text-gray-300"}`}
@@ -254,6 +256,7 @@ export default function AdminTestimonialsPage() {
                           size="icon" 
                           className="h-8 w-8"
                           onClick={() => openEditDialog(testimonial)}
+                          aria-label="Edit testimonial"
                         >
                           <Pencil className="h-4 w-4" />
                         </Button>
@@ -262,6 +265,7 @@ export default function AdminTestimonialsPage() {
                           size="icon" 
                           className="h-8 w-8"
                           onClick={() => toggleFeatured(testimonial)}
+                          aria-label={testimonial.featured ? "Unfeature testimonial" : "Feature testimonial"}
                         >
                           {testimonial.featured ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                         </Button>
@@ -270,6 +274,7 @@ export default function AdminTestimonialsPage() {
                           size="icon" 
                           className="h-8 w-8 text-destructive"
                           onClick={() => handleDelete(testimonial.id)}
+                          aria-label="Delete testimonial"
                         >
                           <Trash2 className="h-4 w-4" />
                         </Button>

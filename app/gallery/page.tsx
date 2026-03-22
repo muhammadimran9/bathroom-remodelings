@@ -243,6 +243,7 @@ export default function GalleryPage() {
               <button
                 onClick={() => setSelectedItem(null)}
                 className="absolute top-4 right-4 p-2 text-white hover:text-primary transition-colors z-10"
+                aria-label="Close gallery lightbox"
               >
                 <X className="h-8 w-8" />
               </button>
@@ -251,6 +252,7 @@ export default function GalleryPage() {
                 <button
                   onClick={(e) => { e.stopPropagation(); handlePrev(); }}
                   className="absolute left-4 p-2 text-white hover:text-primary transition-colors z-10"
+                  aria-label="Previous image"
                 >
                   <ChevronLeft className="h-10 w-10" />
                 </button>
@@ -260,6 +262,7 @@ export default function GalleryPage() {
                 <button
                   onClick={(e) => { e.stopPropagation(); handleNext(); }}
                   className="absolute right-4 p-2 text-white hover:text-primary transition-colors z-10"
+                  aria-label="Next image"
                 >
                   <ChevronRight className="h-10 w-10" />
                 </button>
