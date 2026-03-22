@@ -5,6 +5,7 @@ import Hero from "@/components/home/hero";
 import TrustBadges from "@/components/home/trust-badges";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
+import { Metadata } from "next";
 
 // Lazy load below-the-fold components
 const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { 
@@ -82,6 +83,34 @@ const homeFaqs = [
       "Yes! We offer bathroom remodel in a day near me services for quick updates and renovations. Our experienced bathroom remodelers near me 60625 il team can complete many projects in just one day, perfect for busy homeowners and commercial properties.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Bathroom Remodeling Chandler AZ | Airforshare",
+  description: "Expert bathroom remodeling in Chandler, AZ. Free estimates, financing, quality renovations by trusted contractors. Transform your space today!",
+  keywords: ["bathroom remodeling chandler az", "bathroom remodelers near me", "bathroom renovation chandler", "free estimates", "financing available"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Bathroom Remodeling Chandler AZ | Airforshare",
+    description: "Expert bathroom remodeling in Chandler, AZ. Free estimates, financing, quality renovations by trusted contractors. Transform your space today!",
+    url: siteConfig.url,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodeling Chandler AZ | Airforshare",
+    description: "Expert bathroom remodeling in Chandler, AZ. Free estimates, financing, quality renovations by trusted contractors. Transform your space today!",
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function HomePage() {
   return (

@@ -10,6 +10,35 @@ import type { GalleryItem } from "@/lib/types"
 import { Button } from "@/components/ui/button"
 import { X, ChevronLeft, ChevronRight, ArrowLeftRight } from "lucide-react"
 import { defaultGalleryItems } from "@/lib/seed-blog"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Bathroom Remodel Gallery | Chandler AZ",
+  description: "View before & after photos of Chandler bathroom remodels: showers, vanities, master baths. See our expert transformations. Contact for your project!",
+  keywords: ["bathroom gallery chandler", "bathroom remodel photos", "before after bathroom", "shower remodel gallery", "vanity installation photos"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Bathroom Remodel Gallery | Chandler AZ",
+    description: "View before & after photos of Chandler bathroom remodels: showers, vanities, master baths. See our expert transformations. Contact for your project!",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://airforshare.online'}/gallery`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodel Gallery | Chandler AZ",
+    description: "View before & after photos of Chandler bathroom remodels: showers, vanities, master baths. See our expert transformations. Contact for your project!",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://airforshare.online'}/gallery`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
 
 const categories = [
   { value: "all", label: "All Projects" },
@@ -113,6 +142,42 @@ export default function GalleryPage() {
         {/* Gallery Grid */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
+            {/* Shower Remodels Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-semibold text-foreground text-center mb-8">
+                Shower Remodels
+              </h2>
+              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Transform your daily routine with our stunning shower remodels. From modern walk-in showers to luxurious spa-like designs, 
+                we specialize in creating functional and beautiful shower spaces that enhance your bathroom's appeal and value. 
+                Our expert craftsmanship ensures perfect waterproofing, elegant tile work, and premium fixtures that stand the test of time.
+              </p>
+            </div>
+
+            {/* Vanity Installs Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-semibold text-foreground text-center mb-8">
+                Vanity Installations
+              </h2>
+              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Complete your bathroom transformation with our custom vanity installations. We offer a wide range of styles from 
+                modern floating vanities to traditional cabinet designs. Our team ensures perfect fit, proper plumbing connections, 
+                and beautiful countertop installations that provide both functionality and aesthetic appeal to your space.
+              </p>
+            </div>
+
+            {/* Complete Bathroom Transformations */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-semibold text-foreground text-center mb-8">
+                Complete Bathroom Transformations
+              </h2>
+              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Experience the full potential of your bathroom with our complete transformation services. From concept to completion, 
+                we handle every aspect of your remodel including flooring, lighting, fixtures, and finishes. Our comprehensive approach 
+                ensures cohesive design, quality craftsmanship, and stunning results that exceed your expectations.
+              </p>
+            </div>
+
             {loading ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[...Array(6)].map((_, i) => (

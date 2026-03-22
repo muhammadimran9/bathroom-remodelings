@@ -9,14 +9,18 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "About Us | Best Bathroom Remodel Company Near Me in Chandler, AZ",
-  description: `Learn about Chandler Bathroom Remodeling, Chandler, Arizona's premier bathroom remodeling company. 15+ years of experience, 500+ projects completed, and trusted bathroom remodelers near me with a satisfaction guarantee.`,
+  title: "About Airforshare | Chandler Bathroom Experts",
+  description: "Chandler's top bathroom remodelers with 15+ years, 500+ projects. Satisfaction guaranteed, free estimates. Licensed pros near you experienced in custom designs and renovations.",
   keywords: ["about bathroom remodeling", "bathroom contractors Chandler Arizona", "best remodelers near me", "local bathroom company", "experienced remodelers"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
   openGraph: {
-    title: "About Chandler Bathroom Remodeling | Premium Bathroom Remodeling",
-    description: "Award-winning bathroom remodeling company in Chandler, AZ with 15+ years of expertise and customer-first service.",
+    title: "About Airforshare | Chandler Bathroom Experts",
+    description: "Chandler's top bathroom remodelers with 15+ years, 500+ projects. Satisfaction guaranteed, free estimates. Licensed pros near you experienced in custom designs and renovations.",
     url: `${siteConfig.url}/about`,
     type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
     images: [
       {
         url: `${siteConfig.url}/images/about-bathroom.jpg`,
@@ -28,12 +32,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Chandler Bathroom Remodeling | Premium Bathroom Remodeling",
-    description: "Award-winning bathroom remodeling company in Chandler, AZ with 15+ years of expertise and customer-first service.",
+    title: "About Airforshare | Chandler Bathroom Experts",
+    description: "Chandler's top bathroom remodelers with 15+ years, 500+ projects. Satisfaction guaranteed, free estimates. Licensed pros near you experienced in custom designs and renovations.",
     images: [`${siteConfig.url}/images/about-bathroom.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/about`,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 

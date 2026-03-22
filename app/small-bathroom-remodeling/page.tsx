@@ -15,8 +15,40 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Small Bathroom Remodeling Chandler AZ | Space-Maximizing Designs",
-  description: "Professional small bathroom remodeling in Chandler, Arizona. Space-saving designs, storage solutions, and modern fixtures. Get your small bathroom remodeling estimate today.",
+  title: "Small Bath Remodel Chandler AZ | Airforshare",
+  description: "Space-saving small bathroom designs Chandler: storage, fixtures. Free quotes. Transform your compact bathroom with expert remodeling services.",
+  keywords: ["small bathroom remodel chandler az", "space-saving designs", "bathroom storage", "compact fixtures", "free quotes", "expert remodeling"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Small Bath Remodel Chandler AZ | Airforshare",
+    description: "Space-saving small bathroom designs Chandler: storage, fixtures. Free quotes.",
+    url: `${siteConfig.url}/small-bathroom-remodeling`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+    images: [
+      {
+        url: `${siteConfig.url}/images/small-bathroom-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Small Bathroom Remodeling - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Small Bath Remodel Chandler AZ | Airforshare",
+    description: "Space-saving small bathroom designs Chandler: storage, fixtures. Free quotes.",
+    images: [`${siteConfig.url}/images/small-bathroom-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/small-bathroom-remodeling`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const faqs = [

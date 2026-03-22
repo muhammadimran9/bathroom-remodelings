@@ -15,8 +15,40 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Vanity Installation Chandler AZ | Custom Vanity Pros",
-  description: "Professional bathroom vanity installation in Chandler, Arizona. Custom designs, expert installation, and coordinated fixtures. Get your vanity installation estimate today.",
+  title: "Vanity Install Chandler AZ | Airforshare",
+  description: "Custom bathroom vanity installation Chandler: designs, fixtures. Expert pros, free quotes. Transform your bathroom with professional vanity installation services.",
+  keywords: ["vanity installation chandler az", "custom bathroom vanity", "vanity fixtures", "expert installation", "free quotes", "professional vanity"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Vanity Install Chandler AZ | Airforshare",
+    description: "Custom bathroom vanity installation Chandler: designs, fixtures. Expert pros, free quotes.",
+    url: `${siteConfig.url}/bathroom-vanity-installation`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+    images: [
+      {
+        url: `${siteConfig.url}/images/vanity-installation-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Vanity Installation - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vanity Install Chandler AZ | Airforshare",
+    description: "Custom bathroom vanity installation Chandler: designs, fixtures. Expert pros, free quotes.",
+    images: [`${siteConfig.url}/images/vanity-installation-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-vanity-installation`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const faqs = [

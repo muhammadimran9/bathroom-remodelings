@@ -15,8 +15,40 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Lighting Installation Chandler AZ | Modern Lighting Experts",
-  description: "Professional bathroom lighting installation in Chandler, Arizona. Vanity lights, recessed lighting, and modern fixtures. Get your bathroom lighting installation estimate today.",
+  title: "Bathroom Lighting Chandler AZ | Experts",
+  description: "Modern lighting install: vanity, recessed. Chandler pros, free quotes. Transform your bathroom with expert lighting installation services.",
+  keywords: ["bathroom lighting chandler az", "vanity lighting", "recessed lighting", "modern fixtures", "free quotes", "expert installation"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Bathroom Lighting Chandler AZ | Experts",
+    description: "Modern lighting install: vanity, recessed. Chandler pros, free quotes.",
+    url: `${siteConfig.url}/bathroom-lighting-installation`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+    images: [
+      {
+        url: `${siteConfig.url}/images/bathroom-lighting-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Lighting Installation - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Lighting Chandler AZ | Experts",
+    description: "Modern lighting install: vanity, recessed. Chandler pros, free quotes.",
+    images: [`${siteConfig.url}/images/bathroom-lighting-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-lighting-installation`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const faqs = [

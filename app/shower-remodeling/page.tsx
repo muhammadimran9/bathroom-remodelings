@@ -15,14 +15,18 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Custom Shower Renovations & Frameless Glass",
-  description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures. Licensed, insured, free estimates.",
-  keywords: ["shower remodeling chandler az", "custom shower renovations chandler", "frameless glass shower doors", "bathroom shower remodel", "walk-in shower installation", "shower tile installation"],
+  title: "Shower Remodel Chandler AZ | Airforshare",
+  description: "Custom shower remodeling in Chandler: tile, glass enclosures, waterproofing. Free estimates, expert install. Upgrade today! Transform your bathroom with professional shower renovation services.",
+  keywords: ["shower remodel chandler az", "custom shower renovations", "glass enclosures", "waterproofing", "free estimates", "expert installation"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
   openGraph: {
-    title: "Shower Remodeling Chandler AZ | Custom Shower Renovations",
-    description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures.",
+    title: "Shower Remodel Chandler AZ | Airforshare",
+    description: "Custom shower remodeling in Chandler: tile, glass enclosures, waterproofing. Free estimates, expert install. Upgrade today!",
     url: `${siteConfig.url}/shower-remodeling`,
     type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
     images: [
       {
         url: `${siteConfig.url}/images/shower-remodeling-hero.jpg`,
@@ -34,12 +38,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ | Custom Shower Renovations",
-    description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures.",
+    title: "Shower Remodel Chandler AZ | Airforshare",
+    description: "Custom shower remodeling in Chandler: tile, glass enclosures, waterproofing. Free estimates, expert install. Upgrade today!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/shower-remodeling`,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

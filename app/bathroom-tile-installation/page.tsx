@@ -15,14 +15,18 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-  description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing. Licensed, insured, free estimates.",
-  keywords: ["bathroom tile installation chandler az", "shower tile installation chandler", "bathroom floor tile", "tile contractors chandler", "bathroom backsplash installation", "waterproof tile installation"],
+  title: "Tile Install Chandler AZ | Airforshare",
+  description: "Expert tile installation: shower, floor, backsplash. Free estimates, quality work. Transform your bathroom with professional tile installation services.",
+  keywords: ["tile installation chandler az", "shower tile", "floor tile", "backsplash", "free estimates", "quality installation"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
   openGraph: {
-    title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-    description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing.",
+    title: "Tile Install Chandler AZ | Airforshare",
+    description: "Expert tile installation: shower, floor, backsplash. Free estimates, quality work.",
     url: `${siteConfig.url}/bathroom-tile-installation`,
     type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
     images: [
       {
         url: `${siteConfig.url}/images/tile-installation-hero.jpg`,
@@ -34,12 +38,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-    description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing.",
+    title: "Tile Install Chandler AZ | Airforshare",
+    description: "Expert tile installation: shower, floor, backsplash. Free estimates, quality work.",
     images: [`${siteConfig.url}/images/tile-installation-hero.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-tile-installation`,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

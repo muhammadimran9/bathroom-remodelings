@@ -15,8 +15,40 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Chandler AZ | Professional Tub Renovations",
-  description: "Expert bathtub remodeling in Chandler, Arizona. Modern tub installations, luxury upgrades, and professional renovations. Get your free bathtub remodeling estimate today.",
+  title: "Bathtub Remodel Chandler AZ | Airforshare",
+  description: "Pro tub renovations in Chandler, AZ: modern installs, luxury upgrades. Free estimates, financing available. Transform your bathroom with expert bathtub remodeling services.",
+  keywords: ["bathtub remodel chandler az", "tub renovations", "luxury upgrades", "free estimates", "financing", "expert installation"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Bathtub Remodel Chandler AZ | Airforshare",
+    description: "Pro tub renovations in Chandler, AZ: modern installs, luxury upgrades. Free estimates, financing available.",
+    url: `${siteConfig.url}/bathtub-remodeling`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+    images: [
+      {
+        url: `${siteConfig.url}/images/bathtub-remodeling-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathtub Remodeling - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathtub Remodel Chandler AZ | Airforshare",
+    description: "Pro tub renovations in Chandler, AZ: modern installs, luxury upgrades. Free estimates, financing available.",
+    images: [`${siteConfig.url}/images/bathtub-remodeling-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathtub-remodeling`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const faqs = [

@@ -12,6 +12,35 @@ import { Calendar, Clock, ArrowRight, Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { defaultBlogPost, secondBlogPost } from "@/lib/seed-blog"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Bathroom Remodel Blog | Chandler AZ Tips",
+  description: "Expert tips on bathroom design, costs, trends from Chandler remodelers. Modern ideas, materials, inspiration for your renovation. Free quote today!",
+  keywords: ["bathroom remodel blog", "bathroom design tips", "chandler bathroom ideas", "remodel inspiration", "bathroom trends"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Bathroom Remodel Blog | Chandler AZ Tips",
+    description: "Expert tips on bathroom design, costs, trends from Chandler remodelers. Modern ideas, materials, inspiration for your renovation. Free quote today!",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://airforshare.online'}/blog`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodel Blog | Chandler AZ Tips",
+    description: "Expert tips on bathroom design, costs, trends from Chandler remodelers. Modern ideas, materials, inspiration for your renovation. Free quote today!",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://airforshare.online'}/blog`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([])
@@ -128,6 +157,45 @@ export default function BlogPage() {
         {/* Blog Posts */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
+            {/* Expert Insights Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-semibold text-foreground text-center mb-8">
+                Expert Bathroom Design Tips
+              </h2>
+              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Our blog features comprehensive guides written by experienced bathroom remodeling professionals. 
+                Learn about the latest design trends, cost-saving strategies, material selection tips, and innovative 
+                solutions for small spaces. Whether you're planning a complete renovation or minor updates, our expert 
+                insights will help you make informed decisions for your dream bathroom.
+              </p>
+            </div>
+
+            {/* Design Trends Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-semibold text-foreground text-center mb-8">
+                Latest Bathroom Trends & Materials
+              </h2>
+              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Stay updated with the newest bathroom design trends and innovative materials. From smart technology 
+                integration to sustainable fixtures, we cover everything that's shaping modern bathroom design. 
+                Discover popular color schemes, tile patterns, lighting solutions, and storage innovations that can 
+                transform your space into a functional and stylish retreat.
+              </p>
+            </div>
+
+            {/* Cost & Planning Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-semibold text-foreground text-center mb-8">
+                Budget Planning & Cost Guides
+              </h2>
+              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+                Make smart financial decisions with our detailed cost breakdowns and budget planning guides. 
+                Learn how to prioritize expenses, find affordable alternatives without compromising quality, and 
+                understand the factors that influence bathroom remodeling costs in Chandler, AZ. Our articles provide 
+                realistic estimates and money-saving tips from industry professionals.
+              </p>
+            </div>
+
             {loading ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[...Array(6)].map((_, i) => (

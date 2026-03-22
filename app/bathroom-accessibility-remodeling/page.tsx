@@ -15,8 +15,40 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Accessibility Remodeling Chandler AZ | ADA Compliant Bathrooms",
-  description: "Professional bathroom accessibility remodeling in Chandler, Arizona. ADA compliant bathrooms, grab bars, walk-in showers, and aging in place solutions. Get your accessibility estimate today.",
+  title: "ADA Bathroom Remodel Chandler | Airforshare",
+  description: "ADA-compliant remodels: grab bars, walk-ins. Chandler experts, free estimates. Transform your bathroom with accessibility solutions.",
+  keywords: ["ada bathroom remodel chandler", "grab bars installation", "walk-in showers", "accessible bathroom", "free estimates", "expert installation"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "ADA Bathroom Remodel Chandler | Airforshare",
+    description: "ADA-compliant remodels: grab bars, walk-ins. Chandler experts, free estimates.",
+    url: `${siteConfig.url}/bathroom-accessibility-remodeling`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+    images: [
+      {
+        url: `${siteConfig.url}/images/ada-bathroom-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "ADA Bathroom Remodeling - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ADA Bathroom Remodel Chandler | Airforshare",
+    description: "ADA-compliant remodels: grab bars, walk-ins. Chandler experts, free estimates.",
+    images: [`${siteConfig.url}/images/ada-bathroom-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-accessibility-remodeling`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const faqs = [

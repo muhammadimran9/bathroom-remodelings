@@ -15,8 +15,40 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Flooring Installation Chandler AZ | Waterproof Flooring Experts",
-  description: "Professional bathroom flooring installation in Chandler, Arizona. Waterproof tile, luxury vinyl, and stone flooring. Get your bathroom flooring installation estimate today.",
+  title: "Bathroom Flooring Chandler AZ | Pros",
+  description: "Waterproof flooring install Chandler: tile, vinyl, stone. Free estimates from experts. Transform your bathroom with professional flooring installation.",
+  keywords: ["bathroom flooring chandler az", "waterproof flooring", "tile installation", "vinyl flooring", "free estimates", "expert installation"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
+  openGraph: {
+    title: "Bathroom Flooring Chandler AZ | Pros",
+    description: "Waterproof flooring install Chandler: tile, vinyl, stone. Free estimates from experts.",
+    url: `${siteConfig.url}/bathroom-flooring-installation`,
+    type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
+    images: [
+      {
+        url: `${siteConfig.url}/images/bathroom-flooring-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Flooring Installation - Chandler Bathroom Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Flooring Chandler AZ | Pros",
+    description: "Waterproof flooring install Chandler: tile, vinyl, stone. Free estimates from experts.",
+    images: [`${siteConfig.url}/images/bathroom-flooring-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-flooring-installation`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const faqs = [

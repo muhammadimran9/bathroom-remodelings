@@ -8,14 +8,18 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Contact Commercial Bathroom Remodel Contractors Near Me | Free Estimate - Chandler, AZ",
-  description: `Contact top-rated commercial bathroom remodel contractors near me for your free estimate. Serving Chandler, AZ and 60625 IL with bathroom remodel financing near me, handicap bathroom remodel contractors near me, and free bathroom remodel for seniors near me programs.`,
-  keywords: ["commercial bathroom remodel contractors near me", "handicap bathroom remodel contractors near me", "bathroom remodel financing near me", "bathroom remodelers near me 60625 il", "free bathroom remodel for seniors near me", "bathroom remodel in a day near me"],
+  title: "Contact Airforshare | Chandler Bathroom Remodel",
+  description: "Get free bathroom remodel estimates in Chandler, AZ. Expert contractors ready to help. Call or submit form for quick quotes.",
+  keywords: ["contact bathroom remodel", "free estimates chandler", "bathroom contractors contact", "remodel quotes", "chandler bathroom services"],
+  authors: [{ name: "Airforshare.online" }],
+  publisher: "Airforshare.online",
   openGraph: {
-    title: "Contact Chandler Bathroom Remodeling | Free Remodeling Estimate",
-    description: "Get your free bathroom remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners.",
+    title: "Contact Airforshare | Chandler Bathroom Remodel",
+    description: "Get free bathroom remodel estimates in Chandler, AZ. Expert contractors ready to help. Call or submit form for quick quotes.",
     url: `${siteConfig.url}/contact`,
     type: "website",
+    locale: "en_US",
+    siteName: "Airforshare",
     images: [
       {
         url: `${siteConfig.url}/images/contact-hero.jpg`,
@@ -27,12 +31,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Chandler Bathroom Remodeling | Free Remodeling Estimate",
-    description: "Get your free bathroom remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners.",
+    title: "Contact Airforshare | Chandler Bathroom Remodel",
+    description: "Get free bathroom remodel estimates in Chandler, AZ. Expert contractors ready to help. Call or submit form for quick quotes.",
     images: [`${siteConfig.url}/images/contact-hero.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/contact`,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
