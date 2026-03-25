@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp"
+          src="/images/home/photo-1552321554-5fefe8c9ef14 (1)_geotagged.jpg"
           alt="Luxury bathroom remodel in Chandler, Arizona - best bathroom remodelers near me"
           fill
           className="object-cover"
