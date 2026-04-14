@@ -13,23 +13,23 @@ const trustBadges = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-32 md:pt-40 lg:pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/home/photo-1552321554-5fefe8c9ef14 (1)_geotagged.jpg"
+          src="/images/bathroom-showcase.jpg"
           alt="Luxury bathroom remodel in Chandler, Arizona - best bathroom remodelers near me"
           fill
           className="object-cover"
           priority
           sizes="(max-width: 768px) 100vw, 100vw"
-          quality={75}
+          quality={80}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-16 lg:pt-16 lg:pb-20">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-8 pb-16 lg:pt-16 lg:pb-20">
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">
@@ -46,22 +46,22 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-background leading-tight mb-4 md:mb-6 text-balance">
               Expert Bathroom Remodelers – Chandler, AZ
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-background/80 mb-8 leading-relaxed">
               Looking for commercial bathroom remodel contractors near me? We're the top-rated bathroom remodelers near me serving Chandler and 60625 IL areas. 
               Get bathroom remodel financing near me with our flexible payment options, including free bathroom remodel for seniors near me programs.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base px-6 md:px-8 py-5 md:py-6"
               >
                 <Link href="/contact">Get Your Free Estimate</Link>
               </Button>
@@ -69,7 +69,7 @@ export default function Hero() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-black bg-black text-white hover:border-black/90 hover:bg-black/90 hover:text-white text-base px-8 py-6"
+                className="border-black bg-black text-white hover:border-black/90 hover:bg-black/90 hover:text-white text-sm md:text-base px-6 md:px-8 py-5 md:py-6"
               >
                 <Link href="/gallery">View Our Portfolio</Link>
               </Button>

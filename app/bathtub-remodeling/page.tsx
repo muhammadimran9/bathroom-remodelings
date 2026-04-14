@@ -90,7 +90,7 @@ export default function BathtubRemodelingPage() {
           title="Bathtub Remodeling in Chandler, Arizona"
           subtitle="Professional Bathtub Renovations in Chandler AZ"
           description="Transform your bathroom with expert bathtub remodeling services featuring modern designs, luxury materials, and professional installation."
-          image="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/home/photo-1600566752355-35792bedcfea_geotagged.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathtub Remodeling", url: `${siteConfig.url}/bathtub-remodeling` },

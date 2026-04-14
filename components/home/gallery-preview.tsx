@@ -14,7 +14,7 @@ const galleryItems = [
     title: "Modern Walk-In Shower",
     category: "bathroom",
     before: "/images/home/photo-1584622650111-993a426fbf0a_geotagged.jpg",
-    after: "/images/home/photo-1552321554-5fefe8c9ef14 (1)_geotagged.jpg",
+    after: "/images/bathroom-showcase.jpg",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const galleryItems = [
     title: "Spa-Like Retreat",
     category: "bathroom",
     before: "/images/home/photo-1620626011761-996317b8d101_geotagged.jpg",
-    after: "/images/home/photo-1620626011761-996317b8d101_geotagged.jpg",
+    after: "/images/bathroom-showcase.jpg",
   },
 ];
 

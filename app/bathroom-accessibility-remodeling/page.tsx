@@ -71,7 +71,7 @@ export default function BathroomAccessibilityRemodelingPage() {
           title="Bathroom Accessibility Remodeling in Chandler, Arizona"
           subtitle="ADA Compliant Bathroom Remodeling in Chandler AZ"
           description="Create safe, accessible bathrooms with ADA compliant features, grab bars, walk-in showers, and aging in place solutions for your Chandler home."
-          image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/home/photo-1584622650111-993a426fbf0a_geotagged.jpg"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Accessibility Remodeling", url: `${siteConfig.url}/bathroom-accessibility-remodeling` }]}
         />
         <ServiceProcess

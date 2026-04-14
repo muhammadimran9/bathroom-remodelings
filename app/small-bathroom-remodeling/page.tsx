@@ -71,7 +71,7 @@ export default function SmallBathroomRemodelingPage() {
           title="Small Bathroom Remodeling in Chandler, Arizona"
           subtitle="Space-Maximizing Bathroom Remodeling in Chandler AZ"
           description="Transform your small bathroom with space-saving designs, clever storage solutions, and modern fixtures that maximize every square foot."
-          image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/home/photo-1552321554-5fefe8c9ef14 (1)_geotagged.jpg"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Small Bathroom Remodeling", url: `${siteConfig.url}/small-bathroom-remodeling` }]}
         />
         <ServiceProcess
