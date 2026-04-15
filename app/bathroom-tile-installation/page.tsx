@@ -3,7 +3,6 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/services/service-hero";
 import ServiceCTA from "@/components/service-cta";
-import ServiceFAQ from "@/components/service-faq";
 import ServiceProcess from "@/components/service-process";
 import IssuesSolved from "@/components/issues-solved";
 import Benefits from "@/components/benefits";
