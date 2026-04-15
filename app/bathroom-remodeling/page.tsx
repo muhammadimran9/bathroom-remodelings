@@ -2,12 +2,12 @@
 
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/service-hero";
+import ServiceHero from "@/components/services/service-hero";
 import SubServices from "@/components/sub-services";
 import IssuesSolved from "@/components/issues-solved";
 import Benefits from "@/components/benefits";
 import Tips from "@/components/tips";
-import ProcessSection from "@/components/home/process-section";
+import ProcessSection from "@/components/service-process";
 import Testimonials from "@/components/home/testimonials";
 import ServiceAreas from "@/components/home/service-areas";
 import ServiceCTA from "@/components/service-cta";
