@@ -203,9 +203,8 @@ export default function AdminDashboardPage() {
                         )}
                       </p>
                     </div>
-                    <div className="text-xs text-muted-foreground flex items-center gap-1">
-                      <TrendingUp className="h-3 w-3" />
-                      {post.views || 0} views
+                    <div className="text-xs text-muted-foreground">
+                      {new Date(post.publishedAt || post.createdAt).toLocaleDateString()}
                     </div>
                   </Link>
                 ))}
