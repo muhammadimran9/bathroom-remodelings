@@ -1,9 +1,5 @@
-"use client"
-
-import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { motion } from "framer-motion"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
@@ -13,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { defaultBlogPost, secondBlogPost } from "@/lib/seed-blog"
 import { Metadata } from "next"
+import BlogClient from "@/components/home/blog-client"
 
 export const metadata: Metadata = {
   title: "Bathroom Remodel Blog | Chandler AZ Tips",
@@ -43,53 +40,17 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
-  const [posts, setPosts] = useState<BlogPost[]>([])
-  const [categories, setCategories] = useState<Category[]>([])
-  const [selectedCategory, setSelectedCategory] = useState<string>("all")
-  const [searchQuery, setSearchQuery] = useState("")
-  const [loading, setLoading] = useState(true)
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen bg-background">
+        <BlogClient />
+      </main>
+      <Footer />
+    </>
+  )
+}
 
-  useEffect(() => {
-    async function fetchData() {
-      const [postsData, categoriesData] = await Promise.all([
-        getPublishedPosts(),
-        getCategories()
-      ])
-      // If no posts from database, use default blog posts
-      if (postsData.length === 0) {
-        const defaultPosts: BlogPost[] = [
-          {
-            ...defaultBlogPost,
-            id: "default-post-1",
-            readTime: 12,
-            keywords: ["bathroom remodeling chandler arizona", "bathroom renovation chandler az", "bathroom contractor chandler", "shower remodel chandler arizona", "bathroom design arizona"],
-          },
-          {
-            ...secondBlogPost,
-            id: "default-post-2",
-            readTime: 8,
-            keywords: ["bathroom design trends 2024", "chandler arizona bathroom", "modern bathroom design", "smart bathroom technology", "sustainable bathroom materials"],
-          }
-        ]
-        setPosts(defaultPosts)
-      } else {
-        setPosts(postsData)
-      }
-      setCategories(categoriesData)
-      setLoading(false)
-    }
-    fetchData()
-  }, [])
-
-  const filteredPosts = posts.filter(post => {
-    const matchesCategory = selectedCategory === "all" || post.category === selectedCategory
-    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
-    return matchesCategory && matchesSearch
-  })
-
-  const featuredPost = filteredPosts[0]
-  const remainingPosts = filteredPosts.slice(1)
 
   return (
     <>
