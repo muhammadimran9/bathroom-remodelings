@@ -71,7 +71,7 @@ export default function BathroomLightingInstallationPage() {
           title="Bathroom Lighting Installation in Chandler, Arizona"
           subtitle="Modern Lighting Installation in Chandler AZ"
           description="Transform your bathroom with professional lighting installation featuring modern fixtures, energy-efficient LEDs, and expert electrical work."
-          image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/home/photo-1584622650111-993a426fbf0a_geotagged.jpg"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Lighting Installation", url: `${siteConfig.url}/bathroom-lighting-installation` }]}
         />
         <ServiceProcess

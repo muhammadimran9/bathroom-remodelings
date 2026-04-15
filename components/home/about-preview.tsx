@@ -42,11 +42,11 @@ export default function AboutPreview() {
           <div className={`relative transition-opacity duration-700 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=75&w=800&auto=format&fit=crop&fm=webp"
+                src="/images/about-bathroom.jpg"
                 alt="Chandler Bathroom Remodeling team at work - best bathroom remodel company near me"
                 fill
                 className="object-cover"
-                quality={70}
+                quality={75}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Video Play Button Overlay */}

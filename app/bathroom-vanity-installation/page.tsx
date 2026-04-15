@@ -87,7 +87,7 @@ export default function BathroomVanityInstallationPage() {
           title="Bathroom Vanity Installation in Chandler, Arizona"
           subtitle="Custom Vanity Installation in Chandler AZ"
           description="Transform your bathroom with expert vanity installation services featuring custom designs, premium materials, and professional craftsmanship."
-          image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/bathroom-showcase.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Vanity Installation", url: `${siteConfig.url}/bathroom-vanity-installation` },

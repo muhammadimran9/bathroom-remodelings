@@ -24,7 +24,7 @@ export default function ServiceHero({
   breadcrumbs,
 }: ServiceHeroProps) {
   return (
-    <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-32 md:pt-40 lg:pt-20">
       <BreadcrumbSchema items={breadcrumbs} />
       
       {/* Background Image */}
@@ -40,7 +40,7 @@ export default function ServiceHero({
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-10 pb-20 lg:pt-16 lg:pb-32">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-8 pb-16 md:pt-12 md:pb-20 lg:pt-0 lg:pb-32">
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">

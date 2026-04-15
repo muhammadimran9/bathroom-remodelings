@@ -90,7 +90,7 @@ export default function ShowerRemodelingPage() {
           title="Shower Remodeling in Chandler, Arizona"
           subtitle="Custom Shower Renovations in Chandler AZ"
           description="Upgrade to a watertight, spa-inspired shower with premium tilework, glass, and fixtures tailored to your Chandler home."
-          image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/home/photo-1552321554-5fefe8c9ef14 (1)_geotagged.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Shower Remodeling", url: `${siteConfig.url}/shower-remodeling` },
