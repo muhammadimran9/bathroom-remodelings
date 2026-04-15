@@ -23,7 +23,7 @@ export default function Hero() {
           className="object-cover"
           priority
           sizes="(max-width: 768px) 100vw, 100vw"
-          quality={80}
+          quality={75}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
       </div>
