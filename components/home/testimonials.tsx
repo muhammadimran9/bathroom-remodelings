@@ -16,7 +16,7 @@ const testimonials = [
     service: "Bathroom Remodel",
     content:
       "The team exceeded our expectations in every way. Our master bathroom went from dated and cramped to a spa-like retreat. The attention to detail was remarkable, and they finished on time and on budget.",
-    image: "/images/gallery-1.jpg",
+    image: "/images/bathroom-remodel-shower-renovation-chandler.jpg",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const testimonials = [
     service: "Bathtub Replacement",
     content:
       "From the initial consultation to the final walkthrough, the experience was seamless. They replaced our old bathtub with a sleek new install that instantly made the room feel cleaner, brighter, and easier to use.",
-    image: "/images/gallery-2.jpg",
+    image: "/images/luxury-bathroom-vanity-installation-chandler-az.jpg",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const testimonials = [
     service: "Shower Conversion",
     content:
       "We converted our old tub to a beautiful walk-in shower, and I couldn't be happier. The frameless glass and rainfall showerhead make it feel like a luxury hotel. Highly recommend!",
-    image: "/images/gallery-3.jpg",
+    image: "/images/modern-bathroom-design-remodel-chandler.jpg",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const testimonials = [
     service: "Full Bathroom Remodel",
     content:
       "Professional from start to finish. The team communicated clearly throughout the project and delivered exactly what they promised. Our guest bathroom is now the highlight of our home!",
-    image: "/images/about-bathroom.jpg",
+    image: "/images/professional-bathroom-remodeling-team-chandler-az.jpg",
   },
 ];
 

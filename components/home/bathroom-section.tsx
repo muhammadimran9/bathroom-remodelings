@@ -34,7 +34,7 @@ export default function BathroomSection() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/bathroom-showcase.jpg"
+                src="/images/luxury-bathroom-showcase-remodel-chandler-arizona.jpg"
                 alt="Luxury bathroom remodel featuring walk-in shower in Chandler, Arizona"
                 fill
                 className="object-cover"

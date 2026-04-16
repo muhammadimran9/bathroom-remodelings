@@ -23,7 +23,6 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/services/service-hero";
 import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
 import ServiceProcess from "@/components/services/service-process";
 import IssuesSolved from "@/components/services/issues-solved";
 import Benefits from "@/components/services/benefits";
@@ -216,7 +215,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Upgrade to a watertight, spa-inspired shower with premium tilework, glass, and fixtures tailored to your Chandler home.",
       image:
-        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/spa-shower-remodel-bathroom-upgrade-chandler-az.jpg",
     },
     content: {
       intro:
@@ -378,7 +377,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Install a new bathtub with proper leveling, plumbing connections, and finished trim so your Chandler bathroom feels complete.",
       image:
-        "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/luxury-bathtub-freestanding-bathroom-chandler.jpg",
     },
     content: {
       intro:
@@ -538,7 +537,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Swap outdated tubs for modern, comfortable replacements with clean removal, plumbing updates, and fresh finishes.",
       image:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/curbless-shower-installation-bathroom-remodel-chandler.jpg",
     },
     content: {
       intro:
