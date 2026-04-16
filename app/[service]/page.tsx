@@ -1336,8 +1336,6 @@ export default async function BathroomServicePage({
 
         <ServiceCTA title={content.ctas.midTitle} description={content.ctas.midDescription} />
 
-        <ServiceFAQ faqs={faqs} />
-
         <Testimonials />
 
         <ContactSection />
