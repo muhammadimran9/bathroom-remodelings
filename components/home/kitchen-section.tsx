@@ -77,7 +77,7 @@ export default function LegacySection() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/kitchen-showcase.jpg"
+                src="/images/home-improvement-showcase-chandler-arizona.jpg"
                 alt="Legacy remodeling project preview"
                 fill
                 className="object-cover"
