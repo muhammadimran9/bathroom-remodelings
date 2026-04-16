@@ -121,7 +121,6 @@ export default function BathroomLightingInstallationPage() {
           ]}
         />
         <ServiceCTA title="Ready for professional bathroom lighting installation?" description="Get expert lighting design, quality fixtures, and professional electrical installation for your bathroom." />
-        <ServiceFAQ faqs={faqs} />
         <Testimonials />
         <ContactSection />
         <section className="py-20 lg:py-32 bg-secondary">

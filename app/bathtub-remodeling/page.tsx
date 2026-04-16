@@ -212,8 +212,6 @@ export default function BathtubRemodelingPage() {
           description="Get expert design consultation, quality materials, and professional installation for your dream bathtub." 
         />
 
-        <ServiceFAQ faqs={faqs} />
-
         <Testimonials />
 
         <ContactSection />
