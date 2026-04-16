@@ -145,7 +145,6 @@ export default function BathroomVanityInstallationPage() {
         />
 
         <ServiceCTA title="Ready for professional vanity installation in Chandler?" description="Get expert consultation, quality materials, and professional installation for your perfect bathroom vanity." />
-        <ServiceFAQ faqs={faqs} />
         <Testimonials />
         <ContactSection />
 

@@ -121,7 +121,6 @@ export default function SmallBathroomRemodelingPage() {
           ]}
         />
         <ServiceCTA title="Ready for small bathroom remodeling in Chandler?" description="Get expert space-maximizing design, smart storage solutions, and professional installation for your small bathroom." />
-        <ServiceFAQ faqs={faqs} />
         <Testimonials />
         <ContactSection />
         <section className="py-20 lg:py-32 bg-secondary">

@@ -121,7 +121,6 @@ export default function BathroomFlooringInstallationPage() {
           ]}
         />
         <ServiceCTA title="Ready for professional bathroom flooring installation?" description="Get expert consultation, quality materials, and professional installation for beautiful, waterproof bathroom floors." />
-        <ServiceFAQ faqs={faqs} />
         <Testimonials />
         <ContactSection />
         <section className="py-20 lg:py-32 bg-secondary">

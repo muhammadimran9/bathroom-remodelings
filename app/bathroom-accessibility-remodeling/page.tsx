@@ -121,7 +121,6 @@ export default function BathroomAccessibilityRemodelingPage() {
           ]}
         />
         <ServiceCTA title="Ready for bathroom accessibility remodeling in Chandler?" description="Get expert consultation on ADA compliant features, safety installations, and aging in place solutions." />
-        <ServiceFAQ faqs={faqs} />
         <Testimonials />
         <ContactSection />
         <section className="py-20 lg:py-32 bg-secondary">

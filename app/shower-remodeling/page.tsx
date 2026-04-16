@@ -212,8 +212,6 @@ export default function ShowerRemodelingPage() {
           description="Get a custom shower plan, tile selections, and a clean installation schedule tailored to your home." 
         />
 
-        <ServiceFAQ faqs={faqs} />
-
         <Testimonials />
 
         <ContactSection />

@@ -121,7 +121,6 @@ export default function BathroomTileInstallationPage() {
           ]}
         />
         <ServiceCTA title="Ready for professional bathroom tile installation?" description="Get expert design consultation, quality materials, and precision installation for beautiful bathroom tile work." />
-        <ServiceFAQ faqs={faqs} />
         <Testimonials />
         <ContactSection />
         <section className="py-20 lg:py-32 bg-secondary">
