@@ -61,7 +61,7 @@ def add_geotag_to_image(image_path, latitude, longitude):
         
         # Save with EXIF data
         exif_bytes = piexif.dump(exif_dict)
-        img.save(image_path, "webp", exif=exif_bytes)
+        img.save(image_path, exif=exif_bytes)
         
         print(f"✓ Added geotag to {Path(image_path).name}")
         return True
@@ -71,30 +71,31 @@ def add_geotag_to_image(image_path, latitude, longitude):
 
 def main():
     """Add geotags to all gallery images."""
-    gallery_dir = Path("/vercel/share/v0-project/public/images")
+    images_dir = Path("/vercel/share/v0-project/public/images")
     
-    if not gallery_dir.exists():
-        print(f"Gallery directory not found: {gallery_dir}")
+    if not images_dir.exists():
+        print(f"Images directory not found: {images_dir}")
         return
     
-    # Find all gallery WebP images
-    gallery_images = sorted(gallery_dir.glob("gallery-*.webp"))
+    # Find all JPG and JPEG files recursively
+    all_images = sorted(images_dir.glob("**/*.jpg")) + sorted(images_dir.glob("**/*.jpeg"))
     
-    if not gallery_images:
-        print("No gallery images found.")
+    if not all_images:
+        print("No JPG/JPEG images found.")
         return
     
-    print(f"Found {len(gallery_images)} gallery images")
+    print(f"Found {len(all_images)} JPG/JPEG images")
     print(f"Adding geotags: Latitude {LATITUDE}, Longitude {LONGITUDE}")
     print()
     
     success_count = 0
-    for image_path in gallery_images:
+    for image_path in all_images:
         if add_geotag_to_image(str(image_path), LATITUDE, LONGITUDE):
             success_count += 1
     
     print()
-    print(f"Successfully geotagged {success_count}/{len(gallery_images)} images")
+    print(f"Successfully geotagged {success_count}/{len(all_images)} images")
+    print(f"All images now include Chandler, Arizona coordinates")
 
 if __name__ == "__main__":
     main()
