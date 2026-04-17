@@ -73,7 +73,7 @@ export interface Lead {
   service: string;
   message: string;
   createdAt: Date;
-  status: 'new' | 'contacted' | 'converted' | 'closed';
+  status: 'new' | 'contacted' | 'qualified' | 'closed';
 }
 
 export interface SEOSettings {
