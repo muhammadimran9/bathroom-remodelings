@@ -1,21 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
-
-const cormorant = Cormorant_Garamond({ 
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-serif",
-  display: "swap"
-});
-
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap"
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -68,11 +54,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en">
       <head>
-        {/* Preload critical fonts only */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="font-sans antialiased bg-background text-foreground" suppressHydrationWarning>
         {children}
