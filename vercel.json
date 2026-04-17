@@ -1,12 +1,6 @@
 {
   "version": 2,
   "name": "bathroom-remodeling-website",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "routes": [
     {
       "src": "/sitemap.xml",
