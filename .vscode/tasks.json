@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Git Verification",
+			"type": "shell",
+			"command": "cmd",
+			"args": [
+				"/c",
+				"git status && echo. && git branch -vv && echo. && git log origin/main..HEAD && echo. && git fetch origin && echo. && git status"
+			]
+		}
+	]
+}
