@@ -429,7 +429,7 @@ export default function LocationPage({
         </section>
 
         {/* FAQ Section */}
-        {pageContent && (
+        {pageContent && pageContent.faqTopics && pageContent.faqTopics.length > 0 && (
           <section className="py-16 md:py-24 bg-secondary">
             <div className="container mx-auto px-4 max-w-3xl">
               <h2 className="text-3xl font-serif font-semibold mb-12">
