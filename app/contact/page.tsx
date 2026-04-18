@@ -8,12 +8,12 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Contact Commercial Bathroom Remodel Contractors Near Me | Free Estimate - Chandler, AZ",
-  description: `Contact top-rated commercial bathroom remodel contractors near me for your free estimate. Serving Chandler, AZ and 60625 IL with bathroom remodel financing near me, handicap bathroom remodel contractors near me, and free bathroom remodel for seniors near me programs.`,
-  keywords: ["commercial bathroom remodel contractors near me", "handicap bathroom remodel contractors near me", "bathroom remodel financing near me", "bathroom remodelers near me 60625 il", "free bathroom remodel for seniors near me", "bathroom remodel in a day near me"],
+  title: "Contact ARZ Home Remodeling - Free Estimates Chandler AZ | Expert Contractors",
+  description: `Contact ARZ Home Remodeling for your free bathroom and kitchen remodeling estimate in Chandler, Arizona. Licensed, insured contractors with 15+ years experience. Call (480) 555-0123 today!`,
+  keywords: ["contact home remodeling contractors Chandler AZ", "free bathroom remodeling estimate", "kitchen remodeling consultation Arizona", "licensed contractors Chandler", "home renovation estimates", "remodeling contractors near me"],
   openGraph: {
-    title: "Contact Chandler Bathroom Remodeling | Free Remodeling Estimate",
-    description: "Get your free bathroom remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners.",
+    title: "Contact ARZ Home Remodeling - Free Estimates Chandler AZ",
+    description: "Get your free bathroom and kitchen remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners for 15+ years.",
     url: `${siteConfig.url}/contact`,
     type: "website",
     images: [
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/images/contact-hero.jpg`,
         width: 1200,
         height: 630,
-        alt: "Contact Chandler Bathroom Remodeling",
+        alt: "Contact ARZ Home Remodeling Chandler Arizona",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Chandler Bathroom Remodeling | Free Remodeling Estimate",
-    description: "Get your free bathroom remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners.",
+    title: "Contact ARZ Home Remodeling - Free Estimates Chandler AZ",
+    description: "Get your free bathroom and kitchen remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners.",
     images: [`${siteConfig.url}/images/contact-hero.jpg`],
   },
   alternates: {
@@ -38,20 +38,20 @@ export const metadata: Metadata = {
 
 const contactFaqs = [
   {
-    question: "How do I schedule a free bathroom remodeling consultation in Chandler?",
-    answer: "You can schedule a free consultation by calling us at (480) 555-0123, filling out our online contact form, or emailing us at info@chandlerbathremodeling.com. We typically respond within 24 hours and can schedule consultations within the same week."
+    question: "How do I schedule a free home remodeling consultation in Chandler?",
+    answer: "You can schedule a free consultation by calling us at (480) 555-0123, filling out our online contact form, or emailing us at info@arzhomeremodeling.com. We typically respond within 24 hours and can schedule consultations within the same week."
   },
   {
     question: "What should I expect during the free consultation?",
-    answer: "During your free in-home consultation, our design expert will assess your bathroom, discuss your vision and needs, take measurements, answer questions, and provide a detailed estimate with transparent pricing. The consultation typically takes 45-60 minutes."
+    answer: "During your free in-home consultation, our design expert will assess your space, discuss your vision and needs, take measurements, answer questions, and provide a detailed estimate with transparent pricing. The consultation typically takes 45-60 minutes."
   },
   {
-    question: "How quickly can you start my bathroom remodeling project?",
+    question: "How quickly can you start my remodeling project?",
     answer: "Project start times vary based on our schedule and your availability. Many projects can begin within 1-3 weeks of signing the contract. We'll provide specific timing during your consultation and work to accommodate your schedule."
   },
   {
-    question: "Do you offer emergency bathroom repair services in Chandler?",
-    answer: "While we specialize in bathroom remodeling, we can address urgent issues like water damage or plumbing problems. Contact us immediately for emergency situations, and we'll assess how we can help or refer you to appropriate emergency services."
+    question: "Do you offer emergency repair services in Chandler?",
+    answer: "While we specialize in home remodeling, we can address urgent issues like water damage or plumbing problems. Contact us immediately for emergency situations, and we'll assess how we can help or refer you to appropriate emergency services."
   }
 ];
 
@@ -75,11 +75,11 @@ export default function ContactPage() {
                 Get In Touch
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Contact Commercial Bathroom Remodel Contractors Near Me
+                Contact ARZ Home Remodeling - Free Estimates Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready for bathroom remodel financing near me? Contact our handicap bathroom remodel contractors near me 
-                for a free consultation. We serve Chandler, AZ and 60625 IL with bathroom remodel in a day near me services.
+                Ready to transform your home? Contact our expert remodeling contractors in Chandler, Arizona 
+                for a free consultation. We specialize in bathroom and kitchen remodeling with financing options available.
               </p>
             </div>
           </div>

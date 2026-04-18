@@ -62,24 +62,24 @@ const FinalCTA = dynamic(() => import("@/components/home/final-cta"), {
 
 const homeFaqs = [
   {
-    question: "Are you commercial bathroom remodel contractors near me?",
+    question: "What home remodeling services do you offer in Chandler, AZ?",
     answer:
-      "Yes! We are licensed commercial bathroom remodel contractors near me serving Chandler, AZ and surrounding areas including 60625 IL. We specialize in both residential and commercial bathroom remodeling projects with bathroom remodel financing near me options available.",
+      "ARZ Home Remodeling specializes in complete bathroom and kitchen remodeling services in Chandler, Arizona. We offer luxury renovations, custom designs, and professional installation with 15+ years of experience.",
   },
   {
-    question: "Do you offer handicap bathroom remodel contractors near me services?",
+    question: "Do you provide free estimates for bathroom remodeling projects?",
     answer:
-      "Absolutely! We are certified handicap bathroom remodel contractors near me, specializing in ADA-compliant bathroom renovations. We also offer free bathroom remodel for seniors near me programs and bathroom remodel with financing near me options.",
+      "Yes! We provide free, no-obligation estimates for all bathroom and kitchen remodeling projects in Chandler and surrounding areas. Our expert team will assess your space and provide detailed pricing.",
   },
   {
-    question: "What bathroom remodel financing near me options do you provide?",
+    question: "What areas in Arizona do you serve for home remodeling?",
     answer:
-      "We offer flexible bathroom remodel financing near me with approved credit. Our bathroom remodel near me with financing includes 0% interest options, extended payment plans, and special programs for seniors. Contact us for bathroom remodel with financing near me details.",
+      "We serve Chandler, Sun Lakes, Ahwatukee, Tempe, Mesa, and South Phoenix areas. Our licensed contractors provide professional home remodeling services throughout the greater Phoenix metropolitan area.",
   },
   {
-    question: "Do you provide bathroom remodel in a day near me services?",
+    question: "How long does a typical bathroom remodel take to complete?",
     answer:
-      "Yes! We offer bathroom remodel in a day near me services for quick updates and renovations. Our experienced bathroom remodelers near me 60625 il team can complete many projects in just one day, perfect for busy homeowners and commercial properties.",
+      "Most bathroom remodeling projects take 2-4 weeks depending on the scope of work. We provide detailed timelines during consultation and work efficiently to minimize disruption to your daily routine.",
   },
 ];
 
