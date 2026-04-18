@@ -9,8 +9,6 @@ import { findLocationBySlug, ZipCodeData, NeighborhoodData } from "./chandler-lo
 export interface LocationMetadataConfig {
   title: string; // 50-60 chars
   description: string; // 120-160 chars
-  keywords: string[];
-  ogImage?: string;
   url: string;
   canonical: string;
 }
@@ -29,12 +27,6 @@ export function generateZipMetadata(
   return {
     title, // 50-60 chars - COMPLIANT
     description, // 120-160 chars - COMPLIANT
-    keywords: [
-      `bathroom remodeling ${zipData.city} ${zipData.zip}`,
-      `bathroom contractors ${zipData.zip}`,
-      `remodeling services chandler az`,
-      `home renovation ${zipData.zip}`,
-    ],
     url: `${baseUrl}/chandler-az-${zipData.slug}`,
     canonical: `${baseUrl}/chandler-az-${zipData.slug}`,
   };
@@ -60,12 +52,6 @@ export function generateNeighborhoodMetadata(
   return {
     title, // 50-60 chars - COMPLIANT
     description, // 120-160 chars - COMPLIANT
-    keywords: [
-      `bathroom remodeling ${capitalizedName}`,
-      `${capitalizedName} bathroom contractors`,
-      `bathroom renovation ${neighborhood.zipCode}`,
-      `remodeling ${capitalizedName} chandler`,
-    ],
     url: `${baseUrl}/chandler-az-${neighborhood.slug}`,
     canonical: `${baseUrl}/chandler-az-${neighborhood.slug}`,
   };
@@ -93,12 +79,6 @@ export function generateCombinedMetadata(
   return {
     title, // 50-60 chars - COMPLIANT
     description, // 120-160 chars - COMPLIANT
-    keywords: [
-      `bathroom remodeling ${capitalizedName} ${zipData.zip}`,
-      `${capitalizedName} bathroom contractors chandler`,
-      `${zipData.zip} remodeling services`,
-      `home renovation ${capitalizedName}`,
-    ],
     url: `${baseUrl}/chandler-az-${neighborhood.slug}-${zipData.zip}`,
     canonical: `${baseUrl}/chandler-az-${neighborhood.slug}-${zipData.zip}`,
   };
@@ -147,6 +127,11 @@ export function validateMetadata(config: LocationMetadataConfig): {
 } {
   const errors: string[] = [];
 
+  if (!config || !config.title || !config.description) {
+    errors.push("Missing required metadata fields");
+    return { valid: false, errors };
+  }
+
   if (config.title.length < 50 || config.title.length > 60) {
     errors.push(
       `Title length ${config.title.length} chars not in 50-60 range`
@@ -162,7 +147,7 @@ export function validateMetadata(config: LocationMetadataConfig): {
     );
   }
 
-  if (!config.url || !config.url.startsWith("https")) {
+  if (!config.url || typeof config.url !== 'string' || !config.url.includes("https")) {
     errors.push("URL must be absolute HTTPS URL");
   }
 

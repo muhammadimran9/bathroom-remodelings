@@ -5,13 +5,10 @@ import {
   findLocationBySlug,
   getRelatedLocations,
   generateAllLocationSlugs,
-  NeighborhoodData,
-  ZipCodeData,
 } from "@/lib/chandler-locations";
 import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 import { ChevronRight, MapPin, Phone, Clock } from "lucide-react";
-import { Metadata } from "next";
 
 // Generate static pages for all locations
 export async function generateStaticParams() {
@@ -19,53 +16,6 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({
     location: slug,
   }));
-}
-
-// Generate metadata for each location page
-export async function generateMetadata({
-  params,
-}: {
-  params: { location: string };
-}): Promise<Metadata> {
-  const location = findLocationBySlug(params.location);
-
-  if (!location) {
-    return {};
-  }
-
-  const { type, zipData, neighborhood } = location;
-  const displayName = neighborhood
-    ? neighborhood.name
-    : `${zipData.city}, AZ ${zipData.zip}`;
-
-  const titles: Record<string, string> = {
-    zip: `Bathroom Remodeling in ${zipData.city}, AZ ${zipData.zip}`,
-    neighborhood: `Bathroom Remodeling in ${neighborhood?.name}, Chandler AZ`,
-    combined: `Bathroom Remodeling in ${neighborhood?.name} (${zipData.zip}), Chandler AZ`,
-  };
-
-  const descriptions: Record<string, string> = {
-    zip: `Professional bathroom remodeling services in ${zipData.city}, AZ ${zipData.zip}. ${neighborhood?.neighborhoods?.length || 0}+ neighborhoods served. Free consultation today.`,
-    neighborhood: `Expert bathroom remodeling in ${neighborhood?.name}, Chandler AZ. Local specialists serving your community with custom designs. Call for a free estimate.`,
-    combined: `Bathroom remodeling in ${neighborhood?.name} (ZIP ${zipData.zip}), Chandler AZ. Trusted local contractor with 20+ years experience. Get your free estimate today.`,
-  };
-
-  const title = titles[type];
-  const description = descriptions[type];
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `${siteConfig.url}/chandler-az-${params.location}`,
-    },
-    openGraph: {
-      title,
-      description,
-      url: `${siteConfig.url}/chandler-az-${params.location}`,
-      type: "website",
-    },
-  };
 }
 
 /**
@@ -415,7 +365,7 @@ export default function LocationPage({
                     Popular Home Styles in {neighborhood.name}
                   </h3>
                   <div className="flex flex-wrap gap-3">
-                    {neighborhood.homeStylesCommon.map((style, idx) => (
+                    {neighborhood.homeStylesCommon && neighborhood.homeStylesCommon.map((style, idx) => (
                       <span
                         key={idx}
                         className="bg-background px-4 py-2 rounded-lg text-sm font-medium"

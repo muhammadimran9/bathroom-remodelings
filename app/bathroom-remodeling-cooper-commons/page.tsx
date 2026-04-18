@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -19,29 +17,8 @@ import { bathroomRemodelingAreas } from "@/lib/bathroom-remodeling-areas";
 import { Grid3X3, TrendingUp, DollarSign, Clock, Shield, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Cooper Commons Chandler",
-  description: "Professional bathroom remodeling in Cooper Commons, Chandler. Expert contractors serving this prestigious neighborhood with quality renovations.",
-  keywords: ["bathroom remodeling cooper commons", "bathroom contractors chandler", "remodeling near me"],
-  openGraph: {
-    title: "Bathroom Remodeling Cooper Commons Chandler",
-    description: "Professional bathroom remodeling in Cooper Commons with expert contractors.",
-    url: `${siteConfig.url}/bathroom-remodeling-cooper-commons`,
-    type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/og-image.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Bathroom Remodeling Cooper Commons",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Cooper Commons Chandler",
-    description: "Professional bathroom remodeling in Cooper Commons.",
-    images: [`${siteConfig.url}/og-image.jpg`],
-  },
+  title: "Bathroom Remodeling Cooper Commons Chandler AZ",
+  description: "Expert bathroom remodeling in Cooper Commons, Chandler. Licensed contractors serving this prestigious neighborhood. Free estimates today.",
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-cooper-commons`,
   },
@@ -56,15 +33,6 @@ const issues = [
   { problem: "Difficulty accessing the tub or shower safely, especially for seniors", solution: "Accessible designs including walk-in showers, grab bars, and barrier-free entries for safe, independent use." },
   { problem: "Inefficient water fixtures leading to high utility bills", solution: "WaterSense certified fixtures and modern appliances that reduce water usage without sacrificing performance." },
   { problem: "Poor lighting making grooming and makeup application difficult", solution: "Layered lighting design with task, ambient, and accent lighting for a well-lit, functional space." },
-];
-
-const benefits = [
-  { icon: Grid3X3, title: "Increased Home Value", description: "Bathroom remodels offer one of the highest returns on investment, typically recouping 60-70% of costs at resale." },
-  { icon: TrendingUp, title: "Improved Functionality", description: "Modern layouts and smart storage solutions make your daily routine more efficient and enjoyable." },
-  { icon: DollarSign, title: "Energy Savings", description: "Updated fixtures and efficient lighting reduce water and electricity usage, lowering monthly bills." },
-  { icon: Clock, title: "Time Efficiency", description: "A well-designed bathroom helps you get ready faster with everything organized and accessible." },
-  { icon: Shield, title: "Safety & Accessibility", description: "Modern safety features and accessible designs protect your family and allow aging in place." },
-  { icon: Sparkles, title: "Personal Sanctuary", description: "Create a spa-like retreat where you can relax and unwind after a long day." },
 ];
 
 const tips = [
@@ -96,7 +64,7 @@ export default function CooperCommonsBathroomRemodelingPage() {
         <ServiceHero title={areaData.heroTitle} subtitle={areaData.heroSubtitle} description={areaData.heroDescription} image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop" breadcrumbs={breadcrumbs} />
         <AreaIntro title={areaData.introSection.title} description={areaData.introSection.description} trustSignals={areaData.localTrustSignals} />
         <IssuesSolved title="Problems We Solve" subtitle="Common Bathroom Issues" description="We understand the frustrations that come with an outdated or dysfunctional bathroom. Here's how we address common challenges." issues={issues} />
-        <Benefits title="Benefits of Bathroom Remodeling" subtitle="Why Remodel?" benefits={benefits} />
+        <Benefits title="Benefits of Bathroom Remodeling" subtitle="Why Remodel?" />
         <AreaBenefits benefits={areaData.areaBenefits} />
         <Tips title="Bathroom Remodeling Tips" subtitle="Expert Advice" description="Planning a bathroom remodel? Keep these expert tips in mind to ensure a successful project." tips={tips} />
         <ProcessSection />

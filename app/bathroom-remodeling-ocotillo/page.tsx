@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -26,29 +24,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Ocotillo Chandler",
-  description: "Professional bathroom remodeling in Ocotillo, Chandler. Expert contractors serving this luxury community with quality renovations.",
-  keywords: ["bathroom remodeling ocotillo", "bathroom contractors chandler", "remodeling near me"],
-  openGraph: {
-    title: "Bathroom Remodeling Ocotillo Chandler",
-    description: "Professional bathroom remodeling in Ocotillo with expert contractors.",
-    url: `${siteConfig.url}/bathroom-remodeling-ocotillo`,
-    type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/og-image.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Bathroom Remodeling Ocotillo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Ocotillo Chandler",
-    description: "Professional bathroom remodeling in Ocotillo.",
-    images: [`${siteConfig.url}/og-image.jpg`],
-  },
+  title: "Bathroom Remodeling Ocotillo Chandler AZ",
+  description: "Expert bathroom remodeling in Ocotillo, Chandler. Licensed contractors serving this luxury community. Free consultation today.",
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-ocotillo`,
   },
@@ -80,39 +57,6 @@ const issues = [
   {
     problem: "Poor lighting making grooming and makeup application difficult",
     solution: "Layered lighting design with task, ambient, and accent lighting for a well-lit, functional space.",
-  },
-];
-
-const benefits = [
-  {
-    icon: Grid3X3,
-    title: "Increased Home Value",
-    description: "Bathroom remodels offer one of the highest returns on investment, typically recouping 60-70% of costs at resale.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Improved Functionality",
-    description: "Modern layouts and smart storage solutions make your daily routine more efficient and enjoyable.",
-  },
-  {
-    icon: DollarSign,
-    title: "Energy Savings",
-    description: "Updated fixtures and efficient lighting reduce water and electricity usage, lowering monthly bills.",
-  },
-  {
-    icon: Clock,
-    title: "Time Efficiency",
-    description: "A well-designed bathroom helps you get ready faster with everything organized and accessible.",
-  },
-  {
-    icon: Shield,
-    title: "Safety & Accessibility",
-    description: "Modern safety features and accessible designs protect your family and allow aging in place.",
-  },
-  {
-    icon: Sparkles,
-    title: "Personal Sanctuary",
-    description: "Create a spa-like retreat where you can relax and unwind after a long day.",
   },
 ];
 
@@ -170,7 +114,6 @@ export default function OcotilloBathroomRemodelingPage() {
         <Benefits
           title="Benefits of Bathroom Remodeling"
           subtitle="Why Remodel?"
-          benefits={benefits}
         />
         <AreaBenefits benefits={areaData.areaBenefits} />
         <Tips

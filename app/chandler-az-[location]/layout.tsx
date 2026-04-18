@@ -16,18 +16,12 @@ export async function generateMetadata(
   const locationData = findLocationBySlug(location);
 
   if (!locationData) {
-    return notFound();
+    return {};
   }
 
   const metadata = generateLocationMetadata(location, siteConfig.url);
   if (!metadata) {
-    return notFound();
-  }
-
-  // Validate metadata compliance
-  const validation = validateMetadata(metadata);
-  if (!validation.valid) {
-    console.warn(`Metadata validation failed for ${location}:`, validation.errors);
+    return {};
   }
 
   const displayName =
@@ -40,7 +34,6 @@ export async function generateMetadata(
   return {
     title: metadata.title,
     description: metadata.description,
-    keywords: metadata.keywords,
     openGraph: {
       title: metadata.title,
       description: metadata.description,
