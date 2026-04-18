@@ -87,8 +87,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 bg-secondary">
-          <div className="container mx-auto px-4">
+        <section className="relative pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-24 bg-secondary">
+          <div className="container mx-auto px-4 mt-4">
             <div className="max-w-4xl mx-auto">
               <Link 
                 href="/blog" 

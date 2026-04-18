@@ -77,8 +77,8 @@ export default function FinancingPage() {
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="py-24 md:py-32 bg-secondary">
-          <div className="container mx-auto px-4">
+        <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary">
+          <div className="container mx-auto px-4 mt-4">
             <div className="max-w-3xl mx-auto text-center">
               <span className="text-sm font-medium tracking-widest text-primary uppercase">
                 Financing Options

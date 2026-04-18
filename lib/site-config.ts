@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: "Chandler Bathroom Remodeling",
-  tagline: "Luxury Bathroom Remodeling",
-  description: "Premier bathroom remodeling services in Chandler, Arizona. Transform your bathroom with expert craftsmanship, premium finishes, and timeless design.",
-  url: "https://bathroom-remodelings-995z.vercel.app",
+  name: "ARZ Home Remodeling",
+  tagline: "Premium Home Remodeling Services",
+  description: "Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.",
+  url: "https://arzhomeremodeling.com",
   phone: "(480) 555-0123",
-  email: "bathroomremodelign@gmail.com",
+  email: "info@arzhomeremodeling.com",
   address: {
     street: "123 Main Street",
     city: "Chandler",
@@ -22,10 +22,10 @@ export const siteConfig = {
     sunday: "Closed"
   },
   social: {
-    facebook: "https://facebook.com/chandlerbathremodeling",
-    instagram: "https://instagram.com/chandlerbathremodeling",
-    twitter: "https://twitter.com/chandlerbathaz",
-    pinterest: "https://pinterest.com/chandlerbathremodeling"
+    facebook: "https://facebook.com/arzhomeremodeling",
+    instagram: "https://instagram.com/arzhomeremodeling",
+    twitter: "https://twitter.com/arzhomeremodeling",
+    pinterest: "https://pinterest.com/arzhomeremodeling"
   },
   navigation: [
     { name: "Home", href: "/" },
@@ -39,6 +39,11 @@ export const siteConfig = {
       name: "Bathroom Remodeling",
       href: "/bathroom-remodeling",
       description: "Complete bathroom transformations from concept to completion"
+    },
+    {
+      name: "Kitchen Remodeling",
+      href: "/kitchen-remodeling",
+      description: "Professional kitchen renovations and upgrades"
     }
   ],
   serviceAreas: [
@@ -49,16 +54,24 @@ export const siteConfig = {
     "Mesa",
     "South Phoenix"
   ],
+  serviceAreaCoordinates: {
+    "Ocotillo": { lat: 33.2850, lng: -111.8150 },
+    "Sun Lakes": { lat: 33.1750, lng: -111.8850 },
+    "Downtown Chandler": { lat: 33.3070, lng: -111.8423 },
+    "Fulton Ranch": { lat: 33.3250, lng: -111.8750 },
+    "Cooper Commons": { lat: 33.3450, lng: -111.8550 },
+    "Fox Crossing": { lat: 33.3550, lng: -111.8250 }
+  },
   keywords: {
     primary: "Bathroom Remodeling Chandler Arizona",
     secondary: [
-      "best bathroom remodel company near me",
-      "bathroom remodelers near me",
-      "bathroom remodel financing near me",
-      "handicap bathroom remodel contractors near me",
-      "commercial bathroom remodel contractors near me",
-      "bathroom remodel in a day near me",
-      "free bathroom remodel for seniors near me"
+      "bathroom remodeling services Chandler AZ",
+      "kitchen remodeling Chandler Arizona",
+      "home remodeling contractors near me",
+      "bathroom renovations Chandler",
+      "kitchen renovations Arizona",
+      "luxury home remodeling Chandler",
+      "bathroom remodel financing Arizona"
     ]
   }
 };

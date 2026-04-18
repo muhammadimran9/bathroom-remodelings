@@ -6,26 +6,14 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Expert Bathroom Remodelers – Chandler, AZ | ${siteConfig.name}`,
-    template: `%s | ${siteConfig.name}`
+    default: `ARZ Home Remodeling - Expert Bathroom & Kitchen Remodeling Chandler AZ`,
+    template: `%s | ARZ Home Remodeling`
   },
-  description: 'Expert Bathroom Remodelers – Chandler, AZ. Top-rated commercial bathroom remodel contractors near me in Chandler, AZ and 60625 IL. Get bathroom remodel financing near me, handicap bathroom remodel contractors near me, and free bathroom remodel for seniors near me.',
-  keywords: ['expert bathroom remodelers chandler az', 'commercial bathroom remodel contractors near me', 'handicap bathroom remodel contractors near me', 'bathroom remodel financing near me', 'bathroom remodelers near me 60625 il', 'bathroom remodel jobs near me', 'bathroom remodel near me with financing', 'free bathroom remodel for seniors near me', 'bathroom remodel in a day near me', 'bathroom remodel with financing near me'],
+  description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations with 15+ years experience.',
+  keywords: ['home remodeling Chandler AZ', 'bathroom remodeling Chandler', 'kitchen remodeling Arizona', 'home renovation contractors', 'luxury bathroom remodel', 'kitchen renovation Chandler', 'home improvement services'],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: `Expert Bathroom Remodelers – Chandler, AZ | ${siteConfig.name}`,
-    description: 'Expert Bathroom Remodelers – Chandler, AZ. Top-rated commercial bathroom remodel contractors near me in Chandler, AZ. Bathroom remodel financing near me and handicap bathroom remodel contractors near me available.',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `Expert Bathroom Remodelers – Chandler, AZ | ${siteConfig.name}`,
-    description: 'Expert bathroom remodeling services in Chandler, Arizona. Bathroom remodel financing near me available.',
-  },
+  publisher: siteConfig.name,
   robots: {
     index: true,
     follow: true,
@@ -36,6 +24,34 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `ARZ Home Remodeling - Expert Bathroom & Kitchen Remodeling Chandler AZ`,
+    description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.',
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-home.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'ARZ Home Remodeling - Chandler Arizona',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `ARZ Home Remodeling - Expert Bathroom & Kitchen Remodeling Chandler AZ`,
+    description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors.',
+    images: [`${siteConfig.url}/images/og-home.jpg`],
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  verification: {
+    google: 'your-google-verification-code',
   },
 }
 
@@ -56,6 +72,96 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preload critical fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* DNS Prefetch for external resources */}
+        <link rel="dns-prefetch" href="//images.unsplash.com" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={siteConfig.url} />
+        
+        {/* Additional SEO meta tags */}
+        <meta name="geo.region" content="US-AZ" />
+        <meta name="geo.placename" content="Chandler" />
+        <meta name="geo.position" content="33.3062;-111.8413" />
+        <meta name="ICBM" content="33.3062, -111.8413" />
+        
+        {/* Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": `${siteConfig.url}/#organization`,
+              "name": siteConfig.name,
+              "url": siteConfig.url,
+              "logo": `${siteConfig.url}/images/logo.png`,
+              "image": `${siteConfig.url}/images/og-home.jpg`,
+              "description": siteConfig.description,
+              "telephone": siteConfig.phone,
+              "email": siteConfig.email,
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": siteConfig.address.street,
+                "addressLocality": siteConfig.address.city,
+                "addressRegion": siteConfig.address.state,
+                "postalCode": siteConfig.address.zip,
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": siteConfig.address.coordinates.lat,
+                "longitude": siteConfig.address.coordinates.lng
+              },
+              "openingHours": [
+                "Mo-Fr 08:00-18:00",
+                "Sa 09:00-16:00"
+              ],
+              "priceRange": "$$",
+              "areaServed": siteConfig.serviceAreas,
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": siteConfig.address.coordinates.lat,
+                  "longitude": siteConfig.address.coordinates.lng
+                },
+                "geoRadius": "50000"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Home Remodeling Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Bathroom Remodeling",
+                      "description": "Complete bathroom renovation and remodeling services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Kitchen Remodeling",
+                      "description": "Professional kitchen renovation and upgrade services"
+                    }
+                  }
+                ]
+              },
+              "sameAs": [
+                siteConfig.social.facebook,
+                siteConfig.social.instagram,
+                siteConfig.social.twitter,
+                siteConfig.social.pinterest
+              ]
+            })
+          }}
+        />
       </head>
       <body className="font-sans antialiased bg-background text-foreground" suppressHydrationWarning>
         {children}

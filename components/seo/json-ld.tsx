@@ -307,3 +307,109 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     />
   );
 }
+
+interface ReviewSchemaProps {
+  name: string;
+  description: string;
+  author: string;
+  datePublished: string;
+  rating: number; // 1-5
+  url: string;
+}
+
+export function ReviewSchema({
+  name,
+  description,
+  author,
+  datePublished,
+  rating,
+  url,
+}: ReviewSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: rating,
+      bestRating: "5",
+      worstRating: "1",
+    },
+    reviewBody: description,
+    author: {
+      "@type": "Person",
+      name: author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+    },
+    datePublished: datePublished,
+    url: url,
+    name: name,
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+interface PriceSchemaProps {
+  serviceName: string;
+  priceCurrency?: string;
+  price?: string;
+  priceRange?: string; // e.g., "$15,000 - $45,000"
+  url: string;
+  availability?: "InStock" | "PreOrder" | "OutOfStock";
+}
+
+export function PriceSchema({
+  serviceName,
+  priceCurrency = "USD",
+  price,
+  priceRange,
+  url,
+  availability = "InStock",
+}: PriceSchemaProps) {
+  const offerSchema = price
+    ? {
+        "@type": "Offer",
+        priceCurrency,
+        price,
+        availability: `https://schema.org/${availability}`,
+        url: url,
+      }
+    : {
+        "@type": "Offer",
+        priceCurrency,
+        priceRange,
+        availability: `https://schema.org/${availability}`,
+        url: url,
+      };
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: serviceName,
+    provider: {
+      "@type": "HomeAndConstructionBusiness",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    offers: offerSchema,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "127",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

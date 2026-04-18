@@ -1,28 +1,77 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/site-config'
 import { getPublishedPosts } from '@/lib/actions/blog'
+import { getAllAreaSlugs } from '@/lib/bathroom-remodeling-areas'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url
   
   // Static pages
   const staticPages = [
-    '',
-    '/about',
-    '/contact',
-    '/gallery',
-    '/blog',
-    '/bathroom-remodeling',
-    '/financing',
-    '/privacy-policy',
-    '/terms-of-service',
+    { url: '', priority: 1.0, changeFrequency: 'weekly' as const },
+    { url: '/about', priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: '/contact', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/gallery', priority: 0.85, changeFrequency: 'weekly' as const },
+    { url: '/blog', priority: 0.8, changeFrequency: 'weekly' as const },
+    { url: '/financing', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/offers', priority: 0.85, changeFrequency: 'weekly' as const },
+    { url: '/careers', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/privacy-policy', priority: 0.6, changeFrequency: 'yearly' as const },
+    { url: '/terms-of-service', priority: 0.6, changeFrequency: 'yearly' as const },
   ]
 
   const staticEntries = staticPages.map((page) => ({
-    url: `${baseUrl}${page}`,
+    url: `${baseUrl}${page.url}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: page === '' ? 1 : 0.8,
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+  }))
+
+  // Main service pages
+  const servicePages = [
+    { url: '/bathroom-remodeling', priority: 0.95, changeFrequency: 'weekly' as const },
+    { url: '/kitchen-remodeling', priority: 0.95, changeFrequency: 'weekly' as const },
+    { url: '/shower-remodeling', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathtub-remodeling', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-vanity-installation', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-tile-installation', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-flooring-installation', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-lighting-installation', priority: 0.75, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-accessibility-remodeling', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/small-bathroom-remodeling', priority: 0.8, changeFrequency: 'monthly' as const },
+  ]
+
+  const serviceEntries = servicePages.map((page) => ({
+    url: `${baseUrl}${page.url}`,
+    lastModified: new Date(),
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+  }))
+
+  // Area-specific pages
+  const areaPages = [
+    { url: '/bathroom-remodeling-ocotillo', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-remodeling-sun-lakes', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-remodeling-downtown-chandler', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-remodeling-fulton-ranch', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-remodeling-cooper-commons', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-remodeling-fox-crossing', priority: 0.85, changeFrequency: 'monthly' as const },
+  ]
+
+  const areaEntries = areaPages.map((page) => ({
+    url: `${baseUrl}${page.url}`,
+    lastModified: new Date(),
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+  }))
+
+  // Dynamic area pages from [area] route
+  const areaSlugs = getAllAreaSlugs()
+  const dynamicAreaEntries = areaSlugs.map((slug) => ({
+    url: `${baseUrl}/bathroom-remodeling-areas/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
   }))
 
   // Blog posts
@@ -31,8 +80,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.updatedAt || post.createdAt),
     changeFrequency: 'monthly' as const,
-    priority: 0.6,
+    priority: 0.7,
   }))
 
-  return [...staticEntries, ...blogEntries]
+  return [
+    ...staticEntries,
+    ...serviceEntries,
+    ...areaEntries,
+    ...dynamicAreaEntries,
+    ...blogEntries,
+  ]
 }

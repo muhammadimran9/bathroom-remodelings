@@ -11,6 +11,7 @@ import ProcessSection from "@/components/home/process-section";
 import Testimonials from "@/components/home/testimonials";
 import ServiceAreas from "@/components/home/service-areas";
 import ServiceCTA from "@/components/service-cta";
+import AreaSpecificPages from "@/components/area-specific-pages";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import {
@@ -255,6 +256,7 @@ export default function BathroomRemodelingPage() {
         />
         <ProcessSection />
         <Testimonials />
+        <AreaSpecificPages />
         <ServiceAreas />
         <ServiceCTA
           title="Ready to Transform Your Bathroom?"

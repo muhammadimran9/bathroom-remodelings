@@ -70,8 +70,8 @@ export default function GalleryPage() {
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-secondary">
-          <div className="container mx-auto px-4">
+        <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary">
+          <div className="container mx-auto px-4 mt-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
