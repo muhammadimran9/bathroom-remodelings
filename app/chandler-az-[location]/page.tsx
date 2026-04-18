@@ -240,12 +240,12 @@ const neighborhoodContent: Record<
   },
 };
 
-export default function LocationPage({
+export default async function LocationPage({
   params,
 }: {
-  params: { location: string };
+  params: Promise<{ location: string }>;
 }) {
-  const locationSlug = params.location;
+  const { location: locationSlug } = await params;
   const location = findLocationBySlug(locationSlug);
 
   if (!location) {
@@ -360,21 +360,23 @@ export default function LocationPage({
                 </div>
 
                 {/* Home Styles */}
-                <div>
-                  <h3 className="font-semibold text-lg mb-4">
-                    Popular Home Styles in {neighborhood.name}
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {neighborhood.homeStylesCommon && neighborhood.homeStylesCommon.map((style, idx) => (
-                      <span
-                        key={idx}
-                        className="bg-background px-4 py-2 rounded-lg text-sm font-medium"
-                      >
-                        {style}
-                      </span>
-                    ))}
+                {neighborhood.homeStylesCommon && neighborhood.homeStylesCommon.length > 0 && (
+                  <div>
+                    <h3 className="font-semibold text-lg mb-4">
+                      Popular Home Styles in {neighborhood.name}
+                    </h3>
+                    <div className="flex flex-wrap gap-3">
+                      {neighborhood.homeStylesCommon.map((style, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-background px-4 py-2 rounded-lg text-sm font-medium"
+                        >
+                          {style}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </section>
