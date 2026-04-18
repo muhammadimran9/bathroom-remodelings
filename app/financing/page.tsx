@@ -8,8 +8,32 @@ import { siteConfig } from "@/lib/site-config"
 import { Check, Calculator, Clock, Shield, CreditCard } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Financing Near Me | Chandler Bathroom Remodeling",
-  description: "Looking for bathroom remodel financing near me? Flexible financing options for your bathroom remodeling project in Chandler, Arizona. Low monthly payments and competitive rates available. Bathroom remodel with financing near me.",
+  title: "Bathroom Remodeling Financing Chandler AZ",
+  description: "Flexible financing options for bathroom remodeling projects in Chandler, Arizona. Low monthly payments and competitive rates available.",
+  keywords: ["bathroom remodeling financing", "financing chandler", "low monthly payments", "remodeling loans"],
+  openGraph: {
+    title: "Bathroom Remodeling Financing Chandler AZ",
+    description: "Flexible financing options with low monthly payments and competitive rates for your bathroom project.",
+    url: `${siteConfig.url}/financing`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Remodeling Financing - Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodeling Financing Chandler AZ",
+    description: "Flexible financing options with low monthly payments for your bathroom project.",
+    images: [`${siteConfig.url}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/financing`,
+  },
 }
 
 const benefits = [

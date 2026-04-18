@@ -4,8 +4,32 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Chandler Bathroom Remodeling",
-  description: "Terms of Service for Chandler Bathroom Remodeling. Read our terms and conditions for using our services.",
+  title: "Terms of Service - ARZ Home Remodeling",
+  description: "Terms of Service for ARZ Home Remodeling. Read our terms and conditions for using our services.",
+  keywords: ["terms of service", "terms and conditions", "legal"],
+  openGraph: {
+    title: "Terms of Service - ARZ Home Remodeling",
+    description: "Read our terms and conditions for using our services.",
+    url: `${siteConfig.url}/terms-of-service`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Terms of Service",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service - ARZ Home Remodeling",
+    description: "Read our terms and conditions for using our services.",
+    images: [`${siteConfig.url}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/terms-of-service`,
+  },
 }
 
 export default function TermsOfServicePage() {

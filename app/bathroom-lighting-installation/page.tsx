@@ -15,8 +15,32 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Lighting Installation Chandler AZ | Modern Lighting Experts",
-  description: "Professional bathroom lighting installation in Chandler, Arizona. Vanity lights, recessed lighting, and modern fixtures. Get your bathroom lighting installation estimate today.",
+  title: "Bathroom Lighting Installation Chandler AZ",
+  description: "Professional bathroom lighting installation in Chandler, Arizona. Vanity lights, recessed lighting and modern fixtures.",
+  keywords: ["bathroom lighting chandler", "vanity light installation", "recessed lighting", "bathroom lighting fixtures", "LED bathroom lights"],
+  openGraph: {
+    title: "Bathroom Lighting Installation Chandler AZ",
+    description: "Professional bathroom lighting installation in Chandler with vanity, recessed and modern fixtures.",
+    url: `${siteConfig.url}/bathroom-lighting-installation`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/lighting-installation-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Lighting Installation - Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Lighting Installation Chandler AZ",
+    description: "Professional bathroom lighting installation in Chandler with modern fixtures.",
+    images: [`${siteConfig.url}/images/lighting-installation-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-lighting-installation`,
+  },
 };
 
 const faqs = [

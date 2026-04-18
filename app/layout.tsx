@@ -6,11 +6,10 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `ARZ Home Remodeling - Expert Bathroom & Kitchen Remodeling Chandler AZ`,
+    default: `Bathroom & Kitchen Remodeling Chandler AZ`,
     template: `%s | ARZ Home Remodeling`
   },
-  description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations with 15+ years experience.',
-  keywords: ['home remodeling Chandler AZ', 'bathroom remodeling Chandler', 'kitchen remodeling Arizona', 'home renovation contractors', 'luxury bathroom remodel', 'kitchen renovation Chandler', 'home improvement services'],
+  description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Licensed contractors with 15+ years experience. Free estimates available.',
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -30,11 +29,11 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `ARZ Home Remodeling - Expert Bathroom & Kitchen Remodeling Chandler AZ`,
-    description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.',
+    title: `Bathroom & Kitchen Remodeling Chandler AZ`,
+    description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Licensed contractors with 15+ years experience.',
     images: [
       {
-        url: `${siteConfig.url}/images/og-home.jpg`,
+        url: `${siteConfig.url}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'ARZ Home Remodeling - Chandler Arizona',
@@ -43,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `ARZ Home Remodeling - Expert Bathroom & Kitchen Remodeling Chandler AZ`,
-    description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors.',
-    images: [`${siteConfig.url}/images/og-home.jpg`],
+    title: `Bathroom & Kitchen Remodeling Chandler AZ`,
+    description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Free estimates available.',
+    images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
     canonical: siteConfig.url,

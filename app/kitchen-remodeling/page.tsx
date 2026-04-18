@@ -12,12 +12,12 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: 'Kitchen Remodeling Chandler AZ - Expert Contractors | ARZ Home Remodeling',
-  description: 'Professional kitchen remodeling services in Chandler, Arizona. Expert contractors specializing in custom cabinets, countertops, flooring & complete kitchen renovations. Free estimates!',
+  title: 'Kitchen Remodeling Chandler AZ - Expert',
+  description: 'Professional kitchen remodeling in Chandler, Arizona. Expert contractors specializing in custom cabinets, countertops, flooring and complete kitchen renovations.',
   keywords: ['kitchen remodeling Chandler AZ', 'kitchen renovation Arizona', 'custom kitchen cabinets Chandler', 'kitchen contractors near me', 'luxury kitchen remodel', 'kitchen renovation contractors'],
   openGraph: {
-    title: 'Kitchen Remodeling Chandler AZ - Expert Contractors | ARZ Home Remodeling',
-    description: 'Professional kitchen remodeling services in Chandler, Arizona. Expert contractors specializing in custom cabinets, countertops, flooring & complete kitchen renovations.',
+    title: 'Kitchen Remodeling Chandler AZ - Expert',
+    description: 'Professional kitchen remodeling in Chandler, Arizona with expert contractors specializing in luxury renovations.',
     url: `${siteConfig.url}/kitchen-remodeling`,
     images: [
       {
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kitchen Remodeling Chandler AZ - Expert Contractors',
-    description: 'Professional kitchen remodeling services in Chandler, Arizona. Expert contractors specializing in luxury renovations.',
+    title: 'Kitchen Remodeling Chandler AZ - Expert',
+    description: 'Professional kitchen remodeling in Chandler, Arizona with expert contractors specializing in luxury renovations.',
     images: [`${siteConfig.url}/images/kitchen-remodeling-chandler.jpg`],
   },
   alternates: {

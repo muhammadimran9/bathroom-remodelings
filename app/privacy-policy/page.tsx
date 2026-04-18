@@ -4,8 +4,32 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Chandler Bathroom Remodeling",
-  description: "Privacy Policy for Chandler Bathroom Remodeling. Learn how we collect, use, and protect your personal information.",
+  title: "Privacy Policy - ARZ Home Remodeling",
+  description: "Privacy Policy for ARZ Home Remodeling. Learn how we collect, use and protect your personal information.",
+  keywords: ["privacy policy", "data protection", "privacy"],
+  openGraph: {
+    title: "Privacy Policy - ARZ Home Remodeling",
+    description: "Learn how we collect, use and protect your personal information.",
+    url: `${siteConfig.url}/privacy-policy`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - ARZ Home Remodeling",
+    description: "Learn how we collect, use and protect your personal information.",
+    images: [`${siteConfig.url}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/privacy-policy`,
+  },
 }
 
 export default function PrivacyPolicyPage() {

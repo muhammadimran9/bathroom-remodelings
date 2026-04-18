@@ -1192,14 +1192,34 @@ export async function generateMetadata({
 
   const title = content.seo.title;
   const description = content.seo.description;
+  const url = `${siteConfig.url}${service.href}`;
 
   return {
     title,
     description,
+    keywords: [service.name.toLowerCase(), "chandler arizona", "remodeling contractors"],
     openGraph: {
       title,
       description,
-      url: `${siteConfig.url}${service.href}`,
+      url,
+      type: "website",
+      images: [
+        {
+          url: `${siteConfig.url}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: service.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${siteConfig.url}/og-image.jpg`],
+    },
+    alternates: {
+      canonical: url,
     },
   };
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/service-hero";
@@ -16,6 +17,35 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomRemodelingAreas } from "@/lib/bathroom-remodeling-areas";
 import { Grid3X3, TrendingUp, DollarSign, Clock, Shield, Sparkles } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Bathroom Remodeling Fulton Ranch Chandler",
+  description: "Professional bathroom remodeling in Fulton Ranch, Chandler. Expert contractors serving this premier community with quality renovations.",
+  keywords: ["bathroom remodeling fulton ranch", "bathroom contractors chandler", "remodeling near me"],
+  openGraph: {
+    title: "Bathroom Remodeling Fulton Ranch Chandler",
+    description: "Professional bathroom remodeling in Fulton Ranch with expert contractors.",
+    url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Remodeling Fulton Ranch",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodeling Fulton Ranch Chandler",
+    description: "Professional bathroom remodeling in Fulton Ranch.",
+    images: [`${siteConfig.url}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-remodeling-fulton-ranch`,
+  },
+};
 
 const areaData = bathroomRemodelingAreas["fulton-ranch"];
 

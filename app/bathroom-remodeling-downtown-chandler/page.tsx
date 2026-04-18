@@ -1,5 +1,6 @@
 "use client";
 
+import { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/service-hero";
@@ -16,6 +17,35 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomRemodelingAreas } from "@/lib/bathroom-remodeling-areas";
 import { Grid3X3, TrendingUp, DollarSign, Clock, Shield, Sparkles } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Bathroom Remodeling Downtown Chandler",
+  description: "Professional bathroom remodeling in Downtown Chandler. Expert contractors serving this vibrant area with quality renovations.",
+  keywords: ["bathroom remodeling downtown chandler", "bathroom contractors chandler", "remodeling near me"],
+  openGraph: {
+    title: "Bathroom Remodeling Downtown Chandler",
+    description: "Professional bathroom remodeling in Downtown Chandler with expert contractors.",
+    url: `${siteConfig.url}/bathroom-remodeling-downtown-chandler`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Remodeling Downtown Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodeling Downtown Chandler",
+    description: "Professional bathroom remodeling in Downtown Chandler.",
+    images: [`${siteConfig.url}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-remodeling-downtown-chandler`,
+  },
+};
 
 const areaData = bathroomRemodelingAreas["downtown-chandler"];
 

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/site-config'
 import { getPublishedPosts } from '@/lib/actions/blog'
 import { getAllAreaSlugs } from '@/lib/bathroom-remodeling-areas'
+import { chandlerLocations, generateAllLocationSlugs } from '@/lib/chandler-locations'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url
@@ -48,7 +49,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: page.priority,
   }))
 
-  // Area-specific pages
+  // Area-specific pages (legacy)
   const areaPages = [
     { url: '/bathroom-remodeling-ocotillo', priority: 0.85, changeFrequency: 'monthly' as const },
     { url: '/bathroom-remodeling-sun-lakes', priority: 0.85, changeFrequency: 'monthly' as const },
@@ -74,6 +75,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.85,
   }))
 
+  // ===== NEW: Programmatic Local SEO Pages =====
+  // Generate all location-based pages dynamically
+  const locationSlugs = generateAllLocationSlugs()
+  const locationEntries = locationSlugs.map((slug) => {
+    let priority = 0.8 // Default for neighborhood pages
+    
+    // ZIP code pages get higher priority
+    if (/^\d{5}$/.test(slug)) {
+      priority = 0.85
+    }
+    // Combined pages (neighborhood-zip) get highest priority for local SEO
+    else if (/\d{5}$/.test(slug)) {
+      priority = 0.9
+    }
+
+    return {
+      url: `${baseUrl}/chandler-az-${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority,
+    }
+  })
+
   // Blog posts
   const posts = await getPublishedPosts()
   const blogEntries = posts.map((post) => ({
@@ -88,6 +112,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...serviceEntries,
     ...areaEntries,
     ...dynamicAreaEntries,
+    ...locationEntries,
     ...blogEntries,
   ]
 }

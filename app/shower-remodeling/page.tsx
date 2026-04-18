@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Custom Shower Renovations & Frameless Glass",
-  description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures. Licensed, insured, free estimates.",
+  title: "Shower Remodeling Chandler AZ - Frameless Glass",
+  description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations and premium fixtures.",
   keywords: ["shower remodeling chandler az", "custom shower renovations chandler", "frameless glass shower doors", "bathroom shower remodel", "walk-in shower installation", "shower tile installation"],
   openGraph: {
-    title: "Shower Remodeling Chandler AZ | Custom Shower Renovations",
-    description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures.",
+    title: "Shower Remodeling Chandler AZ - Frameless Glass",
+    description: "Professional shower remodeling in Chandler with custom tile, frameless glass enclosures and premium fixtures.",
     url: `${siteConfig.url}/shower-remodeling`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ | Custom Shower Renovations",
-    description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures.",
+    title: "Shower Remodeling Chandler AZ - Frameless Glass",
+    description: "Professional shower remodeling in Chandler with custom tile, frameless glass enclosures and premium fixtures.",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
   alternates: {

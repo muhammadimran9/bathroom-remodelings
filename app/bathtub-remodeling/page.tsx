@@ -15,8 +15,32 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Chandler AZ | Professional Tub Renovations",
-  description: "Expert bathtub remodeling in Chandler, Arizona. Modern tub installations, luxury upgrades, and professional renovations. Get your free bathtub remodeling estimate today.",
+  title: "Bathtub Remodeling Chandler AZ - Renovations",
+  description: "Expert bathtub remodeling in Chandler, Arizona. Modern tub installations, luxury upgrades and professional renovations. Free estimates.",
+  keywords: ["bathtub remodeling chandler az", "tub replacement chandler", "bathtub renovation arizona", "luxury tub installation", "bathroom tub remodel"],
+  openGraph: {
+    title: "Bathtub Remodeling Chandler AZ - Renovations",
+    description: "Expert bathtub remodeling in Chandler with modern tub installations and luxury upgrades.",
+    url: `${siteConfig.url}/bathtub-remodeling`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/bathtub-remodeling-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathtub Remodeling - Chandler Bathroom",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathtub Remodeling Chandler AZ - Renovations",
+    description: "Expert bathtub remodeling in Chandler with modern tub installations and luxury upgrades.",
+    images: [`${siteConfig.url}/images/bathtub-remodeling-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathtub-remodeling`,
+  },
 };
 
 const faqs = [

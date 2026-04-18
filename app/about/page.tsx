@@ -9,28 +9,27 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "About Us | Best Bathroom Remodel Company Near Me in Chandler, AZ",
-  description: `Learn about Chandler Bathroom Remodeling, Chandler, Arizona's premier bathroom remodeling company. 15+ years of experience, 500+ projects completed, and trusted bathroom remodelers near me with a satisfaction guarantee.`,
-  keywords: ["about bathroom remodeling", "bathroom contractors Chandler Arizona", "best remodelers near me", "local bathroom company", "experienced remodelers"],
+  title: "About ARZ Home Remodeling - Chandler Experts",
+  description: "Meet ARZ Home Remodeling. 15+ years experience serving Chandler, Arizona with expert bathroom and kitchen renovations. Family-owned, licensed, and insured.",
   openGraph: {
-    title: "About Chandler Bathroom Remodeling | Premium Bathroom Remodeling",
-    description: "Award-winning bathroom remodeling company in Chandler, AZ with 15+ years of expertise and customer-first service.",
+    title: "About ARZ Home Remodeling - Chandler Experts",
+    description: "15+ years experience serving Chandler, Arizona with expert bathroom and kitchen renovations.",
     url: `${siteConfig.url}/about`,
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/images/about-bathroom.jpg`,
+        url: `${siteConfig.url}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Chandler Bathroom Remodeling Team",
+        alt: "ARZ Home Remodeling Team",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Chandler Bathroom Remodeling | Premium Bathroom Remodeling",
-    description: "Award-winning bathroom remodeling company in Chandler, AZ with 15+ years of expertise and customer-first service.",
-    images: [`${siteConfig.url}/images/about-bathroom.jpg`],
+    title: "About ARZ Home Remodeling - Chandler Experts",
+    description: "15+ years experience serving Chandler with expert bathroom and kitchen renovations.",
+    images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/about`,

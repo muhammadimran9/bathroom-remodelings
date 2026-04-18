@@ -15,8 +15,32 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Flooring Installation Chandler AZ | Waterproof Flooring Experts",
-  description: "Professional bathroom flooring installation in Chandler, Arizona. Waterproof tile, luxury vinyl, and stone flooring. Get your bathroom flooring installation estimate today.",
+  title: "Bathroom Flooring Installation Chandler AZ",
+  description: "Professional bathroom flooring installation in Chandler, Arizona. Waterproof tile, luxury vinyl, stone flooring and expert installation.",
+  keywords: ["bathroom flooring chandler", "waterproof flooring installation", "bathroom tile flooring", "luxury vinyl bathrooms", "stone flooring"],
+  openGraph: {
+    title: "Bathroom Flooring Installation Chandler AZ",
+    description: "Professional bathroom flooring installation in Chandler with waterproof tile, luxury vinyl and stone options.",
+    url: `${siteConfig.url}/bathroom-flooring-installation`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/flooring-installation-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Flooring Installation - Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Flooring Installation Chandler AZ",
+    description: "Professional bathroom flooring installation in Chandler with waterproof options.",
+    images: [`${siteConfig.url}/images/flooring-installation-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-flooring-installation`,
+  },
 };
 
 const faqs = [

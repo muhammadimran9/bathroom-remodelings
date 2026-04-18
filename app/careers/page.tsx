@@ -3,10 +3,36 @@ import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { Briefcase, MapPin, Clock, DollarSign } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+import { siteConfig } from "@/lib/site-config";
 
-export const metadata = {
-  title: "Careers - Join Our Team | Chandler Bathroom Remodeling",
+export const metadata: Metadata = {
+  title: "Careers - Join Our Team",
   description: "Join our growing team in Chandler, Arizona. We're hiring experienced bathroom remodelers and installers.",
+  keywords: ["careers", "jobs chandler", "bathroom remodeler jobs", "employment"],
+  openGraph: {
+    title: "Careers - Join Our Team",
+    description: "Join our growing team in Chandler, Arizona. We're hiring experienced contractors.",
+    url: `${siteConfig.url}/careers`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Careers at ARZ Home Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers - Join Our Team",
+    description: "Join our growing team in Chandler, Arizona.",
+    images: [`${siteConfig.url}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/careers`,
+  },
 };
 
 const jobs = [

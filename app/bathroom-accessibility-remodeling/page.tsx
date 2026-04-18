@@ -15,8 +15,32 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Accessibility Remodeling Chandler AZ | ADA Compliant Bathrooms",
-  description: "Professional bathroom accessibility remodeling in Chandler, Arizona. ADA compliant bathrooms, grab bars, walk-in showers, and aging in place solutions. Get your accessibility estimate today.",
+  title: "Bathroom Accessibility Remodeling Chandler AZ",
+  description: "Professional bathroom accessibility remodeling in Chandler, Arizona. ADA compliant bathrooms, grab bars, walk-in showers and aging solutions.",
+  keywords: ["bathroom accessibility chandler", "ADA compliant bathrooms", "walk-in tub installation", "grab bar installation", "accessible bathrooms"],
+  openGraph: {
+    title: "Bathroom Accessibility Remodeling Chandler AZ",
+    description: "Professional accessibility remodeling in Chandler with ADA compliant bathrooms and aging in place solutions.",
+    url: `${siteConfig.url}/bathroom-accessibility-remodeling`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/accessibility-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Accessibility Remodeling - Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Accessibility Remodeling Chandler AZ",
+    description: "Professional accessibility remodeling in Chandler with ADA compliant solutions.",
+    images: [`${siteConfig.url}/images/accessibility-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-accessibility-remodeling`,
+  },
 };
 
 const faqs = [

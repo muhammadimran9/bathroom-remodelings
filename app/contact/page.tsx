@@ -8,28 +8,27 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Contact ARZ Home Remodeling - Free Estimates Chandler AZ | Expert Contractors",
-  description: `Contact ARZ Home Remodeling for your free bathroom and kitchen remodeling estimate in Chandler, Arizona. Licensed, insured contractors with 15+ years experience. Call (480) 555-0123 today!`,
-  keywords: ["contact home remodeling contractors Chandler AZ", "free bathroom remodeling estimate", "kitchen remodeling consultation Arizona", "licensed contractors Chandler", "home renovation estimates", "remodeling contractors near me"],
+  title: "Contact ARZ Home Remodeling - Free Quote",
+  description: "Contact ARZ Home Remodeling for a free bathroom and kitchen remodeling estimate in Chandler, Arizona. Call (480) 555-0123.",
   openGraph: {
-    title: "Contact ARZ Home Remodeling - Free Estimates Chandler AZ",
-    description: "Get your free bathroom and kitchen remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners for 15+ years.",
+    title: "Contact ARZ Home Remodeling - Free Quote",
+    description: "Get your free bathroom and kitchen remodeling quote today in Chandler, Arizona.",
     url: `${siteConfig.url}/contact`,
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/images/contact-hero.jpg`,
+        url: `${siteConfig.url}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Contact ARZ Home Remodeling Chandler Arizona",
+        alt: "Contact ARZ Home Remodeling",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact ARZ Home Remodeling - Free Estimates Chandler AZ",
-    description: "Get your free bathroom and kitchen remodeling estimate today. Licensed, insured, and trusted by Chandler homeowners.",
-    images: [`${siteConfig.url}/images/contact-hero.jpg`],
+    title: "Contact ARZ Home Remodeling - Free Quote",
+    description: "Get your free quote for bathroom and kitchen remodeling in Chandler, Arizona today.",
+    images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/contact`,

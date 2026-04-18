@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-  description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing. Licensed, insured, free estimates.",
+  title: "Bathroom Tile Installation Chandler AZ",
+  description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, backsplash installation with waterproofing.",
   keywords: ["bathroom tile installation chandler az", "shower tile installation chandler", "bathroom floor tile", "tile contractors chandler", "bathroom backsplash installation", "waterproof tile installation"],
   openGraph: {
-    title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-    description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing.",
+    title: "Bathroom Tile Installation Chandler AZ",
+    description: "Professional bathroom tile installation in Chandler with shower tile, floor tile and backsplash work.",
     url: `${siteConfig.url}/bathroom-tile-installation`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Tile Installation Chandler AZ | Expert Tile Contractors",
-    description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, and backsplash installation with waterproofing.",
+    title: "Bathroom Tile Installation Chandler AZ",
+    description: "Professional bathroom tile installation in Chandler with shower tile, floor tile and backsplash work.",
     images: [`${siteConfig.url}/images/tile-installation-hero.jpg`],
   },
   alternates: {

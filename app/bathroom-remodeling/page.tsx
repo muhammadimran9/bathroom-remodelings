@@ -14,12 +14,12 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: 'Bathroom Remodeling Chandler AZ - Expert Contractors | ARZ Home Remodeling',
-  description: 'Professional bathroom remodeling services in Chandler, Arizona. Expert contractors specializing in shower remodels, vanity installation, tile work & complete renovations. Free estimates!',
+  title: 'Bathroom Remodeling Chandler AZ - Expert',
+  description: 'Professional bathroom remodeling in Chandler, Arizona. Expert contractors specializing in shower remodels, vanities, tile work, and complete renovations.',
   keywords: ['bathroom remodeling Chandler AZ', 'bathroom renovation Arizona', 'shower remodeling Chandler', 'bathroom contractors near me', 'luxury bathroom remodel', 'bathroom renovation contractors'],
   openGraph: {
-    title: 'Bathroom Remodeling Chandler AZ - Expert Contractors | ARZ Home Remodeling',
-    description: 'Professional bathroom remodeling services in Chandler, Arizona. Expert contractors specializing in shower remodels, vanity installation, tile work & complete renovations.',
+    title: 'Bathroom Remodeling Chandler AZ - Expert',
+    description: 'Professional bathroom remodeling in Chandler, Arizona with expert contractors specializing in luxury renovations.',
     url: `${siteConfig.url}/bathroom-remodeling`,
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bathroom Remodeling Chandler AZ - Expert Contractors',
+    title: 'Bathroom Remodeling Chandler AZ - Expert',
     description: 'Professional bathroom remodeling services in Chandler, Arizona. Expert contractors specializing in luxury renovations.',
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },

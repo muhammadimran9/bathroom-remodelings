@@ -15,8 +15,32 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Vanity Installation Chandler AZ | Custom Vanity Pros",
-  description: "Professional bathroom vanity installation in Chandler, Arizona. Custom designs, expert installation, and coordinated fixtures. Get your vanity installation estimate today.",
+  title: "Bathroom Vanity Installation Chandler AZ",
+  description: "Professional bathroom vanity installation in Chandler, Arizona. Custom designs, expert installation and coordinated fixtures for your bathroom.",
+  keywords: ["vanity installation chandler", "bathroom vanity replacement", "double sink vanity", "custom vanity installation"],
+  openGraph: {
+    title: "Bathroom Vanity Installation Chandler AZ",
+    description: "Professional vanity installation in Chandler with custom designs and expert installation.",
+    url: `${siteConfig.url}/bathroom-vanity-installation`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/vanity-installation-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Vanity Installation - Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Vanity Installation Chandler AZ",
+    description: "Professional vanity installation in Chandler with custom designs and expert installation.",
+    images: [`${siteConfig.url}/images/vanity-installation-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/bathroom-vanity-installation`,
+  },
 };
 
 const faqs = [

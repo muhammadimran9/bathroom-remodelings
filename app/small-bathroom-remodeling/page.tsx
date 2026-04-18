@@ -15,8 +15,32 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Small Bathroom Remodeling Chandler AZ | Space-Maximizing Designs",
-  description: "Professional small bathroom remodeling in Chandler, Arizona. Space-saving designs, storage solutions, and modern fixtures. Get your small bathroom remodeling estimate today.",
+  title: "Small Bathroom Remodeling Chandler AZ",
+  description: "Professional small bathroom remodeling in Chandler, Arizona. Space-saving designs, storage solutions and modern fixtures.",
+  keywords: ["small bathroom remodeling chandler", "space-saving bathroom design", "small bathroom ideas", "bathroom storage solutions"],
+  openGraph: {
+    title: "Small Bathroom Remodeling Chandler AZ",
+    description: "Professional small bathroom remodeling in Chandler with space-saving designs and modern fixtures.",
+    url: `${siteConfig.url}/small-bathroom-remodeling`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/small-bathroom-hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Small Bathroom Remodeling - Chandler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Small Bathroom Remodeling Chandler AZ",
+    description: "Professional small bathroom remodeling in Chandler with space-saving designs.",
+    images: [`${siteConfig.url}/images/small-bathroom-hero.jpg`],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/small-bathroom-remodeling`,
+  },
 };
 
 const faqs = [
