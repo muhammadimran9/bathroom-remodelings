@@ -5,6 +5,8 @@ import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+
+// Note: Metadata for this page is in app/gallery/layout.tsx
 import { getFeaturedGalleryItems } from "@/lib/actions/gallery"
 import type { GalleryItem } from "@/lib/types"
 import { Button } from "@/components/ui/button"

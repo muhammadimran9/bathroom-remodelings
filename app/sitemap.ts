@@ -31,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Main service pages
   const servicePages = [
     { url: '/bathroom-remodeling', priority: 0.95, changeFrequency: 'weekly' as const },
-    { url: '/kitchen-remodeling', priority: 0.95, changeFrequency: 'weekly' as const },
+    { url: '/services', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/shower-remodeling', priority: 0.85, changeFrequency: 'monthly' as const },
     { url: '/bathtub-remodeling', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/walk-in-showers', priority: 0.85, changeFrequency: 'monthly' as const },

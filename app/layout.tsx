@@ -6,10 +6,11 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom & Kitchen Remodeling Chandler AZ`,
+    default: `Bathroom Remodeling Contractors Chandler AZ | Best`,
     template: `%s | ARZ Home Remodeling`
   },
-  description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Licensed contractors with 15+ years experience. Free estimates available.',
+  description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, licensed bathroom renovation contractors. Free bathroom remodel quote!',
+  keywords: ['bathroom remodeling contractors chandler az', 'bathroom remodel cost chandler az', 'bathroom remodel services chandler az', 'hire bathroom remodel contractor chandler az', 'bathroom renovation contractors chandler az', 'best bathroom remodeling contractors chandler az', 'affordable bathroom remodeling contractors chandler az', 'licensed bathroom remodeling contractors chandler az'],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom & Kitchen Remodeling Chandler AZ`,
-    description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Licensed contractors with 15+ years experience.',
+    title: `Bathroom Remodeling Contractors Chandler AZ | Best`,
+    description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
     images: [
       {
         url: `${siteConfig.url}/og-image.jpg`,
@@ -42,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom & Kitchen Remodeling Chandler AZ`,
-    description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Free estimates available.',
+    title: `Bathroom Remodeling Contractors Chandler AZ`,
+    description: 'Best bathroom remodeling contractors Chandler AZ. Free bathroom remodel quote!',
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
@@ -132,22 +133,22 @@ export default function RootLayout({
               },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Home Remodeling Services",
+                "name": "Bathroom Remodeling Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Bathroom Remodeling",
-                      "description": "Complete bathroom renovation and remodeling services"
+                      "name": "Bathroom Remodeling Contractors Chandler AZ",
+                      "description": "Professional bathroom remodeling contractors in Chandler, AZ with affordable bathroom remodel cost"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Kitchen Remodeling",
-                      "description": "Professional kitchen renovation and upgrade services"
+                      "name": "Bathroom Renovation Services",
+                      "description": "Licensed bathroom renovation contractors offering bathroom installation services"
                     }
                   }
                 ]

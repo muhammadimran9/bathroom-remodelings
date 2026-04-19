@@ -2,11 +2,11 @@ import { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Project Gallery – Bathroom Remodeling | ARZ Home Remodeling",
-  description: "View our completed bathroom remodeling projects in Chandler, AZ. Before and after photos showcasing our craftsmanship and design expertise.",
+  title: "Bathroom Remodeling Photos Chandler AZ | Gallery",
+  description: "View bathroom remodeling photos in Chandler, AZ. Before and after gallery of shower remodels, bathtub renovations, and luxury bathroom projects.",
   openGraph: {
-    title: "Project Gallery – Bathroom Remodeling | ARZ Home Remodeling",
-    description: "View our completed bathroom remodeling projects in Chandler, AZ with before and after photos.",
+    title: "Bathroom Remodeling Photos Chandler AZ | Gallery",
+    description: "View bathroom remodeling before and after photos in Chandler, AZ.",
     url: `${siteConfig.url}/gallery`,
     type: "website",
     images: [
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Gallery – Bathroom Remodeling | ARZ Home Remodeling",
-    description: "View our completed bathroom remodeling projects in Chandler, AZ.",
+    title: "Bathroom Remodeling Photos Chandler AZ | Gallery",
+    description: "View bathroom remodeling before and after photos in Chandler, AZ.",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {

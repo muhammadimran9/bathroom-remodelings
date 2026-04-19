@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Chandler AZ - Renovations",
-  description: "Expert bathtub remodeling in Chandler, Arizona. Modern tub installations, luxury upgrades and professional renovations. Free estimates.",
-  keywords: ["bathtub remodeling chandler az", "tub replacement chandler", "bathtub renovation arizona", "luxury tub installation", "bathroom tub remodel"],
+  title: "Bathtub to Shower Conversion Chandler AZ | Best",
+  description: "Best bathtub to shower conversion Chandler AZ. Affordable bathtub to shower conversion cost, professional bathtub remodeling services. Free estimates!",
+  keywords: ["bathtub to shower conversion Chandler AZ", "bathtub to shower conversion cost Chandler AZ", "bathtub to shower conversion price Chandler AZ", "bathtub to shower conversion professional Chandler AZ", "affordable bathtub to shower conversion Chandler AZ", "bathtub to shower conversion estimate Chandler AZ", "bathtub to shower conversion near me Chandler AZ", "bathtub to shower conversion services Chandler AZ", "hire bathtub to shower conversion Chandler AZ", "company bathtub to shower conversion Chandler AZ"],
   openGraph: {
-    title: "Bathtub Remodeling Chandler AZ - Renovations",
-    description: "Expert bathtub remodeling in Chandler with modern tub installations and luxury upgrades.",
+    title: "Bathtub to Shower Conversion Chandler AZ | Best",
+    description: "Best bathtub to shower conversion Chandler AZ. Affordable bathtub remodeling services!",
     url: `${siteConfig.url}/bathtub-remodeling`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathtub Remodeling Chandler AZ - Renovations",
-    description: "Expert bathtub remodeling in Chandler with modern tub installations and luxury upgrades.",
+    title: "Bathtub to Shower Conversion Chandler AZ | Best",
+    description: "Best bathtub to shower conversion Chandler AZ. Affordable bathtub remodeling!",
     images: [`${siteConfig.url}/images/bathtub-remodeling-hero.jpg`],
   },
   alternates: {
@@ -45,20 +45,24 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "How much does bathtub remodeling cost in Chandler, AZ?",
-    answer: "Bathtub remodeling in Chandler typically costs $2,000-$8,000 depending on tub type, materials, and complexity. Basic tub replacements start around $2,000, while luxury soaking tubs with custom surrounds can exceed $8,000. We provide free estimates with transparent pricing."
+    question: "What is the bathtub to shower conversion cost in Chandler AZ?",
+    answer: "Bathtub to shower conversion cost in Chandler AZ ranges from $5,000-$15,000. Affordable bathtub to shower conversion starts at $5,000. Professional bathtub to shower conversion with custom features exceeds $15,000. Get your free bathtub to shower conversion estimate!"
   },
   {
-    question: "How long does bathtub remodeling take?",
-    answer: "Most bathtub remodeling projects are completed in 2-5 days. Simple tub replacements take 2-3 days, while complete remodels with new plumbing and tile work may take 4-5 days. We provide a detailed timeline during your consultation."
+    question: "Do you offer bathtub to shower conversion services in Chandler AZ?",
+    answer: "Yes! We offer complete bathtub to shower conversion services in Chandler AZ. Our bathtub to shower conversion installation includes tub removal, plumbing, and walk-in shower installation. Hire bathtub to shower conversion contractor today!"
   },
   {
-    question: "Do you install freestanding bathtubs?",
-    answer: "Yes! We install all types of bathtubs including freestanding soaking tubs, alcove tubs, whirlpool tubs, and air-jet tubs. Our team handles all plumbing connections, leveling, and finishing work."
+    question: "Are you professional bathtub to shower conversion contractors in Chandler AZ?",
+    answer: "Yes! We're professional bathtub to shower conversion contractors in Chandler AZ with 15+ years experience. Company bathtub to shower conversion services are fully licensed and insured. Best bathtub to shower conversion near me!"
   },
   {
-    question: "Can you remodel a bathtub in an existing bathroom?",
-    answer: "Absolutely! We specialize in bathtub remodeling for existing bathrooms. We assess your plumbing, reinforce the subfloor if needed, and ensure proper drainage and support for your new tub."
+    question: "What is the bathtub to shower conversion price in Chandler AZ?",
+    answer: "Bathtub to shower conversion price in Chandler AZ varies by scope. Affordable bathtub to shower conversion options available. Get your bathtub to shower conversion quote for transparent pricing and bathtub to shower conversion estimate!"
+  },
+  {
+    question: "Do you offer affordable bathtub to shower conversion in Chandler AZ?",
+    answer: "Yes! We offer affordable bathtub to shower conversion in Chandler AZ with flexible financing. Our bathtub to shower conversion services include budget-friendly options. Contact us for bathtub to shower conversion near me Chandler AZ!"
   }
 ];
 
@@ -79,9 +83,9 @@ export default function BathtubRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Bathtub Remodeling in Chandler, Arizona"
-          subtitle="Professional Bathtub Renovations in Chandler AZ"
-          description="Transform your bathroom with expert bathtub remodeling services featuring modern designs, luxury materials, and professional installation."
+          title="Bathtub to Shower Conversion Chandler AZ"
+          subtitle="Best Bathtub to Shower Conversion Services Chandler AZ"
+          description="Professional bathtub to shower conversion Chandler AZ. Affordable bathtub to shower conversion cost, best bathtub remodeling services. Hire bathtub to shower conversion contractor near me!"
           image="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

@@ -8,11 +8,12 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Contact ARZ Home Remodeling - Free Quote",
-  description: "Contact ARZ Home Remodeling for a free bathroom and kitchen remodeling estimate in Chandler, Arizona. Call (480) 555-0123.",
+  title: "Bathroom Contractor Chandler AZ | Free Quote",
+  description: "Best bathroom contractor Chandler AZ. Hire bathroom contractor, affordable bathroom contractor price. Free bathroom contractor estimate!",
+  keywords: ["bathroom contractor Chandler AZ", "bathroom contractor price Chandler AZ", "bathroom contractor quote Chandler AZ", "bathroom contractor estimate Chandler AZ", "bathroom contractor professional Chandler AZ", "bathroom contractor best Chandler AZ", "bathroom contractor near me Chandler AZ", "bathroom contractor affordable Chandler AZ", "hire bathroom contractor Chandler AZ", "bathroom contractor cost Chandler AZ", "bathroom contractor company Chandler AZ", "bathroom contractor installation Chandler AZ"],
   openGraph: {
-    title: "Contact ARZ Home Remodeling - Free Quote",
-    description: "Get your free bathroom and kitchen remodeling quote today in Chandler, Arizona.",
+    title: "Bathroom Contractor Chandler AZ | Free Quote",
+    description: "Best bathroom contractor Chandler AZ. Hire bathroom contractor, free estimate!",
     url: `${siteConfig.url}/contact`,
     type: "website",
     images: [
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact ARZ Home Remodeling - Free Quote",
-    description: "Get your free quote for bathroom and kitchen remodeling in Chandler, Arizona today.",
+    title: "Bathroom Contractor Chandler AZ | Free Quote",
+    description: "Best bathroom contractor Chandler AZ. Hire bathroom contractor, free estimate!",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
@@ -37,20 +38,20 @@ export const metadata: Metadata = {
 
 const contactFaqs = [
   {
-    question: "How do I schedule a free home remodeling consultation in Chandler?",
-    answer: "You can schedule a free consultation by calling us at (480) 555-0123, filling out our online contact form, or emailing us at info@arzhomeremodeling.com. We typically respond within 24 hours and can schedule consultations within the same week."
+    question: "How do I hire bathroom contractor in Chandler AZ?",
+    answer: "To hire bathroom contractor in Chandler AZ, call us at (480) 555-0123 or fill out our contact form. Our professional bathroom contractor services include free bathroom contractor estimate within 24 hours. Best bathroom contractor near me Chandler AZ!"
   },
   {
-    question: "What should I expect during the free consultation?",
-    answer: "During your free in-home consultation, our design expert will assess your space, discuss your vision and needs, take measurements, answer questions, and provide a detailed estimate with transparent pricing. The consultation typically takes 45-60 minutes."
+    question: "What is the bathroom contractor price in Chandler AZ?",
+    answer: "Bathroom contractor price in Chandler AZ varies by project scope. Our affordable bathroom contractor services include transparent pricing. Get your free bathroom contractor quote and bathroom contractor estimate today!"
   },
   {
-    question: "How quickly can you start my remodeling project?",
-    answer: "Project start times vary based on our schedule and your availability. Many projects can begin within 1-3 weeks of signing the contract. We'll provide specific timing during your consultation and work to accommodate your schedule."
+    question: "Are you the best bathroom contractor in Chandler AZ?",
+    answer: "Yes! We're the best bathroom contractor in Chandler AZ with 15+ years experience. Our professional bathroom contractor services are fully licensed and insured. Bathroom contractor company services near me!"
   },
   {
-    question: "Do you offer emergency repair services in Chandler?",
-    answer: "While we specialize in home remodeling, we can address urgent issues like water damage or plumbing problems. Contact us immediately for emergency situations, and we'll assess how we can help or refer you to appropriate emergency services."
+    question: "Do you offer affordable bathroom contractor services in Chandler AZ?",
+    answer: "Yes! We offer affordable bathroom contractor services in Chandler AZ with flexible financing. Hire bathroom contractor for budget-friendly options. Bathroom contractor cost includes free bathroom contractor estimate!"
   }
 ];
 
@@ -74,11 +75,11 @@ export default function ContactPage() {
                 Get In Touch
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Contact ARZ Home Remodeling - Free Estimates Chandler AZ
+                Best Bathroom Contractor Chandler AZ | Free Quote
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready to transform your home? Contact our expert remodeling contractors in Chandler, Arizona 
-                for a free consultation. We specialize in bathroom and kitchen remodeling with financing options available.
+                Ready to hire bathroom contractor in Chandler AZ? Contact our professional bathroom contractor for a free 
+                bathroom contractor estimate. Affordable bathroom contractor services with flexible financing available.
               </p>
             </div>
           </div>

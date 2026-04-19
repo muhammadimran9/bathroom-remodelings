@@ -52,7 +52,7 @@ export default function ServicesGrid() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => {
+          {services.slice(0, 6).map((service, index) => {
             const MotionLink = motion.create(Link);
             return (
               <MotionLink
@@ -79,6 +79,22 @@ export default function ServicesGrid() {
             );
           })}
         </div>
+
+        {/* See All Services Button */}
+        <motion.div
+          initial={mounted ? { opacity: 0, y: 20 } : false}
+          animate={mounted && isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="text-center mt-12"
+        >
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors"
+          >
+            See All Services
+            <ArrowUpRight className="w-5 h-5" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

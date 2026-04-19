@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ - Frameless Glass",
-  description: "Professional shower remodeling in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations and premium fixtures.",
-  keywords: ["shower remodeling chandler az", "custom shower renovations chandler", "frameless glass shower doors", "bathroom shower remodel", "walk-in shower installation", "shower tile installation"],
+  title: "Shower Remodel Chandler AZ | Best Services",
+  description: "Best shower remodel services Chandler AZ. Affordable shower remodel cost, professional shower remodel contractor. Free shower remodel estimate!",
+  keywords: ["shower remodel services Chandler AZ", "shower remodel Chandler AZ", "shower remodel cost Chandler AZ", "shower remodel price Chandler AZ", "shower remodel estimate Chandler AZ", "shower remodel quote Chandler AZ", "shower remodel contractor Chandler AZ", "shower remodel company Chandler AZ", "affordable shower remodel Chandler AZ", "best shower remodel Chandler AZ", "professional shower remodel Chandler AZ", "shower remodel near me Chandler AZ", "hire shower remodel Chandler AZ", "shower remodel installation Chandler AZ"],
   openGraph: {
-    title: "Shower Remodeling Chandler AZ - Frameless Glass",
-    description: "Professional shower remodeling in Chandler with custom tile, frameless glass enclosures and premium fixtures.",
+    title: "Shower Remodel Chandler AZ | Best Services",
+    description: "Best shower remodel services Chandler AZ. Affordable shower remodel, free quotes!",
     url: `${siteConfig.url}/shower-remodeling`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ - Frameless Glass",
-    description: "Professional shower remodeling in Chandler with custom tile, frameless glass enclosures and premium fixtures.",
+    title: "Shower Remodel Chandler AZ | Best Services",
+    description: "Best shower remodel services Chandler AZ. Affordable, professional!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
   alternates: {
@@ -45,20 +45,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "How long does a shower remodel take in Chandler, AZ?",
-    answer: "Most shower remodels in Chandler take 3-7 days depending on complexity. Simple tile updates may take 3-4 days, while complete custom showers with frameless glass and built-in features take 5-7 days. We provide a detailed timeline during your consultation."
+    question: "What is the shower remodel cost in Chandler AZ?",
+    answer: "Shower remodel cost in Chandler AZ ranges from $5,000-$15,000. Affordable shower remodel starts around $5,000. Best shower remodel with premium features exceeds $15,000. Get your free shower remodel estimate today!"
   },
   {
-    question: "What is the cost of shower remodeling in Chandler?",
-    answer: "Shower remodeling costs in Chandler typically range from $5,000-$15,000 depending on size, materials, and features. Basic tile showers start around $5,000, while luxury showers with premium tile, frameless glass, and custom features can exceed $15,000. We offer free estimates with transparent pricing."
+    question: "How do I hire shower remodel contractor in Chandler AZ?",
+    answer: "To hire shower remodel contractor in Chandler AZ, contact us for a free shower remodel quote. Our professional shower remodel services include consultation, design, and installation. We're the best shower remodel company in Chandler AZ."
   },
   {
-    question: "Do you offer waterproof shower installations?",
-    answer: "Yes! All our shower installations include professional waterproofing systems that exceed industry standards. We use RedGard or Schluter waterproofing membranes to protect your walls and subfloors from moisture damage."
+    question: "What is the shower remodel price in Chandler AZ?",
+    answer: "Shower remodel price in Chandler AZ varies by scope. Affordable shower remodel options available. Get your shower remodel quote for transparent pricing and shower remodel estimate near me Chandler AZ!"
   },
   {
-    question: "Can you install frameless glass shower doors in Chandler?",
-    answer: "Absolutely! We specialize in frameless glass shower enclosures that create a modern, spa-like appearance. We measure precisely and install custom-cut tempered glass with premium hardware."
+    question: "Do you offer affordable shower remodel in Chandler AZ?",
+    answer: "Yes! We offer affordable shower remodel in Chandler AZ with flexible financing. Our shower remodel services include budget-friendly options. Contact us for shower remodel near me Chandler AZ!"
+  },
+  {
+    question: "Are you professional shower remodel contractors in Chandler AZ?",
+    answer: "Yes! We're professional shower remodel contractors in Chandler AZ with 15+ years experience. Company shower remodel services are fully licensed and insured. Best shower remodel near me!"
+  },
+  {
+    question: "What shower remodel services do you offer in Chandler AZ?",
+    answer: "Our shower remodel services in Chandler AZ include: complete shower remodel installation, tile shower remodel, custom shower designs, shower remodel contractor services. Shower remodel company services available!"
   }
 ];
 
@@ -79,9 +87,9 @@ export default function ShowerRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Shower Remodeling in Chandler, Arizona"
-          subtitle="Custom Shower Renovations in Chandler AZ"
-          description="Upgrade to a watertight, spa-inspired shower with premium tilework, glass, and fixtures tailored to your Chandler home."
+          title="Best Shower Remodel Services Chandler AZ"
+          subtitle="Professional Shower Remodel Contractor Chandler AZ"
+          description="Best shower remodel services Chandler AZ. Affordable shower remodel cost, professional shower remodel installation, shower remodel contractor. Get your free shower remodel estimate today!"
           image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

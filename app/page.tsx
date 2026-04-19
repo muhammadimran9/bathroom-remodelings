@@ -62,24 +62,24 @@ const FinalCTA = dynamic(() => import("@/components/home/final-cta"), {
 
 const homeFaqs = [
   {
-    question: "What home remodeling services do you offer in Chandler, AZ?",
+    question: "What bathroom remodel services do you offer in Chandler AZ?",
     answer:
-      "ARZ Home Remodeling specializes in complete bathroom and kitchen remodeling services in Chandler, Arizona. We offer luxury renovations, custom designs, and professional installation with 15+ years of experience.",
+      "Our bathroom remodel services in Chandler AZ include: bathroom remodeling contractors, shower remodel, bathtub replacement, bathroom installation services, bathroom repair services, custom bathroom remodel services, master bathroom remodel, and small bathroom remodel. We're your local bathroom remodeling service providers.",
   },
   {
-    question: "Do you provide free estimates for bathroom remodeling projects?",
+    question: "How much does bathroom remodel cost in Chandler AZ?",
     answer:
-      "Yes! We provide free, no-obligation estimates for all bathroom and kitchen remodeling projects in Chandler and surrounding areas. Our expert team will assess your space and provide detailed pricing.",
+      "Bathroom remodel cost in Chandler AZ varies by scope. Affordable bathroom remodeling contractors offer basic updates from $5,000, mid-range bathroom renovation cost $10,000-$20,000, and luxury bathroom remodel cost $25,000+. Get your free bathroom remodel estimate today!",
   },
   {
-    question: "What areas in Arizona do you serve for home remodeling?",
+    question: "How do I hire bathroom remodeling contractors in Chandler AZ?",
     answer:
-      "We serve Chandler, Sun Lakes, Ahwatukee, Tempe, Mesa, and South Phoenix areas. Our licensed contractors provide professional home remodeling services throughout the greater Phoenix metropolitan area.",
+      "To hire bathroom remodeling contractors in Chandler AZ, contact us for a free bathroom remodel quote. We're licensed bathroom remodeling contractors, bonded and insured, serving Chandler, Sun Lakes, Ahwatukee, Tempe, Mesa, and South Phoenix. Top rated bathroom remodeling company!",
   },
   {
-    question: "How long does a typical bathroom remodel take to complete?",
+    question: "Are you affordable bathroom remodeling contractors in Chandler AZ?",
     answer:
-      "Most bathroom remodeling projects take 2-4 weeks depending on the scope of work. We provide detailed timelines during consultation and work efficiently to minimize disruption to your daily routine.",
+      "Yes! We're affordable bathroom remodeling contractors in Chandler AZ with flexible financing. Professional bathroom remodeling contractors with 15+ years experience. Get your free bathroom remodeling estimate with same day bathroom remodel quotes available!",
   },
 ];
 
