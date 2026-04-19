@@ -61,23 +61,10 @@ export default function BathroomFlooringInstallationPage() {
       <main>
         <ServiceHero
           title="Bathroom Flooring Installation in Chandler, Arizona"
-          subtitle="Waterproof Flooring Installation in Chandler AZ"
           description="Professional bathroom flooring installation with waterproof materials, expert craftsmanship, and durable finishes for your Chandler home."
-          image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp"
-          breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Flooring Installation", url: `${siteConfig.url}/bathroom-flooring-installation` }]}
+          backgroundImage="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp"
         />
-        <ServiceProcess
-          title="Bathroom Flooring Installation Process"
-          subtitle="Our Process"
-          description="Professional flooring installation with waterproof preparation and expert craftsmanship."
-          steps={[
-            { number: "01", icon: "Ruler", title: "Assessment & Planning", description: "Evaluate subfloor condition, moisture levels, and plan the perfect flooring solution." },
-            { number: "02", icon: "Layout", title: "Material Selection", description: "Choose from tile, luxury vinyl, or stone flooring with slip-resistant and waterproof options." },
-            { number: "03", icon: "ShieldCheck", title: "Subfloor Preparation", description: "Level subfloors, install moisture barriers, and prepare surfaces for installation." },
-            { number: "04", icon: "Hammer", title: "Flooring Installation", description: "Expert installation with precise cuts, proper spacing, and waterproof sealing." },
-            { number: "05", icon: "Sparkles", title: "Finishing & Sealing", description: "Grout application, sealing, and final cleanup for a perfect bathroom floor." }
-          ]}
-        />
+
         <IssuesSolved
           title="Issues We Solve with Bathroom Flooring Installation"
           subtitle="Common Problems Fixed"
