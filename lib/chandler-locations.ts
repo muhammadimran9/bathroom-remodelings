@@ -265,19 +265,21 @@ export function generateAllLocationSlugs(): string[] {
  * Find location data by slug
  * Handles ZIP, neighborhood, and combined slugs
  */
-export function findLocationBySlug(slug: string): {
+export function findLocationBySlug(slug: string | undefined): {
   type: "zip" | "neighborhood" | "combined";
   zipData: ZipCodeData;
   neighborhood?: NeighborhoodData;
 } | null {
   // Safety check for undefined or invalid slug
-  if (!slug || typeof slug !== 'string') {
+  if (!slug || typeof slug !== 'string' || slug.trim() === '') {
     return null;
   }
 
+  const normalizedSlug = slug.trim();
+
   // Handle combined slug (e.g., "ocotillo-85248")
-  if (slug.includes("-") && /\d{5}$/.test(slug)) {
-    const parts = slug.split("-");
+  if (normalizedSlug.includes("-") && /\d{5}$/.test(normalizedSlug)) {
+    const parts = normalizedSlug.split("-");
     const zip = parts[parts.length - 1];
     const neighborhoodSlug = parts.slice(0, -1).join("-");
 
@@ -294,14 +296,14 @@ export function findLocationBySlug(slug: string): {
 
   // Handle neighborhood slug (e.g., "ocotillo")
   for (const zipData of chandlerLocations) {
-    const neighborhood = zipData.neighborhoods.find((n) => n.slug === slug);
+    const neighborhood = zipData.neighborhoods.find((n) => n.slug === normalizedSlug);
     if (neighborhood) {
       return { type: "neighborhood", zipData, neighborhood };
     }
   }
 
   // Handle ZIP slug (e.g., "85248")
-  const zipData = chandlerLocations.find((loc) => loc.slug === slug);
+  const zipData = chandlerLocations.find((loc) => loc.slug === normalizedSlug);
   if (zipData) {
     return { type: "zip", zipData };
   }
