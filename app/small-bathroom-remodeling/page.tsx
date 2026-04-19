@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Small Bathroom Remodeling Chandler AZ | Expert",
-  description: "Professional small bathroom remodeling in Chandler, AZ. Space-saving designs, storage solutions, and modern fixtures. Free estimates!",
-  keywords: ["small bathroom remodeling chandler", "space-saving bathroom design", "small bathroom ideas", "bathroom storage solutions"],
+  title: "Small Bathroom Remodel Cost Chandler AZ | Expert",
+  description: "Affordable small bathroom remodel cost Chandler AZ. Professional small bathroom remodeling services with space-saving designs. Free estimates!",
+  keywords: ["small bathroom remodel cost chandler az", "affordable small bathroom remodel cost chandler az", "best small bathroom remodel cost chandler az", "local small bathroom remodel cost chandler az", "professional small bathroom remodel cost chandler az", "small bathroom remodeling chandler", "space-saving bathroom design"],
   openGraph: {
-    title: "Small Bathroom Remodeling Chandler AZ",
-    description: "Professional small bathroom remodeling in Chandler with space-saving designs and modern fixtures.",
+    title: "Small Bathroom Remodel Cost Chandler AZ | Expert",
+    description: "Affordable small bathroom remodel cost Chandler AZ. Professional small bathroom remodeling services.",
     url: `${siteConfig.url}/small-bathroom-remodeling`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Small Bathroom Remodeling Chandler AZ",
-    description: "Professional small bathroom remodeling in Chandler with space-saving designs.",
+    title: "Small Bathroom Remodel Cost Chandler AZ",
+    description: "Affordable small bathroom remodel cost Chandler AZ. Free estimates!",
     images: [`${siteConfig.url}/images/small-bathroom-hero.jpg`],
   },
   alternates: {
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: "How much does small bathroom remodeling cost in Chandler?", answer: "Small bathroom remodeling in Chandler typically costs $8,000-$20,000 depending on fixtures, materials, and layout changes. Basic updates start around $8,000, while luxury small bathroom remodels can exceed $20,000." },
-  { question: "What are the best ways to make a small bathroom look bigger?", answer: "Light colors, large mirrors, glass shower doors, floating vanities, and good lighting make small bathrooms appear larger. We also recommend minimizing visual clutter and using consistent materials." },
-  { question: "Can you add storage to a small bathroom remodel?", answer: "Yes! We specialize in creative storage solutions including built-in niches, floating shelves, vanity storage, and recessed medicine cabinets that maximize space without crowding." },
-  { question: "How long does small bathroom remodeling take?", answer: "Small bathroom remodeling typically takes 1-3 weeks depending on complexity. Simple updates take 1-2 weeks, while complete remodels with plumbing changes may take 2-3 weeks." }
+  { question: "How much does small bathroom remodel cost in Chandler AZ?", answer: "Small bathroom remodel cost in Chandler AZ typically ranges $8,000-$20,000. Affordable small bathroom remodel cost starts around $8,000 for basic updates, while professional small bathroom remodel services with luxury finishes can exceed $20,000. Get your free bathroom remodel estimate!" },
+  { question: "What makes your small bathroom remodeling services the best in Chandler AZ?", answer: "We're the best small bathroom remodel contractors in Chandler AZ with 15+ years experience. Our licensed bathroom remodeling contractors specialize in space-maximizing designs, affordable small bathroom remodel cost, and professional bathroom installation services." },
+  { question: "Can you add storage in a small bathroom remodel in Chandler?", answer: "Yes! Our local small bathroom remodel cost includes creative storage solutions. We specialize in built-in niches, floating shelves, vanity storage, and recessed medicine cabinets. Our professional small bathroom remodel services maximize every square foot." },
+  { question: "How long does small bathroom remodeling take in Chandler AZ?", answer: "Small bathroom remodeling in Chandler AZ typically takes 1-3 weeks. Same day bathroom remodeling contractors available for quick updates. Our professional bathroom remodel services are efficient while maintaining top rated quality standards." }
 ];
 
 const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
@@ -60,9 +60,9 @@ export default function SmallBathroomRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Small Bathroom Remodeling in Chandler, Arizona"
-          subtitle="Space-Maximizing Bathroom Remodeling in Chandler AZ"
-          description="Transform your small bathroom with space-saving designs, clever storage solutions, and modern fixtures that maximize every square foot."
+          title="Affordable Small Bathroom Remodel Cost Chandler AZ"
+          subtitle="Best Small Bathroom Remodeling Services in Chandler AZ"
+          description="Get the best small bathroom remodel cost in Chandler AZ. Our licensed small bathroom remodeling contractors deliver space-saving designs and professional bathroom renovation services."
           image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Small Bathroom Remodeling", url: `${siteConfig.url}/small-bathroom-remodeling` }]}
         />

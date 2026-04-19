@@ -7,17 +7,18 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Services Chandler AZ | All",
-  description: "All bathroom remodeling services in Chandler, AZ. Shower remodeling, tub-to-shower conversion, vanity installation, tile, flooring. Free estimates!",
+  title: "Bathroom Remodel Services Chandler AZ | All",
+  description: "Complete bathroom remodel services Chandler AZ. Bathroom installation services, bathroom repair services, bathroom upgrade cost. Free estimates!",
+  keywords: ["bathroom remodel services chandler az", "bathroom installation services chandler az", "bathroom repair services chandler az", "bathroom upgrade cost chandler az", "bathroom redesign services chandler az", "bathroom remodeling services near me in chandler az", "professional bathroom remodel services chandler az"],
   openGraph: {
-    title: "Bathroom Remodeling Services Chandler AZ | All",
-    description: "All bathroom remodeling services in Chandler, AZ. Licensed contractors, free estimates!",
+    title: "Bathroom Remodel Services Chandler AZ | All",
+    description: "Complete bathroom remodel services Chandler AZ. Professional bathroom installation services!",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Services Chandler AZ",
-    description: "All bathroom remodeling services in Chandler, AZ. Free estimates!",
+    title: "Bathroom Remodel Services Chandler AZ",
+    description: "Complete bathroom remodel services Chandler AZ. Free estimates!",
   },
 };
 
@@ -34,12 +35,12 @@ export default function ServicesPage() {
                 Our Services
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold mt-4 mb-6 text-foreground text-balance">
-                All Bathroom Remodeling Services Chandler AZ
+                Bathroom Remodel Services Chandler AZ
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Complete bathroom remodeling services from licensed Chandler contractors. Shower remodeling, 
-                tub-to-shower conversions, walk-in showers, vanity installation, and accessibility upgrades. 
-                Affordable bathroom renovation with free estimates.
+                Complete bathroom remodel services from licensed bathroom remodeling contractors in Chandler AZ. 
+                Professional bathroom installation services, bathroom repair services, bathroom upgrade solutions, 
+                and bathroom redesign services. Affordable bathroom remodeling services near me with free estimates.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Link href="/contact">Get Free Estimate</Link>

@@ -14,12 +14,12 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: 'Bathroom Remodeling Chandler AZ | Top Contractors',
-  description: 'Professional bathroom remodeling services in Chandler, AZ. Licensed bathroom remodelers, affordable pricing, luxury renovations. Free estimates!',
-  keywords: ['bathroom remodeling Chandler AZ', 'bathroom remodelers Chandler', 'bathroom renovation Chandler Arizona', 'bathroom contractors Chandler AZ', 'luxury bathroom remodel Chandler', 'affordable bathroom remodeling'],
+  title: 'Bathroom Remodeling Contractors Chandler AZ | #1',
+  description: 'Top rated bathroom remodeling contractors Chandler AZ. Licensed bathroom renovation company, affordable bathroom remodel cost. Free estimates!',
+  keywords: ['bathroom remodeling contractors chandler az', 'bathroom remodel cost chandler az', 'bathroom remodel services chandler az', 'bathroom renovation contractors chandler az', 'bathroom remodeling company chandler az', 'hire bathroom remodel contractor chandler az', 'licensed bathroom remodeling contractors chandler az', 'affordable bathroom remodeling contractors chandler az', 'best bathroom remodeling contractors chandler az', 'professional bathroom remodeling contractors chandler az'],
   openGraph: {
-    title: 'Bathroom Remodeling Chandler AZ | Top Contractors',
-    description: 'Professional bathroom remodeling services in Chandler, AZ. Licensed contractors, luxury renovations.',
+    title: 'Bathroom Remodeling Contractors Chandler AZ | #1',
+    description: 'Top rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, licensed!',
     url: `${siteConfig.url}/bathroom-remodeling`,
     images: [
       {
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bathroom Remodeling Chandler AZ | Top Contractors',
-    description: 'Professional bathroom remodeling in Chandler, AZ. Licensed contractors, free estimates!',
+    title: 'Bathroom Remodeling Contractors Chandler AZ',
+    description: 'Top rated bathroom remodeling contractors Chandler AZ. Free bathroom remodel estimate!',
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {
@@ -43,20 +43,28 @@ export const metadata: Metadata = {
 
 const serviceFaqs = [
   {
-    question: "How much does bathroom remodeling cost in Chandler, AZ?",
-    answer: "Bathroom remodeling cost in Chandler varies by scope. Basic updates start around $5,000, mid-range remodels $10,000-$20,000, and luxury bathroom remodels $25,000+. We provide free bathroom remodel estimates with transparent pricing.",
+    question: "How much does bathroom remodel cost in Chandler AZ?",
+    answer: "Bathroom remodel cost in Chandler AZ varies: basic bathroom renovation cost starts at $5,000, mid-range bathroom remodeling services cost $10,000-$20,000, and luxury bathroom remodel cost can exceed $25,000. We provide free bathroom remodel estimates with transparent bathroom remodeling pricing.",
   },
   {
-    question: "How long does bathroom remodeling take in Chandler?",
-    answer: "A typical bathroom remodel in Chandler takes 2-4 weeks. Fast bathroom remodel options available for quick renovations. Complete luxury bathroom renovations may take 4-6 weeks. We provide detailed timelines during consultation.",
+    question: "Are you licensed bathroom remodeling contractors in Chandler AZ?",
+    answer: "Yes! We are licensed bathroom remodeling contractors in Chandler AZ with 15+ years experience. Our professional bathroom renovation contractors are bonded and insured. We're the top rated bathroom remodeling company serving Chandler and the greater Phoenix area.",
   },
   {
-    question: "Are you licensed bathroom contractors in Chandler, AZ?",
-    answer: "Yes! We are fully licensed bathroom contractors in Chandler, AZ. Our certified bathroom remodelers are bonded and insured, serving Chandler and the greater Phoenix area with 15+ years experience.",
+    question: "How do I hire bathroom remodel contractor in Chandler AZ?",
+    answer: "To hire a bathroom remodel contractor in Chandler AZ, simply contact us for a free bathroom remodel quote. Our bathroom remodeling professionals will provide a bathroom renovation estimate and discuss your bathroom redesign services needs.",
   },
   {
-    question: "Do you offer affordable bathroom remodeling financing?",
-    answer: "Yes! We offer affordable bathroom remodeling with flexible financing options including 0% APR for qualified buyers, extended payment plans, and quick approval to make your bathroom renovation budget-friendly.",
+    question: "Do you offer affordable bathroom remodeling services in Chandler AZ?",
+    answer: "Yes! We offer affordable bathroom remodeling contractors in Chandler AZ with flexible financing. Our bathroom remodel services include budget-friendly options and 0% APR financing. Get your free bathroom remodeling estimate today!",
+  },
+  {
+    question: "What bathroom remodel services do you offer in Chandler AZ?",
+    answer: "Our bathroom remodel services in Chandler AZ include: shower remodel, bathtub replacement, bathroom installation services, bathroom repair services, bathroom upgrade, custom bathroom remodel services, master bathroom remodel, and small bathroom remodel. We're your local bathroom remodeling service providers.",
+  },
+  {
+    question: "How long does bathroom renovation take in Chandler?",
+    answer: "Bathroom renovation in Chandler typically takes 2-4 weeks. Same day bathroom remodeling contractors are available for emergency bathroom repair services. Our bathroom remodel construction services are efficient while maintaining professional bathroom remodeling quality.",
   },
 ];
 
@@ -72,8 +80,8 @@ export default function BathroomRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Top Rated Bathroom Remodeling Chandler AZ"
-          description="Looking for the best bathroom remodeling company in Chandler? Our licensed bathroom remodelers deliver affordable bathroom renovations with premium quality. Get your free bathroom remodel estimate today!"
+          title="Best Bathroom Remodeling Contractors Chandler AZ"
+          description="Looking for top rated bathroom remodeling contractors in Chandler AZ? Hire our licensed bathroom renovation contractors for affordable bathroom remodel services. Get your free bathroom remodel quote today!"
         />
         <SubServices />
         <IssuesSolved />
