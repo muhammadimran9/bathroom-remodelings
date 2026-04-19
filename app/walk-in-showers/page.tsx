@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Walk-In Shower Remodels Chandler AZ | Experts",
-  description: "Leading companies for walk-in shower remodels in Chandler AZ. Handicap shower remodel, shower to replace tub, bath to shower remodel cost. Free quotes!",
-  keywords: ["walk-in shower remodels chandler az", "leading companies for walk-in shower remodels chandler az", "handicap shower remodel chandler az", "shower to replace tub chandler az", "bath to shower remodel cost chandler az", "replace bath tub with shower chandler az", "shower kits to replace bathtub chandler az", "average cost to replace tub with shower chandler az", "barrier-free showers chandler az", "ada compliant showers chandler az"],
+  title: "Walk In Shower Installation Chandler AZ | Best",
+  description: "Best walk in shower installation Chandler AZ. Affordable walk in shower installation price, professional installation. Free walk in shower installation quote!",
+  keywords: ["walk in shower installation Chandler AZ", "walk in shower installation price Chandler AZ", "walk in shower installation cost Chandler AZ", "walk in shower installation professional Chandler AZ", "walk in shower installation best Chandler AZ", "walk in shower installation company Chandler AZ", "walk in shower installation contractor Chandler AZ", "walk in shower installation estimate Chandler AZ", "walk in shower installation quote Chandler AZ", "walk in shower installation hire Chandler AZ", "affordable walk in shower installation Chandler AZ", "walk in shower installation near me Chandler AZ"],
   openGraph: {
-    title: "Walk-In Shower Remodels Chandler AZ | Experts",
-    description: "Leading walk-in shower remodels Chandler AZ. Handicap shower remodel, tub to shower conversion!",
+    title: "Walk In Shower Installation Chandler AZ | Best",
+    description: "Best walk in shower installation Chandler AZ. Professional installation, free quotes!",
     url: `${siteConfig.url}/walk-in-showers`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Walk-In Shower Remodels Chandler AZ | Experts",
-    description: "Walk-in shower remodels Chandler AZ. Handicap shower remodel, tub to shower conversion!",
+    title: "Walk In Shower Installation Chandler AZ | Best",
+    description: "Best walk in shower installation Chandler AZ. Professional, affordable!",
     images: [`${siteConfig.url}/images/walk-in-shower-hero.jpg`],
   },
   alternates: {
@@ -45,24 +45,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What is the average cost to replace tub with shower in Chandler AZ?",
-    answer: "Average cost to replace tub with shower in Chandler AZ ranges from $4,000-$12,000. Bath to shower remodel cost depends on materials and features. Shower to replace tub with basic walk-in shower starts around $4,000, while luxury walk-in shower remodels with frameless glass exceed $12,000."
+    question: "What is the walk in shower installation price in Chandler AZ?",
+    answer: "Walk in shower installation price in Chandler AZ ranges from $4,000-$12,000. Affordable walk in shower installation starts around $4,000. Best walk in shower installation with custom features exceeds $12,000. Get your free walk in shower installation estimate today!"
   },
   {
-    question: "Do you offer handicap shower remodel in Chandler AZ?",
-    answer: "Yes! We specialize in handicap shower remodel services. Our walk-in shower remodels include barrier-free designs, grab bar installation, built-in seating, and ADA-compliant features. We're leading companies for walk-in shower remodels in Chandler AZ."
+    question: "How do I hire walk in shower installation contractor in Chandler AZ?",
+    answer: "To hire walk in shower installation contractor in Chandler AZ, contact us for a free walk in shower installation quote. Our professional walk in shower installation services include consultation, design, and installation. We're the best walk in shower installation company in Chandler AZ."
   },
   {
-    question: "What shower kits to replace bathtub do you install in Chandler AZ?",
-    answer: "We install various shower kits to replace bathtub including: shower tub replacement kits, shower pans to replace bathtub, and complete replace bath tub with shower conversions. Our shower to replace tub options include walk-in shower and standard shower installations."
+    question: "What is the walk in shower installation cost in Chandler AZ?",
+    answer: "Walk in shower installation cost in Chandler AZ varies by scope. Our walk in shower installation services include affordable options. Get your walk in shower installation estimate for transparent pricing and walk in shower installation quote!"
   },
   {
-    question: "How long does walk-in shower remodel take in Chandler AZ?",
-    answer: "Walk-in shower remodels in Chandler AZ typically take 4-7 days. Standard shower to replace tub conversions take 4-5 days. Custom walk-in shower remodels with frameless glass may take 6-7 days. We provide detailed timelines during your free consultation."
+    question: "Do you offer affordable walk in shower installation in Chandler AZ?",
+    answer: "Yes! We offer affordable walk in shower installation in Chandler AZ with flexible financing. Our walk in shower installation services include budget-friendly options. Contact us for walk in shower installation near me Chandler AZ!"
   },
   {
-    question: "Are you leading companies for walk-in shower remodels in Chandler AZ?",
-    answer: "Yes! We're one of the leading companies for walk-in shower remodels in Chandler AZ with 15+ years experience. Our bath to shower remodel services include handicap shower remodel, ADA-compliant designs, and affordable shower to replace tub conversions."
+    question: "Are you professional walk in shower installation contractors in Chandler AZ?",
+    answer: "Yes! We're professional walk in shower installation contractors in Chandler AZ with 15+ years experience. Company walk in shower installation services are fully licensed and insured. Best walk in shower installation near me!"
+  },
+  {
+    question: "What walk in shower installation services do you offer in Chandler AZ?",
+    answer: "Our walk in shower installation services in Chandler AZ include: complete walk in shower installation, barrier-free shower installation, ADA-compliant showers, and custom walk-in shower designs. Walk in shower installation company services available!"
   }
 ];
 
@@ -83,9 +87,9 @@ export default function WalkInShowersPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Walk-In Shower Remodels Chandler AZ"
-          subtitle="Leading Companies for Walk-In Shower Remodels in Chandler AZ"
-          description="Professional walk-in shower remodels, handicap shower remodel, shower to replace tub, bath to shower remodel. Average cost to replace tub with shower includes free estimates!"
+          title="Best Walk In Shower Installation Chandler AZ"
+          subtitle="Professional Walk In Shower Installation Company Chandler AZ"
+          description="Best walk in shower installation Chandler AZ. Affordable walk in shower installation price, professional walk in shower installation contractor. Get your free walk in shower installation quote today!"
           image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

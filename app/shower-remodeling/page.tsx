@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Tile & Glass",
-  description: "Professional shower remodeling Chandler AZ. Tile shower installation cost, luxury shower remodel, shower tile remodel, acrylic shower remodel. Free quotes!",
-  keywords: ["shower remodeling chandler az", "phoenix shower remodel chandler az", "luxury shower remodel chandler az", "small shower remodel chandler az", "acrylic shower remodel chandler az", "shower tile remodel chandler az", "tile shower installation cost chandler az", "shower stall remodeling chandler az", "handicap shower remodel chandler az", "remodel shower kits chandler az", "shower glass replacement chandler az", "shower pan replacement chandler az"],
+  title: "Shower Remodel Chandler AZ | Best Services",
+  description: "Best shower remodel services Chandler AZ. Affordable shower remodel cost, professional shower remodel contractor. Free shower remodel estimate!",
+  keywords: ["shower remodel services Chandler AZ", "shower remodel Chandler AZ", "shower remodel cost Chandler AZ", "shower remodel price Chandler AZ", "shower remodel estimate Chandler AZ", "shower remodel quote Chandler AZ", "shower remodel contractor Chandler AZ", "shower remodel company Chandler AZ", "affordable shower remodel Chandler AZ", "best shower remodel Chandler AZ", "professional shower remodel Chandler AZ", "shower remodel near me Chandler AZ", "hire shower remodel Chandler AZ", "shower remodel installation Chandler AZ"],
   openGraph: {
-    title: "Shower Remodeling Chandler AZ | Tile & Glass",
-    description: "Professional shower remodeling Chandler AZ. Tile shower installation, luxury shower remodel, free quotes!",
+    title: "Shower Remodel Chandler AZ | Best Services",
+    description: "Best shower remodel services Chandler AZ. Affordable shower remodel, free quotes!",
     url: `${siteConfig.url}/shower-remodeling`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ | Tile & Glass",
-    description: "Professional shower remodeling Chandler AZ. Tile shower installation, luxury remodel!",
+    title: "Shower Remodel Chandler AZ | Best Services",
+    description: "Best shower remodel services Chandler AZ. Affordable, professional!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
   alternates: {
@@ -45,28 +45,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What is the tile shower installation cost in Chandler AZ?",
-    answer: "Tile shower installation cost in Chandler AZ ranges from $5,000-$15,000 depending on size and materials. Shower tile remodel with basic tile starts around $5,000, while luxury shower remodel with premium tile and shower glass replacement can exceed $15,000. Free shower remodel estimates available!"
+    question: "What is the shower remodel cost in Chandler AZ?",
+    answer: "Shower remodel cost in Chandler AZ ranges from $5,000-$15,000. Affordable shower remodel starts around $5,000. Best shower remodel with premium features exceeds $15,000. Get your free shower remodel estimate today!"
   },
   {
-    question: "How long does shower remodeling take in Chandler AZ?",
-    answer: "Most shower remodeling in Chandler AZ takes 3-7 days. Small shower remodel or acrylic shower remodel may take 3-4 days, while shower stall remodeling with custom tile and glass takes 5-7 days. We provide detailed timelines during consultation."
+    question: "How do I hire shower remodel contractor in Chandler AZ?",
+    answer: "To hire shower remodel contractor in Chandler AZ, contact us for a free shower remodel quote. Our professional shower remodel services include consultation, design, and installation. We're the best shower remodel company in Chandler AZ."
   },
   {
-    question: "Do you offer handicap shower remodel in Chandler AZ?",
-    answer: "Yes! We specialize in handicap shower remodel and ADA-compliant shower installations. Our barrier-free walk-in shower remodels include grab bars, built-in seating, and slip-resistant flooring for maximum safety and accessibility."
+    question: "What is the shower remodel price in Chandler AZ?",
+    answer: "Shower remodel price in Chandler AZ varies by scope. Affordable shower remodel options available. Get your shower remodel quote for transparent pricing and shower remodel estimate near me Chandler AZ!"
   },
   {
-    question: "What shower replacement services do you offer in Chandler AZ?",
-    answer: "Our shower replacement services include: shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement, shower drain replacement, and complete shower surround replacement. We handle all shower faucet replacement and shower cartridge replacement needs."
+    question: "Do you offer affordable shower remodel in Chandler AZ?",
+    answer: "Yes! We offer affordable shower remodel in Chandler AZ with flexible financing. Our shower remodel services include budget-friendly options. Contact us for shower remodel near me Chandler AZ!"
   },
   {
-    question: "Do you offer shower glass replacement in Chandler AZ?",
-    answer: "Yes! We offer complete shower glass replacement including glass shower door replacement, replacement shower doors glass, frameless glass shower doors, and sliding shower door replacement. Our shower door replacement services include shower door handle replacement and shower door gaskets replacement."
+    question: "Are you professional shower remodel contractors in Chandler AZ?",
+    answer: "Yes! We're professional shower remodel contractors in Chandler AZ with 15+ years experience. Company shower remodel services are fully licensed and insured. Best shower remodel near me!"
   },
   {
-    question: "What remodel shower kits do you install in Chandler AZ?",
-    answer: "We install various remodel shower kits including acrylic shower remodel kits, tile shower remodel kits, and shower tub replacement kits. Our phoenix shower remodel contractors can help you choose the best remodel plate shower options for your bathroom."
+    question: "What shower remodel services do you offer in Chandler AZ?",
+    answer: "Our shower remodel services in Chandler AZ include: complete shower remodel installation, tile shower remodel, custom shower designs, shower remodel contractor services. Shower remodel company services available!"
   }
 ];
 
@@ -87,9 +87,9 @@ export default function ShowerRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Shower Remodeling Chandler AZ | Tile & Glass"
-          subtitle="Luxury Shower Remodel & Tile Shower Installation Chandler AZ"
-          description="Professional shower remodeling Chandler AZ. Tile shower installation, shower tile remodel, luxury shower remodel, acrylic shower remodel, and shower glass replacement. Free estimates!"
+          title="Best Shower Remodel Services Chandler AZ"
+          subtitle="Professional Shower Remodel Contractor Chandler AZ"
+          description="Best shower remodel services Chandler AZ. Affordable shower remodel cost, professional shower remodel installation, shower remodel contractor. Get your free shower remodel estimate today!"
           image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

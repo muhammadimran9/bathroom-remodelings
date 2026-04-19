@@ -9,11 +9,12 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Best Bathroom Remodelers Chandler AZ | About Us",
-  description: "Top rated bathroom remodeling company in Chandler, AZ. 15+ years experience, licensed bathroom contractors, 500+ projects. Trusted bathroom remodelers!",
+  title: "Bathroom Renovation Contractor Chandler AZ | Best",
+  description: "Best bathroom renovation contractor Chandler AZ. Professional bathroom renovation services, affordable bathroom renovation cost. 15+ years experience!",
+  keywords: ["bathroom renovation Chandler AZ", "bathroom renovation contractor Chandler AZ", "bathroom renovation cost Chandler AZ", "bathroom renovation price Chandler AZ", "bathroom renovation near me Chandler AZ", "bathroom renovation professional Chandler AZ", "bathroom renovation hire Chandler AZ", "bathroom renovation company Chandler AZ", "bathroom renovation services Chandler AZ", "best bathroom renovation Chandler AZ", "bathroom renovation quote Chandler AZ", "bathroom renovation estimate Chandler AZ"],
   openGraph: {
-    title: "Best Bathroom Remodelers Chandler AZ | About Us",
-    description: "Top rated bathroom remodeling company in Chandler, AZ. Licensed bathroom contractors.",
+    title: "Bathroom Renovation Contractor Chandler AZ | Best",
+    description: "Best bathroom renovation contractor Chandler AZ. Professional bathroom renovation!",
     url: `${siteConfig.url}/about`,
     type: "website",
     images: [
@@ -27,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Bathroom Remodelers Chandler AZ | About Us",
-    description: "Top rated bathroom remodeling company in Chandler, AZ. Licensed contractors!",
+    title: "Bathroom Renovation Contractor Chandler AZ | Best",
+    description: "Best bathroom renovation contractor Chandler AZ. Professional, affordable!",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
@@ -68,20 +69,20 @@ const milestones = [
 
 const aboutFaqs = [
   {
-    question: "How long has Chandler Bathroom Remodeling been in business?",
-    answer: "We have been serving Chandler, Arizona and surrounding areas for over 15 years, completing more than 500 bathroom remodeling projects with a 100% satisfaction rate."
+    question: "Are you the best bathroom renovation contractor in Chandler AZ?",
+    answer: "Yes! We're the best bathroom renovation contractor in Chandler AZ with 15+ years experience. Our professional bathroom renovation services have completed 500+ projects with 100% satisfaction rate. Bathroom renovation company near me!"
   },
   {
-    question: "Are you licensed and insured in Arizona?",
-    answer: "Yes! Chandler Bathroom Remodeling is fully licensed (ROC #123456), bonded, and insured for residential remodeling in Arizona. We carry comprehensive liability and workers' compensation insurance for your protection."
+    question: "What is the bathroom renovation cost in Chandler AZ?",
+    answer: "Bathroom renovation cost in Chandler AZ varies by scope. Our affordable bathroom renovation services include transparent pricing. Get your free bathroom renovation quote and bathroom renovation estimate today!"
   },
   {
-    question: "What areas do you serve in Arizona?",
-    answer: "We primarily serve Chandler, Arizona and nearby East Valley communities including Sun Lakes, Ahwatukee, Tempe, Mesa, and South Phoenix. Contact us to confirm service availability in your area."
+    question: "Do you offer professional bathroom renovation services in Chandler AZ?",
+    answer: "Yes! We offer professional bathroom renovation services in Chandler AZ. Hire bathroom renovation contractor for licensed and insured services. Bathroom renovation near me Chandler AZ with flexible financing!"
   },
   {
-    question: "Do you offer free consultations and estimates?",
-    answer: "Yes! We provide complimentary in-home consultations where our design experts assess your space, discuss your vision, and provide detailed estimates with transparent pricing and no hidden fees."
+    question: "How do I hire bathroom renovation contractor in Chandler AZ?",
+    answer: "To hire bathroom renovation contractor in Chandler AZ, contact us for free bathroom renovation estimate. Our bathroom renovation company services include consultation, design, and installation. Best bathroom renovation near me!"
   }
 ];
 
@@ -105,11 +106,11 @@ export default function AboutPage() {
                 Our Story
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Best Bathroom Remodeling Company Chandler AZ
+                Best Bathroom Renovation Contractor Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                For over 15 years, we have been the #1 bathroom remodeling service in Chandler, transforming bathrooms with 
-                exceptional craftsmanship. Trusted bathroom remodelers serving Chandler, Arizona and surrounding areas.
+                For over 15 years, we have been the best bathroom renovation contractor in Chandler AZ. Professional bathroom 
+                renovation services with affordable bathroom renovation cost. Hire bathroom renovation contractor near me today!
               </p>
             </div>
           </div>

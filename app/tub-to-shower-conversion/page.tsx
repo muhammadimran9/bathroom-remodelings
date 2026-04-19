@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler AZ | Expert Install",
-  description: "Professional tub to shower conversion in Chandler, Arizona. Convert your bathtub to a modern walk-in shower. Licensed contractors, free estimates.",
-  keywords: ["tub to shower conversion chandler az", "bathtub to shower conversion", "convert tub to walk-in shower", "tub removal shower install", "bathroom conversion chandler"],
+  title: "Tub to Shower Conversion Chandler AZ | Best Price",
+  description: "Best tub to shower conversion Chandler AZ. Affordable bathtub to shower conversion cost, professional installation. Free tub to shower conversion quote!",
+  keywords: ["tub to shower conversion Chandler AZ", "tub to shower conversion price Chandler AZ", "tub to shower conversion cost Chandler AZ", "best tub to shower conversion Chandler AZ", "affordable tub to shower conversion Chandler AZ", "tub to shower conversion quote Chandler AZ", "tub to shower conversion estimate Chandler AZ", "tub to shower conversion contractor Chandler AZ", "bathtub to shower conversion cost Chandler AZ", "bathtub to shower conversion price Chandler AZ", "bathtub to shower conversion professional Chandler AZ", "hire tub to shower conversion Chandler AZ"],
   openGraph: {
-    title: "Tub to Shower Conversion Chandler AZ | Expert Install",
-    description: "Professional tub to shower conversion in Chandler. Convert your bathtub to a modern walk-in shower.",
+    title: "Tub to Shower Conversion Chandler AZ | Best Price",
+    description: "Best tub to shower conversion Chandler AZ. Affordable bathtub to shower conversion cost!",
     url: `${siteConfig.url}/tub-to-shower-conversion`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub to Shower Conversion Chandler AZ | Expert Install",
-    description: "Professional tub to shower conversion in Chandler. Convert your bathtub to a modern walk-in shower.",
+    title: "Tub to Shower Conversion Chandler AZ | Best Price",
+    description: "Best tub to shower conversion Chandler AZ. Affordable bathtub to shower conversion!",
     images: [`${siteConfig.url}/images/tub-to-shower-hero.jpg`],
   },
   alternates: {
@@ -45,20 +45,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "How much does tub to shower conversion cost in Chandler?",
-    answer: "Tub to shower conversion in Chandler typically costs $5,000-$15,000 depending on shower size, materials, and features. Basic conversions start around $5,000, while custom walk-in showers with frameless glass can exceed $15,000. We provide free in-home estimates."
+    question: "What is the tub to shower conversion cost in Chandler AZ?",
+    answer: "Tub to shower conversion cost in Chandler AZ ranges from $5,000-$15,000. Affordable tub to shower conversion starts around $5,000, while best tub to shower conversion with custom features exceeds $15,000. Get your free tub to shower conversion quote today!"
   },
   {
-    question: "How long does a tub to shower conversion take?",
-    answer: "Most tub to shower conversions are completed in 3-7 days. Simple conversions with prefab units take 3-4 days, while custom tile showers with glass enclosures may take 5-7 days. We provide a detailed timeline during consultation."
+    question: "How do I hire tub to shower conversion contractor in Chandler AZ?",
+    answer: "To hire tub to shower conversion contractor in Chandler AZ, contact us for a free tub to shower conversion estimate. Our professional tub to shower conversion services include consultation, design, and installation. We're the best tub to shower conversion company in Chandler AZ."
   },
   {
-    question: "Will converting my tub to a shower affect home value?",
-    answer: "In most cases, tub to shower conversions increase home value, especially in master bathrooms. However, we recommend keeping at least one bathtub in the home for families with young children and resale considerations."
+    question: "What is bathtub to shower conversion price in Chandler AZ?",
+    answer: "Bathtub to shower conversion price in Chandler AZ varies by scope. Affordable bathtub to shower conversion starts at $5,000. Our bathtub to shower conversion services include professional installation and free bathtub to shower conversion estimate."
   },
   {
-    question: "Can you convert any bathtub to a shower?",
-    answer: "Yes! We can convert alcove tubs, freestanding tubs, and corner tubs to showers. Our team handles all plumbing modifications, drainage adjustments, and waterproofing required for a successful conversion."
+    question: "Do you offer affordable tub to shower conversion in Chandler AZ?",
+    answer: "Yes! We offer affordable tub to shower conversion in Chandler AZ with flexible financing. Our tub to shower conversion services include budget-friendly options. Get your tub to shower conversion quote for transparent pricing!"
+  },
+  {
+    question: "Are you professional bathtub to shower conversion contractors in Chandler AZ?",
+    answer: "Yes! We're professional bathtub to shower conversion contractors in Chandler AZ with 15+ years experience. Our bathtub to shower conversion installation services are fully licensed and insured. Contact us for bathtub to shower conversion near me!"
+  },
+  {
+    question: "What tub to shower conversion services do you offer in Chandler AZ?",
+    answer: "Our tub to shower conversion services in Chandler AZ include: complete tub to shower conversion, bathtub to shower conversion installation, walk-in shower conversion, and tub removal. Company tub to shower conversion services available!"
   }
 ];
 
@@ -79,9 +87,9 @@ export default function TubToShowerConversionPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Tub to Shower Conversion in Chandler, Arizona"
-          subtitle="Expert Bathtub to Shower Conversion in Chandler AZ"
-          description="Transform your unused bathtub into a spacious, modern walk-in shower with professional conversion services."
+          title="Best Tub to Shower Conversion Chandler AZ"
+          subtitle="Affordable Bathtub to Shower Conversion Cost Chandler AZ"
+          description="Professional tub to shower conversion Chandler AZ. Best tub to shower conversion price, affordable bathtub to shower conversion, free tub to shower conversion estimate. Hire tub to shower conversion contractor today!"
           image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
