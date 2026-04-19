@@ -31,9 +31,8 @@ const nextConfig = {
   // Compression
   compress: true,
 
-  // Powering with React Compiler (enabled in React 19)
+  // Performance optimizations for Next.js 16+
   experimental: {
-    reactCompiler: true,
     optimizePackageImports: ['@/components/ui', '@/lib'],
   },
 
@@ -93,21 +92,11 @@ const nextConfig = {
     };
   },
 
-  // Webpack optimization
-  webpack: (config, { dev }) => {
-    config.optimization = {
-      ...config.optimization,
-      usedExports: true,
-      sideEffects: false,
-    };
-    return config;
-  },
-
   // Production optimizations
   productionBrowserSourceMaps: false,
 
-  // Swc minification
-  swcMinify: true,
+  // Turbopack configuration for Next.js 16
+  turbopack: {}
 
   // Page extensions
   pageExtensions: ['ts', 'tsx'],
