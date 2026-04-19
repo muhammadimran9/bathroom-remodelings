@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomServices } from "@/lib/bathroom-services";
@@ -47,15 +48,15 @@ export function Header() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col hover:scale-102 transition-transform duration-200">
-              <span className="font-serif text-2xl lg:text-3xl font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Chandler
-              </span>
-              <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground -mt-1">
-                Bathroom Remodeling
-              </span>
-            </div>
+          <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg"
+              alt="ARZ Home Remodeling"
+              width={280}
+              height={80}
+              priority
+              className="h-16 lg:h-20 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
