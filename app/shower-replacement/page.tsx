@@ -15,12 +15,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Shower Replacement Chandler AZ | Fast Installation",
-  description: "Professional shower replacement services in Chandler, Arizona. Quick installation, modern designs, and quality materials. Free estimates available today.",
-  keywords: ["shower replacement chandler az", "replace old shower", "new shower installation", "shower upgrade chandler", "bathroom shower replacement"],
+  title: "Shower Replacement Chandler AZ | Parts & Install",
+  description: "Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement. Free quotes!",
+  keywords: ["shower replacement chandler az", "shower valve replacement chandler az", "shower handle replacement chandler az", "shower door replacement chandler az", "shower pan replacement chandler az", "shower drain replacement chandler az", "shower cartridge replacement chandler az", "shower faucet replacement chandler az", "glass shower door replacement cost chandler az", "shower surround replacement chandler az", "shower stall replacement contractors chandler az", "mobile home shower replacement chandler az"],
   openGraph: {
-    title: "Shower Replacement Chandler AZ | Fast Installation",
-    description: "Professional shower replacement in Chandler with quick installation and modern designs.",
+    title: "Shower Replacement Chandler AZ | Parts & Install",
+    description: "Professional shower replacement Chandler AZ. Valve, handle, door, pan replacement. Free quotes!",
     url: `${siteConfig.url}/shower-replacement`,
     type: "website",
     images: [
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Replacement Chandler AZ | Fast Installation",
-    description: "Professional shower replacement in Chandler with quick installation and modern designs.",
+    title: "Shower Replacement Chandler AZ | Parts & Install",
+    description: "Professional shower replacement Chandler AZ. Valve, handle, door replacement!",
     images: [`${siteConfig.url}/images/shower-replacement-hero.jpg`],
   },
   alternates: {
@@ -45,20 +45,28 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "How much does shower replacement cost in Chandler?",
-    answer: "Shower replacement in Chandler typically costs $3,000-$10,000 depending on scope, materials, and features. Basic shower replacements start around $3,000, while complete custom replacements with premium tile and glass can exceed $10,000. We provide free estimates."
+    question: "What shower replacement services do you offer in Chandler AZ?",
+    answer: "Our shower replacement services in Chandler AZ include: shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement, shower drain replacement, shower cartridge replacement, shower faucet replacement, shower surround replacement, and complete shower stall replacement. We're your local shower replacement contractors!"
   },
   {
-    question: "How long does shower replacement take?",
-    answer: "Most shower replacements in Chandler are completed in 2-5 days. Simple replacements with prefab units take 2-3 days, while custom tile showers may take 4-5 days. We work efficiently to minimize disruption to your daily routine."
+    question: "How much does shower valve replacement cost in Chandler AZ?",
+    answer: "Shower valve replacement cost in Chandler AZ ranges from $150-$500 depending on valve type. We handle Delta shower valve replacement, Moen shower valve replacement, Kohler shower cartridge replacement, and all major brands. Shower mixing valve replacement and shower cartridge replacement cost varies by complexity."
   },
   {
-    question: "When should I replace my shower?",
-    answer: "Consider shower replacement if you notice persistent leaks, cracked tiles, mold growth, outdated appearance, or if your shower is over 15-20 years old. We offer free assessments to help determine if replacement is right for you."
+    question: "Do you offer shower door replacement in Chandler AZ?",
+    answer: "Yes! We offer complete shower door replacement including glass shower door replacement, replacement shower doors glass, frameless glass options, sliding shower door replacement, and shower door handle replacement. Glass shower door replacement cost includes installation."
   },
   {
-    question: "Do you handle all plumbing for shower replacement?",
-    answer: "Yes! Our team handles all plumbing work including valve replacement, drainage updates, and water line modifications. We ensure your new shower has proper water pressure and drainage."
+    question: "What shower pan replacement options are available in Chandler AZ?",
+    answer: "Our shower pan replacement services include: bathtub replacement shower pan, shower pan for tile installation, shower pans to replace bathtub, and cost of shower pan replacement. We handle complete shower pan replacement for bathtub conversions."
+  },
+  {
+    question: "Do you offer shower handle and faucet replacement in Chandler AZ?",
+    answer: "Yes! We specialize in shower handle replacement including Moen shower handle replacement, Delta shower handle replacement, Kohler shower handle replacement, and shower faucet replacement parts. Our services include shower single handle replacement and 3 handle shower faucet replacement."
+  },
+  {
+    question: "What is the shower drain replacement cost in Chandler AZ?",
+    answer: "Shower drain replacement cost varies by type. We offer shower drain replacement kit installation, shower drain cover replacement, and complete shower drain replacement. Our services include replace shower drain cover and shower drain replacement cover installation."
   }
 ];
 
@@ -79,9 +87,9 @@ export default function ShowerReplacementPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Shower Replacement in Chandler, Arizona"
-          subtitle="Professional Shower Replacement Services in Chandler AZ"
-          description="Replace your old, worn-out shower with a modern, efficient design featuring quality materials and expert installation."
+          title="Shower Replacement Chandler AZ | All Parts"
+          subtitle="Shower Valve, Handle, Door & Pan Replacement Chandler AZ"
+          description="Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement, shower drain replacement. Free estimates!"
           image="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1600&auto=format&fit=crop&fm=webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
