@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Image Optimization
+  // Image Optimization - Critical for LCP
   images: {
     remotePatterns: [
       {
@@ -18,12 +18,14 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Performance: Enable SWR caching
+  // Performance: Enable SWR caching with aggressive buffering
   onDemandEntries: {
-    maxInactiveAge: 60 * 60 * 1000,
-    pagesBufferLength: 5,
+    maxInactiveAge: 120 * 60 * 1000,
+    pagesBufferLength: 8,
   },
 
   // Compression
@@ -32,9 +34,10 @@ const nextConfig = {
   // Powering with React Compiler (enabled in React 19)
   experimental: {
     reactCompiler: true,
+    optimizePackageImports: ['@/components/ui', '@/lib'],
   },
 
-  // Headers for caching
+  // Headers for aggressive caching and performance
   async headers() {
     return [
       {
@@ -47,11 +50,29 @@ const nextConfig = {
         ],
       },
       {
-        source: '/:path*',
+        source: '/_next/static/:path*',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600, s-maxage=86400',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/fonts/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/((?!api|admin|_next/static|_next/image).*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, s-maxage=86400, stale-while-revalidate=604800',
           },
         ],
       },

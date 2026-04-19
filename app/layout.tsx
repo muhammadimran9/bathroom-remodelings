@@ -79,16 +79,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
-        {/* Critical performance optimizations */}
-        <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="dns-prefetch" href="//images.unsplash.com" />
+        {/* Critical performance optimizations - Resource Hints */}
+        <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         
-        {/* Preload critical assets */}
-        <link rel="preload" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp" as="image" type="image/webp" />
+        {/* Preload critical LCP image with fetchpriority */}
+        <link rel="preload" fetchPriority="high" href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp" as="image" type="image/webp" />
+        <link rel="preload" fetchPriority="high" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg" as="image" type="image/jpeg" />
         
         {/* Canonical URL */}
         <link rel="canonical" href={siteConfig.url} />
@@ -177,7 +177,8 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-background text-foreground" suppressHydrationWarning>
         {children}
       </body>
-      <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
+      {/* Defer Vercel analytics - not critical for rendering */}
+      <Script src="/_vercel/insights/script.js" strategy="lazyOnload" />
     </html>
   )
 }

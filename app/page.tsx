@@ -1,10 +1,21 @@
 import dynamic from "next/dynamic";
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
 import TrustBadges from "@/components/home/trust-badges";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Best Bathroom Remodeling Contractors Chandler AZ | Free Quote",
+  description: "Professional bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel services, licensed & insured. Get your free bathroom remodel estimate today!",
+  openGraph: {
+    title: "Best Bathroom Remodeling Contractors Chandler AZ",
+    description: "Professional bathroom remodeling contractors Chandler AZ. Free bathroom remodel quote!",
+    type: "website",
+  },
+};
 
 // Lazy load below-the-fold components for better code splitting
 const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { 
