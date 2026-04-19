@@ -2,6 +2,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Critical CSS - Inline above the fold */
+@font-face {
+  font-family: 'system-ui';
+  font-display: swap;
+  src: system-ui;
+}
+
 :root {
   /* Luxury Remodeling Color Palette */
   --background: oklch(0.97 0.005 85); /* Warm off-white */

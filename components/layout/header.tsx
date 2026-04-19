@@ -47,11 +47,11 @@ export function Header() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200">
+          {/* Logo - Accessible */}
+          <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg"
-              alt="ARZ Home Remodeling"
+              alt="ARZ Home Remodeling Logo"
               width={280}
               height={80}
               priority
@@ -65,7 +65,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
               >
                 {item.name}
               </Link>
@@ -144,7 +144,7 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium py-2 border-b border-border text-foreground"
+                  className="text-lg font-medium py-2 border-b border-border text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 block rounded px-2"
                 >
                   {item.name}
                 </Link>
@@ -190,12 +190,13 @@ export function Header() {
       )}
     </header>
 
-    {/* Mobile Sticky Call Button */}
+    {/* Mobile Sticky Call Button - Accessible */}
     <a
       href={`tel:${siteConfig.phone}`}
-      className="lg:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full shadow-2xl active:scale-95 transition-transform duration-200 animate-in slide-in-from-bottom-4"
+      className="lg:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full shadow-2xl active:scale-95 transition-transform duration-200 animate-in slide-in-from-bottom-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      aria-label={`Call us at ${siteConfig.phone}`}
     >
-      <Phone className="w-5 h-5" />
+      <Phone className="w-5 h-5" aria-hidden="true" />
       Call Now
     </a>
     </>

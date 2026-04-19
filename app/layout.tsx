@@ -3,6 +3,15 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
+// Preload critical fonts
+const geistSans = `
+@font-face {
+  font-family: 'system-ui';
+  font-weight: 400;
+  font-style: normal;
+}
+`
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -72,12 +81,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preload critical fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        {/* DNS Prefetch for external resources */}
+        {/* Critical performance optimizations */}
+        <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="//images.unsplash.com" />
+        
+        {/* Preload critical assets */}
+        <link rel="preload" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp" as="image" type="image/webp" />
         
         {/* Canonical URL */}
         <link rel="canonical" href={siteConfig.url} />
