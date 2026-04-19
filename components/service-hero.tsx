@@ -55,7 +55,7 @@ export default function ServiceHero({
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black"
+              className="border-white bg-white text-primary hover:bg-white/90 hover:text-primary"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />

@@ -8,13 +8,14 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
 import { InfoHeader } from "@/components/layout/info-header";
 
+// Show only first 6 services in header dropdown
+const headerServices = bathroomServices.slice(0, 6);
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
-
-  const servicesMenu = bathroomServices; // show all new services
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,8 +85,8 @@ export function Header() {
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-card rounded-lg shadow-xl border border-border p-1 opacity-100 animate-in fade-in slide-in-from-top-2 duration-200">
-                  {servicesMenu.map((service) => (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-card rounded-lg shadow-xl border border-border p-1 opacity-100 animate-in fade-in slide-in-from-top-2 duration-200">
+                  {headerServices.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
@@ -95,6 +96,15 @@ export function Header() {
                       {service.name}
                     </Link>
                   ))}
+                  <div className="border-t border-border mt-1 pt-1">
+                    <Link
+                      href="/services"
+                      onClick={() => setIsServicesOpen(false)}
+                      className="block px-4 py-2.5 rounded-md bg-primary/5 hover:bg-primary/10 transition-all duration-200 text-sm font-semibold text-primary"
+                    >
+                      See All Services
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -142,7 +152,7 @@ export function Header() {
               <div className="py-2 border-b border-border">
                 <span className="text-lg font-medium text-foreground">Services</span>
                 <div className="mt-3 space-y-3 pl-4">
-                  {servicesMenu.map((service) => (
+                  {headerServices.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
@@ -152,6 +162,13 @@ export function Header() {
                       {service.name}
                     </Link>
                   ))}
+                  <Link
+                    href="/services"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block py-1 font-semibold text-primary hover:text-primary/80 transition-colors"
+                  >
+                    See All Services
+                  </Link>
                 </div>
               </div>
               <div className="mt-6 space-y-4">
