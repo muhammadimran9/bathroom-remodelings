@@ -1,4 +1,4 @@
-import { ShowerHead, Bath, Lightbulb, LucideIcon, Droplets, Sparkles, ArrowUpDown, Accessibility } from "lucide-react";
+import { ShowerHead, Bath, Lightbulb, LucideIcon, Droplets, Sparkles, ArrowUpDown, Accessibility, DoorOpen, RefreshCw, ArrowRightLeft, Trash2, TrendingUp, LayoutGrid } from "lucide-react";
 
 export type BathroomService = {
   name: string;
@@ -21,6 +21,48 @@ export const bathroomServices: BathroomService[] = [
     description:
       "Professional bathtub remodeling and replacement services for ultimate comfort and relaxation.",
     icon: Bath,
+  },
+  {
+    name: "Walk-In Showers",
+    href: "/walk-in-showers",
+    description:
+      "Barrier-free walk-in shower installation with frameless glass and ADA-compliant options.",
+    icon: DoorOpen,
+  },
+  {
+    name: "Shower Replacement",
+    href: "/shower-replacement",
+    description:
+      "Fast, professional shower replacement services with modern designs and quality materials.",
+    icon: RefreshCw,
+  },
+  {
+    name: "Tub to Shower Conversion",
+    href: "/tub-to-shower-conversion",
+    description:
+      "Convert your unused bathtub into a spacious, modern walk-in shower.",
+    icon: ArrowRightLeft,
+  },
+  {
+    name: "Tub Removal",
+    href: "/tub-removal",
+    description:
+      "Professional bathtub removal with proper plumbing disconnection and floor preparation.",
+    icon: Trash2,
+  },
+  {
+    name: "Shower & Bathtub Upgrade",
+    href: "/shower-bathtub-upgrade",
+    description:
+      "Upgrade your shower and bathtub with modern fixtures, fresh tile, and premium materials.",
+    icon: TrendingUp,
+  },
+  {
+    name: "Cabinet & Countertop Installation",
+    href: "/cabinet-countertop-installation",
+    description:
+      "Custom cabinet and countertop installation with granite, quartz, and marble options.",
+    icon: LayoutGrid,
   },
   {
     name: "Bathroom Vanity Installation",

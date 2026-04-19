@@ -15,8 +15,8 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Vanity Installation Chandler AZ",
-  description: "Professional bathroom vanity installation in Chandler, Arizona. Custom designs, expert installation and coordinated fixtures for your bathroom.",
+  title: "Bathroom Vanity Installation Chandler AZ | Pro",
+  description: "Professional bathroom vanity installation in Chandler, AZ. Custom designs, expert installation, and coordinated fixtures. Free quotes!",
   keywords: ["vanity installation chandler", "bathroom vanity replacement", "double sink vanity", "custom vanity installation"],
   openGraph: {
     title: "Bathroom Vanity Installation Chandler AZ",

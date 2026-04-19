@@ -15,8 +15,8 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Small Bathroom Remodeling Chandler AZ",
-  description: "Professional small bathroom remodeling in Chandler, Arizona. Space-saving designs, storage solutions and modern fixtures.",
+  title: "Small Bathroom Remodeling Chandler AZ | Expert",
+  description: "Professional small bathroom remodeling in Chandler, AZ. Space-saving designs, storage solutions, and modern fixtures. Free estimates!",
   keywords: ["small bathroom remodeling chandler", "space-saving bathroom design", "small bathroom ideas", "bathroom storage solutions"],
   openGraph: {
     title: "Small Bathroom Remodeling Chandler AZ",

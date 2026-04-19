@@ -16,7 +16,7 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title: "Bathroom Accessibility Remodeling Chandler AZ",
-  description: "Professional bathroom accessibility remodeling in Chandler, Arizona. ADA compliant bathrooms, grab bars, walk-in showers and aging solutions.",
+  description: "ADA compliant bathroom accessibility remodeling in Chandler, AZ. Grab bars, walk-in showers, and aging in place solutions. Free quotes!",
   keywords: ["bathroom accessibility chandler", "ADA compliant bathrooms", "walk-in tub installation", "grab bar installation", "accessible bathrooms"],
   openGraph: {
     title: "Bathroom Accessibility Remodeling Chandler AZ",
