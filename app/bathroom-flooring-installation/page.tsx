@@ -15,8 +15,8 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Flooring Installation Chandler AZ",
-  description: "Professional bathroom flooring installation in Chandler, Arizona. Waterproof tile, luxury vinyl, stone flooring and expert installation.",
+  title: "Bathroom Flooring Installation Chandler AZ | Pro",
+  description: "Professional bathroom flooring installation in Chandler, AZ. Waterproof tile, luxury vinyl, and stone flooring with expert installation.",
   keywords: ["bathroom flooring chandler", "waterproof flooring installation", "bathroom tile flooring", "luxury vinyl bathrooms", "stone flooring"],
   openGraph: {
     title: "Bathroom Flooring Installation Chandler AZ",

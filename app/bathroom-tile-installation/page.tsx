@@ -15,8 +15,8 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Bathroom Tile Installation Chandler AZ",
-  description: "Professional bathroom tile installation in Chandler, Arizona. Shower tile, floor tile, backsplash installation with waterproofing.",
+  title: "Bathroom Tile Installation Chandler AZ | Expert",
+  description: "Professional bathroom tile installation in Chandler, AZ. Shower tile, floor tile, and backsplash with waterproofing. Free estimates available!",
   keywords: ["bathroom tile installation chandler az", "shower tile installation chandler", "bathroom floor tile", "tile contractors chandler", "bathroom backsplash installation", "waterproof tile installation"],
   openGraph: {
     title: "Bathroom Tile Installation Chandler AZ",

@@ -3,8 +3,8 @@ import { siteConfig } from "@/lib/site-config"
 import BlogContent from "./blog-content"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Blog - Tips & Ideas",
-  description: "Expert bathroom remodeling tips, design trends, and ideas from Chandler, Arizona's top contractors. Learn about costs and materials.",
+  title: "Bathroom Remodeling Blog Chandler AZ | Tips",
+  description: "Expert bathroom remodeling tips, design trends, and ideas from Chandler, AZ contractors. Learn about costs, materials, and more!",
   openGraph: {
     title: "Bathroom Remodeling Blog - Tips & Ideas",
     description: "Discover expert bathroom remodeling tips and design inspiration from Chandler's experienced contractors.",
