@@ -10,7 +10,6 @@ import Benefits from "@/components/benefits";
 import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 
@@ -219,34 +218,6 @@ export default function ShowerRemodelingPage() {
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Service Area Map for Shower Remodeling in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We serve homeowners across Chandler, Arizona with fast scheduling, reliable communication, and
-                clean job sites. View our primary service area below and call if you need shower remodeling nearby.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and nearby neighborhoods</li>
-                <li>• Local crews familiar with East Valley homes</li>
-                <li>• Same-week consultations when available</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Shower Remodeling in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
 
         <ServiceCTA 
           title="Need fast shower remodeling in Chandler, AZ?" 
