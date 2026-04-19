@@ -108,11 +108,11 @@ export default function FinancingPage() {
                 Financing Options
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Make Your Dream Remodel Affordable
+                Affordable Bathroom Remodeling Financing
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Don&apos;t let budget constraints hold you back. We offer flexible financing options to help 
-                you achieve the bathroom of your dreams with payments that fit your lifestyle.
+                Don&apos;t let budget constraints hold you back. Get affordable bathroom remodeling with flexible 
+                financing options. Low monthly payments and 0% APR available for Chandler homeowners.
               </p>
               <div className="mt-8">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">

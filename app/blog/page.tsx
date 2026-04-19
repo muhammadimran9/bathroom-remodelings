@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   title: "Bathroom Remodeling Blog Chandler AZ | Tips",
   description: "Expert bathroom remodeling tips, design trends, and ideas from Chandler, AZ contractors. Learn about costs, materials, and more!",
   openGraph: {
-    title: "Bathroom Remodeling Blog - Tips & Ideas",
-    description: "Discover expert bathroom remodeling tips and design inspiration from Chandler's experienced contractors.",
+    title: "Bathroom Remodeling Blog Chandler AZ | Tips",
+    description: "Expert bathroom remodeling tips and design ideas from Chandler, AZ contractors.",
     url: `${siteConfig.url}/blog`,
     type: "website",
     images: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Blog - Tips & Ideas",
-    description: "Expert bathroom remodeling tips and design ideas from Chandler's top contractors.",
+    title: "Bathroom Remodeling Blog Chandler AZ | Tips",
+    description: "Bathroom remodeling tips and ideas from Chandler, AZ contractors.",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
