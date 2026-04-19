@@ -46,7 +46,7 @@ export default function AboutPreview() {
                 alt="Chandler Bathroom Remodeling team at work - best bathroom remodel company near me"
                 fill
                 className="object-cover"
-                quality={70}
+                quality={75}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Video Play Button Overlay */}
