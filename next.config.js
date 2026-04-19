@@ -96,7 +96,7 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
 
   // Turbopack configuration for Next.js 16
-  turbopack: {}
+  turbopack: {},
 
   // Page extensions
   pageExtensions: ['ts', 'tsx'],
