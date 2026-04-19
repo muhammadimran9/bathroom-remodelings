@@ -8,11 +8,11 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Contact ARZ Home Remodeling - Free Quote",
-  description: "Contact ARZ Home Remodeling for a free bathroom and kitchen remodeling estimate in Chandler, Arizona. Call (480) 555-0123.",
+  title: "Bathroom Remodel Quote Chandler AZ | Free Est",
+  description: "Get a free bathroom remodel estimate in Chandler, AZ. Hire bathroom remodeler today! Affordable bathroom remodeling, fast quotes. Call now!",
   openGraph: {
-    title: "Contact ARZ Home Remodeling - Free Quote",
-    description: "Get your free bathroom and kitchen remodeling quote today in Chandler, Arizona.",
+    title: "Bathroom Remodel Quote Chandler AZ | Free Estimate",
+    description: "Get a free bathroom remodel estimate in Chandler, AZ. Affordable bathroom remodeling!",
     url: `${siteConfig.url}/contact`,
     type: "website",
     images: [
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact ARZ Home Remodeling - Free Quote",
-    description: "Get your free quote for bathroom and kitchen remodeling in Chandler, Arizona today.",
+    title: "Bathroom Remodel Quote Chandler AZ | Free Estimate",
+    description: "Get free bathroom remodel estimate in Chandler, AZ. Affordable pricing, fast quotes!",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
@@ -74,11 +74,11 @@ export default function ContactPage() {
                 Get In Touch
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Contact ARZ Home Remodeling - Free Estimates Chandler AZ
+                Get Free Bathroom Remodel Quote Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready to transform your home? Contact our expert remodeling contractors in Chandler, Arizona 
-                for a free consultation. We specialize in bathroom and kitchen remodeling with financing options available.
+                Ready to hire a bathroom remodeler in Chandler? Contact our licensed bathroom contractors for a free 
+                bathroom remodel estimate. Affordable bathroom remodeling with flexible financing options available.
               </p>
             </div>
           </div>

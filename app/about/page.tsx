@@ -9,11 +9,11 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "About ARZ Home Remodeling - Chandler Experts",
-  description: "Meet ARZ Home Remodeling. 15+ years experience serving Chandler, Arizona with expert bathroom and kitchen renovations. Family-owned, licensed, and insured.",
+  title: "Best Bathroom Remodelers Chandler AZ | About Us",
+  description: "Top rated bathroom remodeling company in Chandler, AZ. 15+ years experience, licensed bathroom contractors, 500+ projects. Trusted bathroom remodelers!",
   openGraph: {
-    title: "About ARZ Home Remodeling - Chandler Experts",
-    description: "15+ years experience serving Chandler, Arizona with expert bathroom and kitchen renovations.",
+    title: "Best Bathroom Remodelers Chandler AZ | About Us",
+    description: "Top rated bathroom remodeling company in Chandler, AZ. Licensed bathroom contractors.",
     url: `${siteConfig.url}/about`,
     type: "website",
     images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About ARZ Home Remodeling - Chandler Experts",
-    description: "15+ years experience serving Chandler with expert bathroom and kitchen renovations.",
+    title: "Best Bathroom Remodelers Chandler AZ | About Us",
+    description: "Top rated bathroom remodeling company in Chandler, AZ. Licensed contractors!",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
@@ -105,11 +105,11 @@ export default function AboutPage() {
                 Our Story
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Our Story: About Chandler Bathroom Remodeling
+                Best Bathroom Remodeling Company Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                For over 15 years, we have been transforming bathrooms across 
-                Chandler, Arizona with exceptional craftsmanship and personalized service. We are the best bathroom remodel company near me.
+                For over 15 years, we have been the #1 bathroom remodeling service in Chandler, transforming bathrooms with 
+                exceptional craftsmanship. Trusted bathroom remodelers serving Chandler, Arizona and surrounding areas.
               </p>
             </div>
           </div>
@@ -160,16 +160,14 @@ export default function AboutPage() {
                   Building Dream Spaces Since 2010
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  Chandler Bathroom Remodeling was founded with a simple mission: to help homeowners 
-                  in Chandler, Arizona create beautiful, functional spaces they love. What 
-                  started as a small family business has grown into the region&apos;s most 
-                  trusted remodeling company - the best bathroom remodelers near me.
+                  ARZ Home Remodeling was founded as the premier bathroom remodeling company in Chandler, Arizona. 
+                  We help homeowners create beautiful, functional bathrooms they love. What started as a small 
+                  family business has grown into Chandler&apos;s most trusted bathroom renovation company with 500+ completed projects.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  Our team of skilled craftsmen combines traditional techniques with modern 
-                  innovation to deliver exceptional results on every project. We believe 
-                  that your home should reflect your style and meet your needs, which is 
-                  why we take a personalized approach to every remodel.
+                  Our experienced bathroom remodelers combine traditional techniques with modern 
+                  innovation to deliver exceptional results. As licensed bathroom contractors in Chandler, AZ, 
+                  we take a personalized approach to every bathroom remodel, ensuring premium quality and customer satisfaction.
                 </p>
                 <ul className="mt-6 space-y-3">
                   {["Family-owned and operated", "Local Chandler, AZ business", "Experienced design team", "Premium materials only"].map((item) => (

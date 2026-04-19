@@ -6,10 +6,10 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom & Kitchen Remodeling Chandler AZ`,
+    default: `Bathroom Remodeling Chandler AZ | #1 Contractors`,
     template: `%s | ARZ Home Remodeling`
   },
-  description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Licensed contractors with 15+ years experience. Free estimates available.',
+  description: 'Top rated bathroom remodeling contractors in Chandler, AZ. Licensed bathroom remodelers with 15+ years experience. Free bathroom remodel estimates!',
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom & Kitchen Remodeling Chandler AZ`,
-    description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Licensed contractors with 15+ years experience.',
+    title: `Bathroom Remodeling Chandler AZ | #1 Contractors`,
+    description: 'Top rated bathroom remodeling contractors in Chandler, AZ. Licensed bathroom remodelers with 15+ years experience.',
     images: [
       {
         url: `${siteConfig.url}/og-image.jpg`,
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom & Kitchen Remodeling Chandler AZ`,
-    description: 'Expert bathroom and kitchen remodeling in Chandler, Arizona. Free estimates available.',
+    title: `Bathroom Remodeling Chandler AZ | #1 Contractors`,
+    description: 'Top rated bathroom remodelers in Chandler, AZ. Licensed contractors, free estimates!',
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {

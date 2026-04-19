@@ -47,13 +47,13 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance">
-              Expert Bathroom Remodelers – Chandler, AZ
+              #1 Bathroom Remodeling Chandler AZ
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed">
-              Looking for commercial bathroom remodel contractors near me? We're the top-rated bathroom remodelers near me serving Chandler and 60625 IL areas. 
-              Get bathroom remodel financing near me with our flexible payment options, including free bathroom remodel for seniors near me programs.
+              Looking for the best bathroom remodeling company in Chandler? We&apos;re top rated bathroom remodelers 
+              serving Chandler, AZ with 15+ years experience. Get a free bathroom remodel quote today!
             </p>
 
             {/* CTA Buttons */}
