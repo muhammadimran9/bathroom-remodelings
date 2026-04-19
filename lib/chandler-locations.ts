@@ -270,6 +270,11 @@ export function findLocationBySlug(slug: string): {
   zipData: ZipCodeData;
   neighborhood?: NeighborhoodData;
 } | null {
+  // Safety check for undefined or invalid slug
+  if (!slug || typeof slug !== 'string') {
+    return null;
+  }
+
   // Handle combined slug (e.g., "ocotillo-85248")
   if (slug.includes("-") && /\d{5}$/.test(slug)) {
     const parts = slug.split("-");
