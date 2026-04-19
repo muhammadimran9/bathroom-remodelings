@@ -92,6 +92,11 @@ export function generateLocationMetadata(
   slug: string,
   baseUrl: string
 ): LocationMetadataConfig | null {
+  // Safety check for undefined or invalid slug
+  if (!slug || typeof slug !== 'string') {
+    return null;
+  }
+  
   const location = findLocationBySlug(slug);
   if (!location) return null;
 
@@ -147,7 +152,7 @@ export function validateMetadata(config: LocationMetadataConfig): {
     );
   }
 
-  if (!config.url || typeof config.url !== 'string' || !config.url.includes("https")) {
+  if (!config.url || typeof config.url !== 'string' || (config.url && !config.url.includes("https"))) {
     errors.push("URL must be absolute HTTPS URL");
   }
 
